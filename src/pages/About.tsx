@@ -40,8 +40,8 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
-                  alt="Developer profile"
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                  alt="Code and technology"
                   className="w-full h-auto object-cover"
                 />
               </div>

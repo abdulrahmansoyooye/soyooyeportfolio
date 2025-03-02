@@ -25,22 +25,22 @@ const TechItem: React.FC<TechItemProps> = ({ name, icon, proficiency }) => {
 const TechStack = () => {
   const backendTech = [
     { name: 'Node.js', icon: '/placeholder.svg', proficiency: 95 },
-    { name: 'Python', icon: '/placeholder.svg', proficiency: 90 },
-    { name: 'Java', icon: '/placeholder.svg', proficiency: 85 },
-    { name: 'SQL', icon: '/placeholder.svg', proficiency: 90 },
-    { name: 'MongoDB', icon: '/placeholder.svg', proficiency: 85 },
-    { name: 'GraphQL', icon: '/placeholder.svg', proficiency: 80 },
+    { name: 'Express', icon: '/placeholder.svg', proficiency: 95 },
+    { name: 'Rest Api', icon: '/placeholder.svg', proficiency: 95 },
+    { name: 'MongoDB', icon: '/placeholder.svg', proficiency: 95 },
+    { name: '', icon: '/placeholder.svg', proficiency: 80 },
+    { name: 'Python', icon: '/placeholder.svg', proficiency: 50 },
   ];
 
   const frontendTech = [
-    { name: 'React', icon: '/placeholder.svg', proficiency: 85 },
+    { name: 'Nextjs', icon: '/placeholder.svg', proficiency: 90 },
     { name: 'TypeScript', icon: '/placeholder.svg', proficiency: 80 },
-    { name: 'HTML/CSS', icon: '/placeholder.svg', proficiency: 85 },
-    { name: 'Tailwind', icon: '/placeholder.svg', proficiency: 90 },
+    { name: 'React', icon: '/placeholder.svg', proficiency: 95 },
+    { name: 'Tailwind', icon: '/placeholder.svg', proficiency: 85 },
   ];
 
   const devOpsTech = [
-    { name: 'Docker', icon: '/placeholder.svg', proficiency: 85 },
+    { name: 'Docker', icon: '/placeholder.svg', proficiency: 70 },
     { name: 'AWS', icon: '/placeholder.svg', proficiency: 80 },
     { name: 'CI/CD', icon: '/placeholder.svg', proficiency: 75 },
     { name: 'Git', icon: '/placeholder.svg', proficiency: 95 },

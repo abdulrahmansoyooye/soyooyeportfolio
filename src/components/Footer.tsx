@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <Link to="/" className="text-2xl font-bold">
-              <span className="text-gradient-purple">DevName</span>
+              <span className="text-gradient-purple">Soyooye Abdulrahman</span>
             </Link>
             <p className="mt-4 text-muted-foreground max-w-md">
               Passionate backend developer with frontend expertise, creating scalable
@@ -49,15 +49,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-muted-foreground">email@example.com</li>
+              <li className="text-muted-foreground">abdulrahmansoyooye@gmail.com</li>
               <li className="text-muted-foreground">+1 (123) 456-7890</li>
-              <li className="text-muted-foreground">San Francisco, CA</li>
+              <li className="text-muted-foreground">Lagos, Nigeria</li>
             </ul>
           </div>
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} DevName. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Abdulrahman. All rights reserved.</p>
         </div>
       </div>
     </footer>

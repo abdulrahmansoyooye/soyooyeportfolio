@@ -46,7 +46,7 @@ const About = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 p-6 glass rounded-xl max-w-[250px]">
-                <div className="text-2xl font-bold text-gradient-purple mb-2">100+</div>
+                <div className="text-2xl font-bold text-gradient-purple mb-2">10+</div>
                 <div className="text-sm">Projects completed successfully</div>
               </div>
             </div>

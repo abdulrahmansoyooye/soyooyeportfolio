@@ -12,59 +12,35 @@ import Sphere3D from '../components/Sphere3D';
 const featuredProjects = [
   {
     id: 1,
-    title: 'E-commerce API Platform',
+    title: 'Social Media Microservices',
     description: 'A scalable REST API for e-commerce applications with authentication, product management, and order processing.',
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'Docker'],
+    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
     type: 'backend'
   },
   {
-    id: 2,
-    title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio website built with React and Tailwind CSS.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript'],
+    id: 9,
+    title: 'Sayf Network Website',
+    description: 'User interface for a travel booking application with search, filtering, and booking functionality.',
+    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Nextjs', 'MongoDB', 'Tailwind', 'Cloudinary'],
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
     type: 'frontend'
   },
   {
     id: 3,
-    title: 'Microservice Architecture',
-    description: 'A system of microservices for handling user authentication, payments, and notifications.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Kubernetes', 'Docker', 'Node.js', 'gRPC'],
+    title: 'Post Microservice',
+    description: 'High-performance data processing system for real-time analytics and reporting of user behavior.',
+    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
     type: 'backend'
   },
 ];
 
 const Index = () => {
-  // Scroll animation effect
-  useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.animate-on-scroll').forEach((elem) => {
-      elem.classList.add('opacity-0');
-      observer.observe(elem);
-    });
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <>
@@ -73,16 +49,18 @@ const Index = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="absolute inset-0 overflow-hidden">
+          
           <div className="absolute w-full h-full bg-gradient-to-b from-background/50 to-background" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center justify-center text-center">
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 animate-on-scroll">
             Backend Developer with Frontend Expertise
+            
           </span>
           
           <h1 className="heading-xl text-gradient mb-6 max-w-4xl animate-on-scroll">
-            Bridging <span className="text-gradient-purple">Backend Power</span> with <span className="text-gradient-purple">Frontend Finesse</span>
+            Bridging <span className="text-gradient-purple">Backend Power</span> with <span className="text-gradient-purple">Frontend Mastery</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
@@ -121,7 +99,7 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="heading-lg text-gray-900 mb-6">
-                Crafting Digital Experiences & Scalable Solutions
+                I'm Soyooye Abdulrahman, A developer for building Scalable Solutions
               </h2>
               <p className="text-gray-700 mb-6">
                 I'm a backend developer with over 5 years of experience building 
@@ -177,8 +155,8 @@ const Index = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 p-6 glass rounded-xl max-w-[250px]">
-                <div className="text-2xl font-bold text-gradient-purple mb-2">5+</div>
-                <div className="text-sm">Years of experience in backend development</div>
+                <div className="text-2xl font-bold text-gradient-purple mb-2">2+</div>
+                <div className="text-sm text-slate-300">Years of experience in backend development</div>
               </div>
             </div>
           </div>

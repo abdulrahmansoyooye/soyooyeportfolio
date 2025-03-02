@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-bold text-gradient">
-            <span className="text-gradient-purple">DevName</span>
+            <span className="text-gradient-purple">Soyooye</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,9 +50,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`fixed inset-0 z-50 md:hidden transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 z-50 md:hidden transition-transform duration-300 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} h-full`}>
         <div className="absolute inset-0 bg-background/95 backdrop-blur-sm">
-          <div className="flex flex-col h-full justify-center items-center space-y-8 p-4">
+          <div className="flex flex-col h-[100vh] justify-center  bg-background/95 backdrop-blur-sm items-center space-y-8 p-4">
             <Link to="/" className="nav-link text-xl" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/about" className="nav-link text-xl" onClick={() => setIsOpen(false)}>About</Link>
             <Link to="/projects" className="nav-link text-xl" onClick={() => setIsOpen(false)}>Projects</Link>

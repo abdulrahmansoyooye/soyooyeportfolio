@@ -10,39 +10,59 @@ const allProjects = [
   // Backend Projects
   {
     id: 1,
-    title: 'E-commerce API Platform',
+    title: 'Social Media API Platform',
     description: 'A scalable REST API for e-commerce applications with authentication, product management, and order processing.',
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'Docker'],
+    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
     type: 'backend'
+  },
+  {
+    id: 9,
+    title: 'Sayf Network Website',
+    description: 'User interface for a travel booking application with search, filtering, and booking functionality.',
+    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Nextjs', 'MongoDB', 'Tailwind', 'Cloudinary'],
+    githubLink: 'https://github.com',
+    liveLink: 'https://example.com',
+    type: 'frontend'
   },
   {
     id: 2,
     title: 'Authentication Microservice',
     description: 'Secure authentication and authorization service with OAuth2, JWT, and multi-factor authentication support.',
     image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Java', 'Spring Boot', 'Redis', 'OAuth2'],
+    tags: ['Node.js', 'JWT', 'Argon2', 'MongoDB',"Proxy Integration"],
     githubLink: 'https://github.com',
     type: 'backend'
   },
   {
     id: 3,
-    title: 'Real-time Analytics Engine',
+    title: 'Post Microservice',
     description: 'High-performance data processing system for real-time analytics and reporting of user behavior.',
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Python', 'Kafka', 'Spark', 'ElasticSearch'],
+    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
     type: 'backend'
   },
   {
     id: 4,
-    title: 'Microservice Architecture',
+    title: 'Main Microservice Architecture',
     description: 'A system of microservices for handling user authentication, payments, and notifications.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Kubernetes', 'Docker', 'Node.js', 'gRPC'],
+    image: '',
+    tags: ['Express Proxy', 'Docker', 'Node.js'],
     githubLink: 'https://github.com',
     type: 'backend'
+  },
+  {
+    id: 8,
+    title: 'E-commerce Website',
+    description: 'Admin dashboard for managing products, orders, and customers of an e-commerce platform.',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Nextjs', 'Sanity', 'Shadcn UI',"Pay stack"],
+    githubLink: 'https://github.com',
+    liveLink: 'https://example.com',
+    type: 'frontend'
   },
   {
     id: 5,
@@ -65,6 +85,16 @@ const allProjects = [
   
   // Frontend Projects
   {
+    id: 10,
+    title: 'Rawaaq School Dashboard',
+    description: 'Interactive charts and graphs for visualizing complex datasets and analysis results.',
+    image: '',
+    tags: ['Nextjs', 'Shadcn UI', 'Tailwind', 'TypeScript'],
+    githubLink: 'https://github.com',
+    liveLink: 'https://example.com',
+    type: 'frontend'
+  },
+  {
     id: 7,
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website built with React and Tailwind CSS.',
@@ -74,36 +104,9 @@ const allProjects = [
     liveLink: 'https://example.com',
     type: 'frontend'
   },
-  {
-    id: 8,
-    title: 'E-commerce Dashboard',
-    description: 'Admin dashboard for managing products, orders, and customers of an e-commerce platform.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['React', 'Material UI', 'Redux', 'Chart.js'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    type: 'frontend'
-  },
-  {
-    id: 9,
-    title: 'Travel Booking UI',
-    description: 'User interface for a travel booking application with search, filtering, and booking functionality.',
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Vue.js', 'Vuetify', 'Nuxt.js', 'Mapbox'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    type: 'frontend'
-  },
-  {
-    id: 10,
-    title: 'Interactive Data Visualization',
-    description: 'Interactive charts and graphs for visualizing complex datasets and analysis results.',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['D3.js', 'React', 'SVG', 'TypeScript'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    type: 'frontend'
-  },
+ 
+
+
 ];
 
 const Projects = () => {
@@ -125,7 +128,7 @@ const Projects = () => {
               My Work
             </span>
             <h1 className="heading-lg text-gradient mb-6">
-              Showcasing My <span className="text-gradient-purple">Projects</span>
+             A Few Selection of My <span className="text-gradient-purple">Projects</span>
             </h1>
             <p className="text-muted-foreground">
               A collection of my work across backend and frontend development.

@@ -4,7 +4,7 @@ import {
   Braces, 
   Code, 
   Database, 
-  Docker, 
+  Container, 
   FileJson, 
   Github, 
   Globe, 
@@ -64,7 +64,7 @@ const TechStack = () => {
   ];
 
   const devOpsTech = [
-    { name: 'Docker', icon: <Docker className="text-blue-500" size={32} />, proficiency: 80 },
+    { name: 'Docker', icon: <Container className="text-blue-500" size={32} />, proficiency: 80 },
     { name: 'Git', icon: <Github className="text-gray-500" size={32} />, proficiency: 95 },
     { name: 'GitHub', icon: <Github className="text-purple-500" size={32} />, proficiency: 95 },
     { name: 'Postman', icon: <Globe className="text-orange-500" size={32} />, proficiency: 90 },

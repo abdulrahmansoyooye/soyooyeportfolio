@@ -1,7 +1,8 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { ArrowDown, ArrowRight, Code, Database, Server } from 'lucide-react';
+import { ArrowDown, ArrowRight, Code, Database, FileText, Server } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import TechStack from '../components/TechStack';
@@ -9,6 +10,15 @@ import Sphere3D from '../components/Sphere3D';
 
 // Sample data - in a real app, you would fetch this from an API or CMS
 const featuredProjects = [
+  {
+    id: 11,
+    title: 'AI-Powered Social Media Analytics',
+    description: 'Currently developing a platform that uses AI to analyze social media trends and provide actionable insights for businesses.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Node.js', 'Machine Learning', 'MongoDB', 'React', 'Redis'],
+    githubLink: 'https://github.com',
+    type: 'ongoing' as 'ongoing'
+  },
   {
     id: 1,
     title: 'Social Media Microservices',
@@ -27,15 +37,6 @@ const featuredProjects = [
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
     type: 'frontend' as 'frontend'
-  },
-  {
-    id: 3,
-    title: 'Post Microservice',
-    description: 'High-performance data processing system for real-time analytics and reporting of user behavior.',
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
-    githubLink: 'https://github.com',
-    type: 'backend' as 'backend'
   },
 ];
 
@@ -74,9 +75,15 @@ const Index = () => {
             <Link to="/projects" className="button-primary">
               View Projects <ArrowRight size={16} className="ml-2" />
             </Link>
-            <Link to="/contact" className="button-secondary">
-              Contact Me
-            </Link>
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="button-secondary flex items-center justify-center gap-2"
+            >
+              <FileText size={16} />
+              Check Resume
+            </a>
           </div>
           
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -102,7 +109,7 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="heading-lg text-gray-900 mb-6">
-                I'm Soyooye Abdulrahman, A developer for building Scalable Solutions
+                I'm devabdulrahman, A developer for building Scalable Solutions
               </h2>
               <p className="text-gray-700 mb-6">
                 I'm a backend developer with over 5 years of experience building 
@@ -144,9 +151,20 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <Link to="/about" className="inline-flex items-center mt-8 text-accent-purple font-medium">
-                More About Me <ArrowRight size={16} className="ml-2" />
-              </Link>
+              <div className="flex gap-4 mt-8">
+                <Link to="/about" className="inline-flex items-center text-accent-purple font-medium">
+                  More About Me <ArrowRight size={16} className="ml-2" />
+                </Link>
+                <a 
+                  href="/resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center text-accent-blue font-medium"
+                >
+                  <FileText size={16} className="mr-2" />
+                  View Resume
+                </a>
+              </div>
             </div>
             
             <div className="relative animate-on-scroll">

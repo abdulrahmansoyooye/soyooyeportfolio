@@ -7,6 +7,25 @@ import { Link } from 'react-router-dom';
 
 // Sample project data - in a real app, you would fetch this from an API or CMS
 const allProjects = [
+  // Ongoing Projects
+  {
+    id: 11,
+    title: 'AI-Powered Social Media Analytics',
+    description: 'Currently developing a platform that uses AI to analyze social media trends and provide actionable insights for businesses.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Node.js', 'Machine Learning', 'MongoDB', 'React', 'Redis'],
+    githubLink: 'https://github.com',
+    type: 'ongoing' as 'ongoing'
+  },
+  {
+    id: 12,
+    title: 'Blockchain-Based Identity Verification',
+    description: 'Building a secure identity verification system using blockchain technology to provide tamper-proof verification processes.',
+    image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['Solidity', 'Ethereum', 'React', 'Node.js', 'Web3.js'],
+    githubLink: 'https://github.com',
+    type: 'ongoing' as 'ongoing'
+  },
   // Backend Projects
   {
     id: 1,
@@ -107,7 +126,7 @@ const allProjects = [
 ];
 
 const Projects = () => {
-  const [filter, setFilter] = useState<'all' | 'backend' | 'frontend'>('all');
+  const [filter, setFilter] = useState<'all' | 'backend' | 'frontend' | 'ongoing'>('all');
   
   useEffect(() => {
     // Scroll to top when component mounts
@@ -155,6 +174,16 @@ const Projects = () => {
                 }`}
               >
                 All Projects
+              </button>
+              <button
+                onClick={() => setFilter('ongoing')}
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
+                  filter === 'ongoing'
+                    ? 'bg-white text-background'
+                    : 'text-foreground hover:bg-white/10'
+                }`}
+              >
+                Ongoing
               </button>
               <button
                 onClick={() => setFilter('backend')}

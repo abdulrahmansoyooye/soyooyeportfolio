@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-xl font-bold text-gradient" onClick={handleLinkClick}>
-            <span className="text-gradient-purple">DevAbdulrahman</span>
+            <span className="text-gradient-purple">devabdulrahman</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,6 +45,15 @@ const Navbar = () => {
             <Link to="/about" className="nav-link" onClick={handleLinkClick}>About</Link>
             <Link to="/projects" className="nav-link" onClick={handleLinkClick}>Projects</Link>
             <Link to="/contact" className="nav-link" onClick={handleLinkClick}>Contact</Link>
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 nav-link"
+            >
+              <FileText size={16} />
+              Resume
+            </a>
             <Link to="/contact" className="button-primary" onClick={handleLinkClick}>Hire Me</Link>
           </div>
 
@@ -68,6 +77,15 @@ const Navbar = () => {
             <Link to="/about" className="nav-link text-xl" onClick={handleLinkClick}>About</Link>
             <Link to="/projects" className="nav-link text-xl" onClick={handleLinkClick}>Projects</Link>
             <Link to="/contact" className="nav-link text-xl" onClick={handleLinkClick}>Contact</Link>
+            <a 
+              href="/resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 nav-link text-xl"
+            >
+              <FileText size={18} />
+              Resume
+            </a>
             <Link to="/contact" className="button-primary text-xl" onClick={handleLinkClick}>Hire Me</Link>
           </div>
           <button 

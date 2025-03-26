@@ -9,7 +9,7 @@ interface ProjectCardProps {
   tags: string[];
   githubLink?: string;
   liveLink?: string;
-  type: 'backend' | 'frontend';
+  type: 'backend' | 'frontend' | 'ongoing';
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -59,9 +59,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <span className={`inline-block px-3 py-1 text-xs rounded-full mb-2 ${
         type === 'backend' 
           ? 'bg-accent-purple/20 text-accent-purple' 
-          : 'bg-accent-blue/20 text-accent-blue'
+          : type === 'frontend'
+            ? 'bg-accent-blue/20 text-accent-blue'
+            : 'bg-accent-green/20 text-green-500'
       }`}>
-        {type === 'backend' ? 'Backend' : 'Frontend'}
+        {type === 'backend' ? 'Backend' : type === 'frontend' ? 'Frontend' : 'Ongoing'}
       </span>
       
       <h3 className="text-xl font-semibold mb-2">{title}</h3>

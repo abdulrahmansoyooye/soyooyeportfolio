@@ -1,16 +1,32 @@
 
 import React from 'react';
+import { 
+  Braces, 
+  Code, 
+  Database, 
+  Docker, 
+  FileJson, 
+  Github, 
+  Globe, 
+  LayoutGrid, 
+  Leaf, 
+  Rabbit, 
+  Server, 
+  Store 
+} from 'lucide-react';
 
 interface TechItemProps {
   name: string;
-  icon: string;
+  icon: React.ReactNode;
   proficiency: number;
 }
 
 const TechItem: React.FC<TechItemProps> = ({ name, icon, proficiency }) => {
   return (
     <div className="glass p-4 rounded-xl flex flex-col items-center transition-all duration-300 hover:translate-y-[-5px]">
-      <img src={icon} alt={name} className="w-12 h-12 mb-3" />
+      <div className="w-12 h-12 mb-3 flex items-center justify-center">
+        {icon}
+      </div>
       <h3 className="font-medium mb-2">{name}</h3>
       <div className="w-full bg-secondary rounded-full h-2 mt-1">
         <div 
@@ -24,26 +40,37 @@ const TechItem: React.FC<TechItemProps> = ({ name, icon, proficiency }) => {
 
 const TechStack = () => {
   const backendTech = [
-    { name: 'Node.js', icon: '/placeholder.svg', proficiency: 95 },
-    { name: 'Express', icon: '/placeholder.svg', proficiency: 95 },
-    { name: 'Rest Api', icon: '/placeholder.svg', proficiency: 95 },
-    { name: 'MongoDB', icon: '/placeholder.svg', proficiency: 95 },
-    { name: '', icon: '/placeholder.svg', proficiency: 80 },
-    { name: 'Python', icon: '/placeholder.svg', proficiency: 50 },
+    { name: 'Node.js', icon: <Server className="text-green-500" size={32} />, proficiency: 95 },
+    { name: 'Express', icon: <Server className="text-gray-400" size={32} />, proficiency: 95 },
+    { name: 'NestJS', icon: <Leaf className="text-red-500" size={32} />, proficiency: 85 },
+    { name: 'REST API', icon: <Globe className="text-blue-500" size={32} />, proficiency: 95 },
+    { name: 'Microservices', icon: <LayoutGrid className="text-purple-500" size={32} />, proficiency: 90 },
+    { name: 'MongoDB', icon: <Leaf className="text-green-600" size={32} />, proficiency: 90 },
+    { name: 'PostgreSQL', icon: <Database className="text-blue-600" size={32} />, proficiency: 85 },
+    { name: 'Prisma', icon: <Database className="text-teal-500" size={32} />, proficiency: 80 },
+    { name: 'Mongoose', icon: <Database className="text-orange-500" size={32} />, proficiency: 90 },
+    { name: 'Redis', icon: <Store className="text-red-600" size={32} />, proficiency: 80 },
+    { name: 'RabbitMQ', icon: <Rabbit className="text-orange-400" size={32} />, proficiency: 75 },
+    { name: 'Deno', icon: <FileJson className="text-gray-500" size={32} />, proficiency: 65 },
   ];
 
   const frontendTech = [
-    { name: 'Nextjs', icon: '/placeholder.svg', proficiency: 90 },
-    { name: 'TypeScript', icon: '/placeholder.svg', proficiency: 80 },
-    { name: 'React', icon: '/placeholder.svg', proficiency: 95 },
-    { name: 'Tailwind', icon: '/placeholder.svg', proficiency: 85 },
+    { name: 'TypeScript', icon: <Braces className="text-blue-500" size={32} />, proficiency: 90 },
+    { name: 'JavaScript', icon: <Braces className="text-yellow-500" size={32} />, proficiency: 95 },
+    { name: 'React', icon: <Code className="text-blue-400" size={32} />, proficiency: 90 },
+    { name: 'NextJS', icon: <Code className="text-black" size={32} />, proficiency: 85 },
+    { name: 'Tailwind CSS', icon: <Code className="text-cyan-500" size={32} />, proficiency: 95 },
+    { name: 'Sanity CMS', icon: <LayoutGrid className="text-red-500" size={32} />, proficiency: 80 },
   ];
 
   const devOpsTech = [
-    { name: 'Docker', icon: '/placeholder.svg', proficiency: 70 },
-    { name: 'AWS', icon: '/placeholder.svg', proficiency: 80 },
-    { name: 'CI/CD', icon: '/placeholder.svg', proficiency: 75 },
-    { name: 'Git', icon: '/placeholder.svg', proficiency: 95 },
+    { name: 'Docker', icon: <Docker className="text-blue-500" size={32} />, proficiency: 80 },
+    { name: 'Git', icon: <Github className="text-gray-500" size={32} />, proficiency: 95 },
+    { name: 'GitHub', icon: <Github className="text-purple-500" size={32} />, proficiency: 95 },
+    { name: 'Postman', icon: <Globe className="text-orange-500" size={32} />, proficiency: 90 },
+    { name: 'Jira', icon: <LayoutGrid className="text-blue-500" size={32} />, proficiency: 80 },
+    { name: 'Caching', icon: <Store className="text-green-500" size={32} />, proficiency: 85 },
+    { name: 'Adapter Pattern', icon: <Code className="text-purple-400" size={32} />, proficiency: 90 },
   ];
 
   return (
@@ -64,7 +91,7 @@ const TechStack = () => {
 
         <div className="mt-12">
           <h3 className="text-xl font-semibold mb-6">Backend</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {backendTech.map((tech, index) => (
               <TechItem key={index} {...tech} />
             ))}
@@ -73,7 +100,7 @@ const TechStack = () => {
 
         <div className="mt-12">
           <h3 className="text-xl font-semibold mb-6">Frontend</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {frontendTech.map((tech, index) => (
               <TechItem key={index} {...tech} />
             ))}
@@ -82,7 +109,7 @@ const TechStack = () => {
 
         <div className="mt-12">
           <h3 className="text-xl font-semibold mb-6">DevOps & Tools</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {devOpsTech.map((tech, index) => (
               <TechItem key={index} {...tech} />
             ))}

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -17,7 +16,7 @@ const featuredProjects = [
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   {
     id: 9,
@@ -27,7 +26,7 @@ const featuredProjects = [
     tags: ['Nextjs', 'MongoDB', 'Tailwind', 'Cloudinary'],
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
-    type: 'frontend'
+    type: 'frontend' as 'frontend'
   },
   {
     id: 3,
@@ -36,11 +35,15 @@ const featuredProjects = [
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
 ];
 
 const Index = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

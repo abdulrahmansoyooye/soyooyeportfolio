@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
@@ -15,7 +15,7 @@ const allProjects = [
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   {
     id: 9,
@@ -25,7 +25,7 @@ const allProjects = [
     tags: ['Nextjs', 'MongoDB', 'Tailwind', 'Cloudinary'],
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
-    type: 'frontend'
+    type: 'frontend' as 'frontend'
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const allProjects = [
     image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'JWT', 'Argon2', 'MongoDB',"Proxy Integration"],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   {
     id: 3,
@@ -43,16 +43,16 @@ const allProjects = [
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   {
     id: 4,
     title: 'Main Microservice Architecture',
     description: 'A system of microservices for handling user authentication, payments, and notifications.',
-    image: '',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Express Proxy', 'Docker', 'Node.js'],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   {
     id: 8,
@@ -62,7 +62,7 @@ const allProjects = [
     tags: ['Nextjs', 'Sanity', 'Shadcn UI',"Pay stack"],
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
-    type: 'frontend'
+    type: 'frontend' as 'frontend'
   },
   {
     id: 5,
@@ -71,7 +71,7 @@ const allProjects = [
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['AWS Lambda', 'DynamoDB', 'API Gateway', 'Serverless'],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const allProjects = [
     image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['GraphQL', 'Node.js', 'MongoDB', 'AWS S3'],
     githubLink: 'https://github.com',
-    type: 'backend'
+    type: 'backend' as 'backend'
   },
   
   // Frontend Projects
@@ -88,11 +88,11 @@ const allProjects = [
     id: 10,
     title: 'Rawaaq School Dashboard',
     description: 'Interactive charts and graphs for visualizing complex datasets and analysis results.',
-    image: '',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Nextjs', 'Shadcn UI', 'Tailwind', 'TypeScript'],
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
-    type: 'frontend'
+    type: 'frontend' as 'frontend'
   },
   {
     id: 7,
@@ -102,15 +102,17 @@ const allProjects = [
     tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript'],
     githubLink: 'https://github.com',
     liveLink: 'https://example.com',
-    type: 'frontend'
+    type: 'frontend' as 'frontend'
   },
- 
-
-
 ];
 
 const Projects = () => {
   const [filter, setFilter] = useState<'all' | 'backend' | 'frontend'>('all');
+  
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   
   const filteredProjects = filter === 'all'
     ? allProjects

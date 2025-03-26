@@ -10,7 +10,7 @@ import {
   Globe, 
   LayoutGrid, 
   Leaf, 
-  Rabbit, 
+  // Rabbit, 
   Server, 
   Store 
 } from 'lucide-react';
@@ -50,7 +50,7 @@ const TechStack = () => {
     { name: 'Prisma', icon: <Database className="text-teal-500" size={32} />, proficiency: 80 },
     { name: 'Mongoose', icon: <Database className="text-orange-500" size={32} />, proficiency: 90 },
     { name: 'Redis', icon: <Store className="text-red-600" size={32} />, proficiency: 80 },
-    { name: 'RabbitMQ', icon: <Rabbit className="text-orange-400" size={32} />, proficiency: 75 },
+    // { name: 'RabbitMQ', icon: <Rabbit className="text-orange-400" size={32} />, proficiency: 75 },
     { name: 'Deno', icon: <FileJson className="text-gray-500" size={32} />, proficiency: 65 },
   ];
 
@@ -108,7 +108,7 @@ const TechStack = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-xl font-semibold mb-6">DevOps & Tools</h3>
+          <h3 className="text-xl font-semibold mb-6">Dev Tools </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {devOpsTech.map((tech, index) => (
               <TechItem key={index} {...tech} />

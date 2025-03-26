@@ -76,10 +76,10 @@ const Index = () => {
               View Projects <ArrowRight size={16} className="ml-2" />
             </Link>
             <a 
-              href="/resume.pdf" 
               target="_blank" 
+              href={"https://docs.google.com/document/d/1gyPjPSXf0ZGtf1PtNxjiBtZYnypBaXW3SAITIkww0ns/edit?usp=sharing"}
               rel="noopener noreferrer" 
-              className="button-secondary flex items-center justify-center gap-2"
+              className="button-secondary flex items-center justify-center gap-2 cursor-pointer"
             >
               <FileText size={16} />
               Check Resume

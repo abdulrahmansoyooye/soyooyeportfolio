@@ -48,9 +48,9 @@ const About = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 p-6 glass rounded-xl max-w-[250px]">
                 <div className="text-2xl font-bold text-gradient-purple mb-2">
-                  10+
+                  40+
                 </div>
-                <div className="text-sm">Projects completed successfully</div>
+                <div className="text-sm">Repositories</div>
               </div>
             </div>
           </div>
@@ -197,47 +197,54 @@ const About = () => {
               <div className="space-y-8">
                 <div className="glass p-6 rounded-xl">
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Senior Backend Developer</h4>
+                    <h4 className="font-semibold">Full-Stack Developer</h4>
                     <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      2020 - Present
+                      MAY 2024 - Present
                     </span>
                   </div>
-                  <h5 className="text-accent-purple mb-4">
-                    Tech Innovations Inc.
-                  </h5>
+                  <h5 className="text-accent-purple mb-4">Sayf Network</h5>
                   <p className="text-muted-foreground">
-                    Led the development of scalable backend services for
-                    enterprise clients. Designed and implemented microservice
-                    architectures, API gateways, and database optimization
-                    strategies.
+                    Led the full-stack development of an admin dashboard,
+                    improving user efficiency by 35% through an intuitive UI and
+                    seamless backend integration Designed and implemented the
+                    system using Next.js, MongoDB, Mongoose, and Tailwind CSS,
+                    ensuring scalability and performance optimization. Enhanced
+                    data management and security, leading to a 25% improvement
+                    in query performance and ensuring data integrity and
+                    reliability.
                   </p>
                 </div>
 
                 <div className="glass p-6 rounded-xl">
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Backend Developer</h4>
+                    <h4 className="font-semibold">Lead Software Developer</h4>
                     <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      2018 - 2020
+                      NOV 2024 – PRESENT
                     </span>
                   </div>
                   <h5 className="text-accent-blue mb-4">
-                    Digital Solutions Ltd.
+                    Nextage Digital Solutions Ltd.
                   </h5>
                   <p className="text-muted-foreground">
-                    Developed RESTful APIs and integrations for e-commerce
-                    platforms. Implemented payment processing systems and
-                    inventory management solutions.
+                    Led the development of multiple applications, improving
+                    development speed by 40% through efficient code structuring
+                    and process automation. Collaborated with cross-functional
+                    teams, effectively communicating technical requirements and
+                    solutions, resulting in 20% faster project delivery times.
+                    Designed and deployed scalable, high-performance systems
+                    using Next.js, Sanity, TypeScript, Tailwind, ensuring 99.9%
+                    uptime and seamless data flow.
                   </p>
                 </div>
 
                 <div className="glass p-6 rounded-xl">
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Junior Developer</h4>
+                    <h4 className="font-semibold">Frontend Developer</h4>
                     <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
                       2016 - 2018
                     </span>
                   </div>
-                  <h5 className="text-accent-pink mb-4">Web Creators Co.</h5>
+                  <h5 className="text-accent-pink mb-4">Rawaaq </h5>
                   <p className="text-muted-foreground">
                     Assisted in building web applications and content management
                     systems. Collaborated on frontend and backend features as

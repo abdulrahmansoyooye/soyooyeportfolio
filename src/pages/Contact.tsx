@@ -89,7 +89,7 @@ const Contact = () => {
               <div className="glass p-6 rounded-xl">
                 <div className="grid grid-cols-3 gap-4">
                   <a 
-                    href="https://github.com/" 
+                    href="https://github.com/abdulrahmansoyooye" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex flex-col items-center p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors"
@@ -99,7 +99,7 @@ const Contact = () => {
                   </a>
                   
                   <a 
-                    href="https://linkedin.com/" 
+                    href="https://www.linkedin.com/in/abdulrahman-soyooye-814435294/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex flex-col items-center p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors"
@@ -109,7 +109,7 @@ const Contact = () => {
                   </a>
                   
                   <a 
-                    href="https://twitter.com/" 
+                    href="https://x.com/abdulrahmansoyo" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex flex-col items-center p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors"

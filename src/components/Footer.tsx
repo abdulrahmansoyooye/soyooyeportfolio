@@ -23,15 +23,15 @@ const Footer = () => {
               and elegant solutions for modern web applications.
             </p>
             <div className="flex mt-6 space-x-4">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/abdulrahmansoyooye" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-400 hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.linkedin.com/in/abdulrahman-soyooye-814435294/" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" 
+              <a href="https://x.com/abdulrahmansoyo" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
               </a>
@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-muted-foreground">abdulrahmansoyooye@gmail.com</li>
-              <li className="text-muted-foreground">+1 (123) 456-7890</li>
+              <li className="text-muted-foreground">+ (234) 70-1128 0726</li>
               <li className="text-muted-foreground">Lagos, Nigeria</li>
             </ul>
           </div>

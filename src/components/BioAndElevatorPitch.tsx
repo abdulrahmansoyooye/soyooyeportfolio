@@ -58,7 +58,7 @@ const BioAndElevatorPitch = () => {
                   Resume
                 </a>
                 <a 
-                  href="https://wa.me/2347011280726" 
+                  href="https://api.whatsapp.com/send?phone=2347011280726" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="button-secondary flex items-center gap-2 bg-green-600 hover:bg-green-700"
@@ -107,7 +107,7 @@ const BioAndElevatorPitch = () => {
                     Let's Connect
                   </a>
                   <a 
-                    href="https://wa.me/2347011280726" 
+                    href="https://api.whatsapp.com/send?phone=2347011280726" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="button-primary flex items-center gap-2 bg-green-600 hover:bg-green-700"

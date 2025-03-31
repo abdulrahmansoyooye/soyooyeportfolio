@@ -46,7 +46,7 @@ const Footer = () => {
                    className="text-gray-400 hover:text-white transition-colors">
                   <Mail size={20} />
                 </a>
-                <a href="https://wa.me/2347011280726" target="_blank" rel="noopener noreferrer" 
+                <a href="https://api.whatsapp.com/send?phone=2347011280726" target="_blank" rel="noopener noreferrer" 
                    className="text-gray-400 hover:text-green-400 transition-colors">
                   <MessageCircle size={20} />
                 </a>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <li className="text-muted-foreground">Lagos, Nigeria</li>
                 <li>
                   <a 
-                    href="https://wa.me/2347011280726" 
+                    href="https://api.whatsapp.com/send?phone=2347011280726" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-green-400 flex items-center gap-1 transition-colors"

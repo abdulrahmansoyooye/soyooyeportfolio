@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2 font-bold" onClick={handleLinkClick}>
             <Avatar className="h-8 w-8 border border-accent-purple/30">
-              <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" />
+              <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" className='object-cover'/>
               <AvatarFallback>AB</AvatarFallback>
             </Avatar>
             <span className="text-gradient-purple">Abdulrahman</span>

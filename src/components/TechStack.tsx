@@ -1,23 +1,19 @@
 
 import React from 'react';
 import { 
-  Braces, 
   Code, 
   Database, 
-  Container, 
-  FileJson, 
-  Github, 
+
   Globe, 
   LayoutGrid, 
   Leaf, 
-  // Rabbit, 
   Server, 
   Store 
 } from 'lucide-react';
 
 interface TechItemProps {
   name: string;
-  icon: React.ReactNode;
+  icon: React.ReactNode ;
   proficiency: number;
 }
 
@@ -25,7 +21,7 @@ const TechItem: React.FC<TechItemProps> = ({ name, icon, proficiency }) => {
   return (
     <div className="glass p-4 rounded-xl flex flex-col items-center transition-all duration-300 hover:translate-y-[-5px]">
       <div className="w-12 h-12 mb-3 flex items-center justify-center">
-        {icon}
+        {typeof(icon) === "string" ? <img src={`/stacks/${icon}.svg`} alt="" />: icon}
       </div>
       <h3 className="font-medium mb-2">{name}</h3>
       <div className="w-full bg-secondary rounded-full h-2 mt-1">
@@ -40,34 +36,35 @@ const TechItem: React.FC<TechItemProps> = ({ name, icon, proficiency }) => {
 
 const TechStack = () => {
   const backendTech = [
-    { name: 'Node.js', icon: <Server className="text-green-500" size={32} />, proficiency: 95 },
-    { name: 'Express', icon: <Server className="text-gray-400" size={32} />, proficiency: 95 },
-    { name: 'NestJS', icon: <Leaf className="text-red-500" size={32} />, proficiency: 85 },
+    { name: 'Node.js', icon: "nodejs", proficiency: 95 },
+    { name: 'Express', icon: "express", proficiency: 95 },
+    { name: 'NestJS', icon: "nest", proficiency: 85 },
     { name: 'REST API', icon: <Globe className="text-blue-500" size={32} />, proficiency: 95 },
     { name: 'Microservices', icon: <LayoutGrid className="text-purple-500" size={32} />, proficiency: 90 },
-    { name: 'MongoDB', icon: <Leaf className="text-green-600" size={32} />, proficiency: 90 },
+    { name: 'MongoDB', icon: "mongodb", proficiency: 90 },
     { name: 'PostgreSQL', icon: <Database className="text-blue-600" size={32} />, proficiency: 85 },
-    { name: 'Prisma', icon: <Database className="text-teal-500" size={32} />, proficiency: 80 },
-    { name: 'Mongoose', icon: <Database className="text-orange-500" size={32} />, proficiency: 90 },
-    { name: 'Redis', icon: <Store className="text-red-600" size={32} />, proficiency: 80 },
-    // { name: 'RabbitMQ', icon: <Rabbit className="text-orange-400" size={32} />, proficiency: 75 },
-    { name: 'Deno', icon: <FileJson className="text-gray-500" size={32} />, proficiency: 65 },
+    { name: 'Prisma', icon: <Database className="text-red-600" size={32} />, proficiency: 80 },
+    { name: 'Mongoose', icon: <Database className="text-green-600" size={32} />, proficiency: 90 },
+    { name: 'Redis', icon: "redis", proficiency: 80 },
+    { name: 'RabbitMQ', icon: "rabbitmq", proficiency: 75 },
+    { name: 'Grafana', icon: "grafana", proficiency: 75 },
+    { name: 'Deno', icon: "deno", proficiency: 65 },
   ];
 
   const frontendTech = [
-    { name: 'TypeScript', icon: <Braces className="text-blue-500" size={32} />, proficiency: 90 },
-    { name: 'JavaScript', icon: <Braces className="text-yellow-500" size={32} />, proficiency: 95 },
-    { name: 'React', icon: <Code className="text-blue-400" size={32} />, proficiency: 90 },
-    { name: 'NextJS', icon: <Code className="text-black" size={32} />, proficiency: 85 },
-    { name: 'Tailwind CSS', icon: <Code className="text-cyan-500" size={32} />, proficiency: 95 },
-    { name: 'Sanity CMS', icon: <LayoutGrid className="text-red-500" size={32} />, proficiency: 80 },
+    { name: 'TypeScript', icon: "typescript", proficiency: 90 },
+    { name: 'JavaScript', icon: "javascript", proficiency: 95 },
+    { name: 'React', icon: "react", proficiency: 90 },
+    { name: 'NextJS', icon: "next", proficiency: 85 },
+    { name: 'Tailwind CSS', icon: "tailwind", proficiency: 95 },
+    { name: 'Shadcn ui', icon: "shadcn", proficiency: 80 },
   ];
 
   const devOpsTech = [
-    { name: 'Docker', icon: <Container className="text-blue-500" size={32} />, proficiency: 80 },
-    { name: 'Git', icon: <Github className="text-gray-500" size={32} />, proficiency: 95 },
-    { name: 'GitHub', icon: <Github className="text-purple-500" size={32} />, proficiency: 95 },
-    { name: 'Postman', icon: <Globe className="text-orange-500" size={32} />, proficiency: 90 },
+    { name: 'Docker', icon: "docker", proficiency: 80 },
+    { name: 'Github', icon: "github", proficiency: 95 },
+    { name: 'Git', icon: "git", proficiency: 95 },
+    { name: 'Postman', icon: "postman", proficiency: 90 },
     { name: 'Jira', icon: <LayoutGrid className="text-blue-500" size={32} />, proficiency: 80 },
     { name: 'Caching', icon: <Store className="text-green-500" size={32} />, proficiency: 85 },
     { name: 'Adapter Pattern', icon: <Code className="text-purple-400" size={32} />, proficiency: 90 },

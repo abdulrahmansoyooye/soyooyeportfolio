@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,6 +6,7 @@ import { Link } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import TechStack from '../components/TechStack';
 import Sphere3D from '../components/Sphere3D';
+import BioAndElevatorPitch from '../components/BioAndElevatorPitch';
 
 // Sample data - in a real app, you would fetch this from an API or CMS
 const featuredProjects = [
@@ -183,6 +183,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Bio and Elevator Pitch Section */}
+      <BioAndElevatorPitch />
       
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">

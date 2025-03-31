@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileText, Video, UserRound, MessageSquare } from 'lucide-react';
+import { FileText, Video, UserRound, MessageSquare, Whatsapp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BioAndElevatorPitch = () => {
@@ -11,7 +11,7 @@ const BioAndElevatorPitch = () => {
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
             About Me
           </span>
-          <h2 className="heading-lg text-gradient mb-6">Bio & Elevator Pitch</h2>
+          <h2 className="heading-lg text-gradient mb-6">Say Hello to devabdulrahman!</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Get to know me better through my professional summary and video introduction.
           </p>
@@ -24,7 +24,7 @@ const BioAndElevatorPitch = () => {
               <div className="p-3 rounded-full bg-accent-purple/20 mr-4">
                 <UserRound size={24} className="text-accent-purple" />
               </div>
-              <h3 className="text-xl font-semibold text-gradient-purple">My Bio</h3>
+              <h3 className="text-xl font-semibold text-gradient-purple">Hey There, I'm Your Backend Expert!</h3>
             </div>
             
             <div className="space-y-4 text-muted-foreground">
@@ -41,7 +41,7 @@ const BioAndElevatorPitch = () => {
                 What sets me apart is my holistic understanding of the development process. While my primary focus is backend,
                 I'm comfortable working across the full stack, ensuring seamless integration between server-side logic and user interfaces.
               </p>
-              <div className="flex gap-4 mt-6">
+              <div className="flex flex-wrap gap-4 mt-6">
                 <Link to="/about" className="button-secondary flex items-center gap-2">
                   <UserRound size={16} />
                   More About Me
@@ -55,6 +55,15 @@ const BioAndElevatorPitch = () => {
                   <FileText size={16} />
                   Resume
                 </a>
+                <a 
+                  href="https://wa.me/2347011280726" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="button-secondary flex items-center gap-2 bg-green-600 hover:bg-green-700"
+                >
+                  <Whatsapp size={16} />
+                  Chat on WhatsApp
+                </a>
               </div>
             </div>
           </div>
@@ -65,7 +74,7 @@ const BioAndElevatorPitch = () => {
               <div className="p-3 rounded-full bg-accent-blue/20 mr-4">
                 <MessageSquare size={24} className="text-accent-blue" />
               </div>
-              <h3 className="text-xl font-semibold text-gradient-purple">Elevator Pitch</h3>
+              <h3 className="text-xl font-semibold text-gradient-purple">Let Me Solve Your Backend Challenges</h3>
             </div>
             
             <div className="space-y-4">
@@ -90,10 +99,19 @@ const BioAndElevatorPitch = () => {
                   </div>
                 </div>
                 
-                <div className="mt-6 flex justify-center">
+                <div className="mt-6 flex justify-center gap-4">
                   <a href="/contact" className="button-primary flex items-center gap-2">
                     <MessageSquare size={16} />
                     Let's Connect
+                  </a>
+                  <a 
+                    href="https://wa.me/2347011280726" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="button-primary flex items-center gap-2 bg-green-600 hover:bg-green-700"
+                  >
+                    <Whatsapp size={16} />
+                    Quick Chat
                   </a>
                 </div>
               </div>

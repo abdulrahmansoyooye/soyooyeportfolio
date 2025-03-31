@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,6 +8,7 @@ import ProjectCard from '../components/ProjectCard';
 import TechStack from '../components/TechStack';
 import Sphere3D from '../components/Sphere3D';
 import BioAndElevatorPitch from '../components/BioAndElevatorPitch';
+import GitHubAchievements from '../components/GitHubAchievements';
 
 const featuredProjects = [
   {
@@ -185,6 +187,9 @@ const Index = () => {
       
       {/* Bio and Elevator Pitch Section */}
       <BioAndElevatorPitch />
+      
+      {/* GitHub Achievements Section */}
+      <GitHubAchievements />
       
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">

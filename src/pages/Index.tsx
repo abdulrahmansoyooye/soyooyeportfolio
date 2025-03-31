@@ -8,7 +8,6 @@ import TechStack from '../components/TechStack';
 import Sphere3D from '../components/Sphere3D';
 import BioAndElevatorPitch from '../components/BioAndElevatorPitch';
 
-// Sample data - in a real app, you would fetch this from an API or CMS
 const featuredProjects = [
   {
     id: 11,
@@ -109,7 +108,7 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="heading-lg text-gray-900 mb-6">
-                I'm devabdulrahman, A developer for building Scalable Solutions
+                Hi, I'm Abdulrahman! Turning Complex Problems into Elegant Digital Solutions
               </h2>
               <p className="text-gray-700 mb-6">
                 I'm a backend developer with over 5 years of experience building 

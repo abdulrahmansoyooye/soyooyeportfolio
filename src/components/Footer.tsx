@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Twitter, Mail, MessageCircle } from 'lucide-react';
 import BackToTop from './BackToTop';
+import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
 
 const Footer = () => {
   const location = useLocation();
@@ -17,8 +18,12 @@ const Footer = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <Link to="/" className="text-2xl font-bold" onClick={handleLinkClick}>
-                <span className="text-gradient-purple">devabdulrahman</span>
+              <Link to="/" className="flex items-center gap-2 text-2xl font-bold" onClick={handleLinkClick}>
+                <Avatar className="h-10 w-10 border border-accent-purple/30">
+                  <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" />
+                  <AvatarFallback>AB</AvatarFallback>
+                </Avatar>
+                <span className="text-gradient-purple">Abdulrahman</span>
               </Link>
               <p className="mt-4 text-muted-foreground max-w-md">
                 Passionate backend developer with frontend expertise, creating scalable
@@ -80,7 +85,7 @@ const Footer = () => {
           </div>
           
           <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} devabdulrahman. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Abdulrahman. All rights reserved.</p>
           </div>
         </div>
       </footer>

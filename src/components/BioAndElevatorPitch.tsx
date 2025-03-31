@@ -2,6 +2,7 @@
 import React from 'react';
 import { FileText, Video, UserRound, MessageSquare, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
 
 const BioAndElevatorPitch = () => {
   return (
@@ -11,7 +12,7 @@ const BioAndElevatorPitch = () => {
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
             About Me
           </span>
-          <h2 className="heading-lg text-gradient mb-6">Say Hello to devabdulrahman!</h2>
+          <h2 className="heading-lg text-gradient mb-6">Meet Abdulrahman: Your Coding Partner!</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Get to know me better through my professional summary and video introduction.
           </p>
@@ -20,16 +21,17 @@ const BioAndElevatorPitch = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 animate-on-scroll">
           {/* Bio Section */}
           <div className="glass p-6 rounded-xl">
-            <div className="flex items-center mb-4">
-              <div className="p-3 rounded-full bg-accent-purple/20 mr-4">
-                <UserRound size={24} className="text-accent-purple" />
-              </div>
-              <h3 className="text-xl font-semibold text-gradient-purple">Hey There, I'm Your Backend Expert!</h3>
+            <div className="flex items-center mb-6">
+              <Avatar className="h-16 w-16 border-2 border-accent-purple/30 mr-4">
+                <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" />
+                <AvatarFallback>AB</AvatarFallback>
+              </Avatar>
+              <h3 className="text-xl font-semibold text-gradient-purple">Hey There, I'm Your Backend Wizard!</h3>
             </div>
             
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Hey there! I'm devabdulrahman, a passionate backend developer with over 2 years of experience
+                Hey there! I'm Abdulrahman, a passionate backend developer with over 2 years of experience
                 crafting robust, scalable solutions that power modern web applications.
               </p>
               <p>
@@ -74,7 +76,7 @@ const BioAndElevatorPitch = () => {
               <div className="p-3 rounded-full bg-accent-blue/20 mr-4">
                 <MessageSquare size={24} className="text-accent-blue" />
               </div>
-              <h3 className="text-xl font-semibold text-gradient-purple">Let Me Solve Your Backend Challenges</h3>
+              <h3 className="text-xl font-semibold text-gradient-purple">I Turn Complex Problems Into Elegant Solutions</h3>
             </div>
             
             <div className="space-y-4">

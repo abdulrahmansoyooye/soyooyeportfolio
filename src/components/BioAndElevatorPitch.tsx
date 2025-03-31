@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FileText, Video, UserRound, MessageSquare, Whatsapp } from 'lucide-react';
+import { FileText, Video, UserRound, MessageSquare, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BioAndElevatorPitch = () => {
@@ -61,7 +61,7 @@ const BioAndElevatorPitch = () => {
                   rel="noopener noreferrer"
                   className="button-secondary flex items-center gap-2 bg-green-600 hover:bg-green-700"
                 >
-                  <Whatsapp size={16} />
+                  <MessageCircle size={16} />
                   Chat on WhatsApp
                 </a>
               </div>
@@ -110,7 +110,7 @@ const BioAndElevatorPitch = () => {
                     rel="noopener noreferrer"
                     className="button-primary flex items-center gap-2 bg-green-600 hover:bg-green-700"
                   >
-                    <Whatsapp size={16} />
+                    <MessageCircle size={16} />
                     Quick Chat
                   </a>
                 </div>

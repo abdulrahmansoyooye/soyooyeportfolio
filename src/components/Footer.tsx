@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Mail, Whatsapp } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, MessageCircle } from 'lucide-react';
 import BackToTop from './BackToTop';
 
 const Footer = () => {
@@ -43,7 +43,7 @@ const Footer = () => {
                 </a>
                 <a href="https://wa.me/2347011280726" target="_blank" rel="noopener noreferrer" 
                    className="text-gray-400 hover:text-green-400 transition-colors">
-                  <Whatsapp size={20} />
+                  <MessageCircle size={20} />
                 </a>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-green-400 flex items-center gap-1 transition-colors"
                   >
-                    <Whatsapp size={16} className="text-green-500" />
+                    <MessageCircle size={16} className="text-green-500" />
                     Chat on WhatsApp
                   </a>
                 </li>

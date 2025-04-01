@@ -12,9 +12,9 @@ const BioAndElevatorPitch = () => {
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
             About Me
           </span>
-          <h2 className="heading-lg text-gradient mb-6">Meet Abdulrahman: Your Coding Partner!</h2>
+          <h2 className="heading-lg text-gradient mb-6">Hi There! I'm Abdulrahman 👋</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Get to know me better through my professional summary and video introduction.
+            Let's get to know each other! Here's a bit about who I am and what I do.
           </p>
         </div>
         
@@ -26,7 +26,7 @@ const BioAndElevatorPitch = () => {
                 <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" />
                 <AvatarFallback>AB</AvatarFallback>
               </Avatar>
-              <h3 className="text-xl font-semibold text-gradient-purple">Hey There, I'm Your Backend Wizard!</h3>
+              <h3 className="text-xl font-semibold text-gradient-purple">Your Backend Buddy & Frontend Friend!</h3>
             </div>
             
             <div className="space-y-4 text-muted-foreground">
@@ -77,14 +77,14 @@ const BioAndElevatorPitch = () => {
               <div className="p-3 rounded-full bg-accent-blue/20 mr-4">
                 <MessageSquare size={24} className="text-accent-blue" />
               </div>
-              <h3 className="text-xl font-semibold text-gradient-purple">I Turn Complex Problems Into Elegant Solutions</h3>
+              <h3 className="text-xl font-semibold text-gradient-purple">Let Me Solve Your Tech Puzzles!</h3>
             </div>
             
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                I'm a solution-oriented backend developer who builds scalable infrastructure that powers reliable web applications.
-                My expertise spans from RESTful APIs to microservices architecture, and I deliver clean, maintainable code that solves
-                real business problems.
+                I'm a friendly problem-solver who loves turning complex challenges into elegant solutions. Whether you need 
+                robust APIs, scalable microservices, or user-friendly interfaces, I've got you covered with clean code that 
+                makes life easier for everyone.
               </p>
               
               <div className="mt-6 relative">

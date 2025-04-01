@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Twitter, Mail, MessageCircle } from 'lucide-react';
@@ -26,8 +25,8 @@ const Footer = () => {
                 <span className="text-gradient-purple">Abdulrahman</span>
               </Link>
               <p className="mt-4 text-muted-foreground max-w-md">
-                Passionate backend developer with frontend expertise, creating scalable
-                and elegant solutions for modern web applications.
+                Hey there! I'm your friendly neighborhood developer who loves building amazing digital experiences. 
+                I blend backend magic with frontend finesse to create solutions that make life easier and more enjoyable!
               </p>
               <div className="flex mt-6 space-x-4">
                 <a href="https://github.com/abdulrahmansoyooye" target="_blank" rel="noopener noreferrer" 

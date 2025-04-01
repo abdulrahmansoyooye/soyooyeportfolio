@@ -9,6 +9,8 @@ import TechStack from '../components/TechStack';
 import Sphere3D from '../components/Sphere3D';
 import BioAndElevatorPitch from '../components/BioAndElevatorPitch';
 import GitHubAchievements from '../components/GitHubAchievements';
+import WhatIDo from '../components/WhatIDo';
+import DevelopmentProcess from '../components/DevelopmentProcess';
 
 const featuredProjects = [
   {
@@ -54,27 +56,25 @@ const Index = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="absolute inset-0 overflow-hidden">
-          
           <div className="absolute w-full h-full bg-gradient-to-b from-background/50 to-background" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center justify-center text-center">
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 animate-on-scroll">
             Backend Developer with Frontend Expertise
-            
           </span>
           
           <h1 className="heading-xl text-gradient mb-6 max-w-4xl animate-on-scroll">
-            Bridging <span className="text-gradient-purple">Backend Power</span> with <span className="text-gradient-purple">Frontend Mastery</span>
+            Let's Build Something <span className="text-gradient-purple">Amazing</span> Together!
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-            Creating scalable, elegant, and high-performance solutions that deliver exceptional user experiences, with a passion for digital health innovation.
+            Hi! I'm Abdulrahman, and I create scalable, elegant solutions that people love using. I'm especially passionate about improving healthcare through technology.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
             <Link to="/projects" className="button-primary">
-              View Projects <ArrowRight size={16} className="ml-2" />
+              See My Work <ArrowRight size={16} className="ml-2" />
             </Link>
             <a 
               target="_blank" 
@@ -110,16 +110,15 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="heading-lg text-gray-900 mb-6">
-                Hi, I'm Abdulrahman! Turning Complex Problems into Elegant Digital Solutions
+                Hey There! I'm Abdulrahman, Your Friendly Tech Partner
               </h2>
               <p className="text-gray-700 mb-6">
-                I'm a backend developer with over 5 years of experience building 
-                robust services, APIs, and data-driven applications. My expertise spans 
-                across the entire development lifecycle, from architecture design to 
-                deployment and scaling.
+                I'm a backend developer who loves creating awesome digital experiences. With over 2 years of hands-on experience, 
+                I build everything from powerful APIs to user-friendly interfaces that make life easier.
               </p>
               <p className="text-gray-700 mb-6">
-                I'm particularly passionate about digital health innovation, especially telemedicine in Nigeria. I believe technology can transform healthcare delivery and make quality medical services accessible to everyone, regardless of location.
+                I'm super passionate about digital health innovation, especially telemedicine in Nigeria. I believe technology 
+                can transform healthcare delivery and make quality medical services accessible to everyone, no matter where they are!
               </p>
               <div className="flex flex-wrap gap-6 mt-8">
                 <div className="flex items-center">
@@ -186,8 +185,11 @@ const Index = () => {
       {/* Bio and Elevator Pitch Section */}
       <BioAndElevatorPitch />
       
-      {/* GitHub Achievements Section */}
-      <GitHubAchievements />
+      {/* What I Do Section */}
+      <WhatIDo />
+      
+      {/* Development Process Section */}
+      <DevelopmentProcess />
       
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">
@@ -198,8 +200,8 @@ const Index = () => {
             </span>
             <h2 className="heading-lg text-gradient mb-6">Featured Projects</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Innovative solutions crafted with passion. These selected projects showcase my 
-              technical expertise and problem-solving approach.
+              Check out some of my favorite projects! These showcase my problem-solving approach 
+              and technical skills across different domains.
             </p>
           </div>
           
@@ -223,17 +225,20 @@ const Index = () => {
       {/* Tech Stack Section */}
       <TechStack />
       
+      {/* GitHub Achievements Section - Now below Tech Stack */}
+      <GitHubAchievements />
+      
       {/* CTA Section */}
       <section className="py-20 bg-gradient-radial from-accent-purple/20 via-background to-background">
         <div className="section-wrapper">
           <div className="glass p-8 md:p-12 rounded-2xl text-center animate-on-scroll">
-            <h2 className="heading-md text-gradient mb-6">Ready to Build Something Amazing?</h2>
+            <h2 className="heading-md text-gradient mb-6">Let's Create Something Amazing Together!</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              Whether you need a robust backend service, an intuitive frontend, or a digital health solution, 
-              I'm here to help bring your vision to life.
+              Have a project in mind? Whether you need a robust backend service, an intuitive frontend, 
+              or a digital health solution, I'd love to hear about it and see how I can help!
             </p>
             <Link to="/contact" className="button-primary">
-              Get in Touch
+              Let's Chat
             </Link>
           </div>
         </div>

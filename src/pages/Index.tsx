@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -17,6 +18,7 @@ import BioAndElevatorPitch from "../components/BioAndElevatorPitch";
 import GitHubAchievements from "../components/GitHubAchievements";
 import WhatIDo from "../components/WhatIDo";
 import DevelopmentProcess from "../components/DevelopmentProcess";
+import Testimonials from "../components/Testimonials";
 
 const featuredProjects = [
   {
@@ -88,6 +90,31 @@ const Index = () => {
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    
+    // Initialize animation observer
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+            entry.target.classList.remove('opacity-0');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      elements.forEach(element => {
+        observer.observe(element);
+      });
+    };
+    
+    animateOnScroll();
+    
+    return () => {
+      // Cleanup if needed
+    };
   }, []);
 
   return (
@@ -252,10 +279,16 @@ const Index = () => {
       {/* What I Do Section */}
       <WhatIDo />
 
+      {/* Development Process Section */}
+      <DevelopmentProcess />
+
+      {/* Testimonials Section - New addition */}
+      <Testimonials />
+
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">
         <div className="section-wrapper">
-          <div className="text-center mb-12 animate-on-scroll">
+          <div className="text-center mb-12 animate-on-scroll opacity-0">
             <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
               My Work
             </span>
@@ -267,13 +300,13 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-on-scroll">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-on-scroll opacity-0">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.id} {...project} />
             ))}
           </div>
 
-          <div className="text-center mt-12 animate-on-scroll">
+          <div className="text-center mt-12 animate-on-scroll opacity-0">
             <Link
               to="/projects"
               className="button-secondary inline-flex items-center"
@@ -286,15 +319,14 @@ const Index = () => {
 
       {/* Tech Stack Section */}
       <TechStack />
-      {/* Development Process Section */}
-      <DevelopmentProcess />
+      
       {/* GitHub Achievements Section - Now below Tech Stack */}
       <GitHubAchievements />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-radial from-accent-purple/20 via-background to-background">
         <div className="section-wrapper">
-          <div className="glass p-8 md:p-12 rounded-2xl text-center animate-on-scroll">
+          <div className="glass p-8 md:p-12 rounded-2xl text-center animate-on-scroll opacity-0">
             <h2 className="heading-md text-gradient mb-6">
               Let's Create Something Amazing Together!
             </h2>

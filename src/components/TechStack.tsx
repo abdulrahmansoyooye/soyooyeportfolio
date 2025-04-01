@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { 
   Code, 
   Database, 
-
   Globe, 
   LayoutGrid, 
   Leaf, 
@@ -13,20 +11,20 @@ import {
 
 interface TechItemProps {
   name: string;
-  icon: React.ReactNode ;
+  icon: React.ReactNode;
   proficiency: number;
 }
 
 const TechItem: React.FC<TechItemProps> = ({ name, icon, proficiency }) => {
   return (
-    <div className="glass p-4 rounded-xl flex flex-col items-center transition-all duration-300 hover:translate-y-[-5px]">
+    <div className="glass p-4 rounded-xl flex flex-col items-center transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg">
       <div className="w-12 h-12 mb-3 flex items-center justify-center">
         {typeof(icon) === "string" ? <img src={`/stacks/${icon}.svg`} alt="" />: icon}
       </div>
       <h3 className="font-medium mb-2">{name}</h3>
       <div className="w-full bg-secondary rounded-full h-2 mt-1">
         <div 
-          className="bg-gradient-to-r from-accent-purple to-accent-blue h-2 rounded-full" 
+          className="bg-gradient-to-r from-accent-purple to-accent-blue h-2 rounded-full animate-slide-in-right" 
           style={{ width: `${proficiency}%` }}
         />
       </div>
@@ -71,9 +69,9 @@ const TechStack = () => {
   ];
 
   return (
-    <section className="section-padding">
+    <section className="section-padding" id="tech-stack">
       <div className="section-wrapper">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <div className="inline-block">
             <span className="px-3 py-1 rounded-full text-sm font-medium bg-accent-purple/20 text-accent-purple mb-4 inline-block">
               My Expertise
@@ -86,7 +84,7 @@ const TechStack = () => {
           </p>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 animate-on-scroll opacity-0">
           <h3 className="text-xl font-semibold mb-6">High-Demand Backend Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {backendTech.map((tech, index) => (
@@ -95,7 +93,7 @@ const TechStack = () => {
           </div>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 animate-on-scroll opacity-0">
           <h3 className="text-xl font-semibold mb-6">High-Demand Frontend Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {frontendTech.map((tech, index) => (
@@ -104,7 +102,7 @@ const TechStack = () => {
           </div>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-12 animate-on-scroll opacity-0">
           <h3 className="text-xl font-semibold mb-6">Developer Tools</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {devOpsTech.map((tech, index) => (

@@ -1,20 +1,22 @@
-
-import React, { useState } from 'react';
-import { Send, CheckCircle } from 'lucide-react';
-
+import React, { useState } from "react";
+import { Send, CheckCircle } from "lucide-react";
+import { useForm, ValidationError } from "@formspree/react";
 const ContactForm = () => {
   const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
+  const [state, handleformSubmit,reset] = useForm("xeoalypy");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormState((prev) => ({
       ...prev,
@@ -22,38 +24,7 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Basic validation
-    if (!formState.name || !formState.email || !formState.message) {
-      setError('Please fill in all required fields');
-      return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formState.email)) {
-      setError('Please enter a valid email address');
-      return;
-    }
-    
-    setError('');
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setIsSubmitted(true);
-      // In a real app, you would post to an API endpoint here
-    } catch (err) {
-      setError('An error occurred. Please try again later.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  if (isSubmitted) {
+  if (state.succeeded) {
     return (
       <div className="glass p-8 rounded-xl text-center">
         <CheckCircle size={48} className="mx-auto mb-4 text-green-500" />
@@ -63,8 +34,8 @@ const ContactForm = () => {
         </p>
         <button
           onClick={() => {
-            setIsSubmitted(false);
-            setFormState({ name: '', email: '', subject: '', message: '' });
+            reset()
+            setFormState({ name: "", email: "", subject: "", message: "" });
           }}
           className="button-secondary"
         >
@@ -75,13 +46,18 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="glass p-8 rounded-xl">
+    <form
+      onSubmit={handleformSubmit}
+      // action="https://formspree.io/f/xeoalypy"
+      // method="POST"
+      className="glass p-8 rounded-xl"
+    >
       {error && (
         <div className="bg-destructive/20 text-destructive-foreground p-4 rounded-lg mb-6">
           {error}
         </div>
       )}
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -97,7 +73,7 @@ const ContactForm = () => {
             required
           />
         </div>
-        
+
         <div>
           <label htmlFor="email" className="block text-sm font-medium mb-2">
             Email <span className="text-destructive">*</span>
@@ -112,8 +88,9 @@ const ContactForm = () => {
             required
           />
         </div>
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
-      
+
       <div className="mb-6">
         <label htmlFor="subject" className="block text-sm font-medium mb-2">
           Subject
@@ -126,8 +103,13 @@ const ContactForm = () => {
           onChange={handleChange}
           className="w-full p-3 rounded-lg bg-secondary border border-secondary focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple transition-colors"
         />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
       </div>
-      
+
       <div className="mb-6">
         <label htmlFor="message" className="block text-sm font-medium mb-2">
           Message <span className="text-destructive">*</span>
@@ -141,18 +123,39 @@ const ContactForm = () => {
           className="w-full p-3 rounded-lg bg-secondary border border-secondary focus:border-accent-purple focus:outline-none focus:ring-1 focus:ring-accent-purple transition-colors resize-none"
           required
         />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
       </div>
-      
+
       <button
         type="submit"
         disabled={isSubmitting}
         className="button-primary w-full flex items-center justify-center"
       >
-        {isSubmitting ? (
+        {state.submitting ? (
           <div className="flex items-center">
-            <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            <svg
+              className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              ></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
             </svg>
             Sending...
           </div>

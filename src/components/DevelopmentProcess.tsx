@@ -35,7 +35,7 @@ const DevelopmentProcess = () => {
                 </p>
               </div>
               <div className="relative order-1 md:order-2 mb-6 md:mb-0 md:w-8">
-                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-accent-purple z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 p-3  rounded-full max-md:relative bg-accent-purple z-10 ">
                   <Search className="text-white" size={24} />
                 </div>
               </div>
@@ -46,7 +46,7 @@ const DevelopmentProcess = () => {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 md:pr-12 order-1 hidden md:block" />
               <div className="relative order-2 mb-6 md:mb-0 md:w-8">
-                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-accent-blue z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 max-md:relative rounded-full bg-accent-blue z-10">
                   <FileCode className="text-white" size={24} />
                 </div>
               </div>
@@ -71,7 +71,7 @@ const DevelopmentProcess = () => {
                 </p>
               </div>
               <div className="relative order-1 md:order-2 mb-6 md:mb-0 md:w-8">
-                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-accent-pink z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 max-md:relative rounded-full bg-accent-pink z-10">
                   <Zap className="text-white" size={24} />
                 </div>
               </div>
@@ -82,7 +82,7 @@ const DevelopmentProcess = () => {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 md:pr-12 order-1 hidden md:block" />
               <div className="relative order-2 mb-6 md:mb-0 md:w-8">
-                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-accent-purple z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 max-md:relative rounded-full bg-accent-purple z-10">
                   <Microscope className="text-white" size={24} />
                 </div>
               </div>
@@ -107,7 +107,7 @@ const DevelopmentProcess = () => {
                 </p>
               </div>
               <div className="relative order-1 md:order-2 mb-6 md:mb-0 md:w-8">
-                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 rounded-full bg-accent-blue z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 p-3 max-md:relative rounded-full bg-accent-blue z-10">
                   <Rocket className="text-white" size={24} />
                 </div>
               </div>

@@ -10,7 +10,7 @@ const WhatIDo = () => {
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
             My Services
           </span>
-          <h2 className="heading-lg text-gradient mb-6">How I Can Help You Succeed</h2>
+          <h2 className="heading-lg text-gradient mb-6">How I Help You Succeed</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             I'm passionate about creating digital solutions that solve real problems and help businesses thrive.
             Here's what I bring to the table:

@@ -46,7 +46,7 @@ const About = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 p-6 glass rounded-xl max-w-[250px]">
                 <div className="text-2xl font-bold text-gradient-purple mb-2">
-                  500+
+                  400+
                 </div>
                 <div className="text-sm">GitHub Contributions</div>
               </div>
@@ -62,7 +62,7 @@ const About = () => {
             <div>
               <h2 className="heading-md text-gray-900 mb-6">My Story</h2>
               <p className="text-gray-700 mb-4">
-                My journey in software development began over 5 years ago when I
+                My journey in software development began years ago when I
                 discovered my passion for creating efficient systems and solving
                 complex problems through code.
               </p>
@@ -192,9 +192,9 @@ const About = () => {
               <div className="space-y-8">
                 <div className="glass p-6 rounded-xl">
                   <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Full-Stack Developer</h4>
+                    <h4 className="font-semibold">Fullstack Engineer</h4>
                     <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      MAY 2024 - Present
+                      May 2024 - Present
                     </span>
                   </div>
                   <h5 className="text-accent-purple mb-4">Sayf Network</h5>
@@ -209,7 +209,7 @@ const About = () => {
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-semibold">Lead Software Developer</h4>
                     <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      NOV 2024 – PRESENT
+                      Nov 2024 – Present
                     </span>
                   </div>
                   <h5 className="text-accent-blue mb-4">
@@ -226,7 +226,7 @@ const About = () => {
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-semibold">Frontend Developer</h4>
                     <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      2016 - 2018
+                      Dec 2024 -Present
                     </span>
                   </div>
                   <h5 className="text-accent-pink mb-4">Rawaaq</h5>
@@ -252,14 +252,14 @@ const About = () => {
                     <div className="glass p-6 rounded-xl">
                       <div className="flex justify-between items-start mb-2">
                         <h4 className="font-semibold">
-                          Master of Computer Science
+                          Computer Science
                         </h4>
                         <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                          2014 - 2016
+                          2025 
                         </span>
                       </div>
                       <h5 className="text-accent-purple mb-4">
-                        Tech University
+                         University
                       </h5>
                       <p className="text-muted-foreground">
                         Specialized in Distributed Systems and Database
@@ -271,14 +271,14 @@ const About = () => {
                     <div className="glass p-6 rounded-xl">
                       <div className="flex justify-between items-start mb-2">
                         <h4 className="font-semibold">
-                          Bachelor of Science in Computer Science
+                          Computer Science
                         </h4>
                         <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                          2010 - 2014
+                          2025
                         </span>
                       </div>
                       <h5 className="text-accent-blue mb-4">
-                        State University
+                         University
                       </h5>
                       <p className="text-muted-foreground">
                         Foundation in programming, algorithms, data structures,

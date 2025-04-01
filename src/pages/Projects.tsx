@@ -11,18 +11,18 @@ const allProjects = [
     id: 11,
     title: 'Digital Health Platform',
     description: 'Leading development of a telemedicine platform aimed at improving healthcare accessibility in Nigeria. Features include remote consultations, medical record management, and medication tracking with local pharmacy integration.',
-    image: '/lovable-uploads/b7005ebc-f4b0-411e-b9e0-db270ef96902.png',
-    tags: ['Node.js', 'React', 'MongoDB', 'WebRTC', 'Express'],
-    githubLink: 'https://github.com',
+    image: '/lovable-uploads/digital-health-platform-image.png',
+    tags: ['Node.js', 'React', 'MongoDB', 'Postgreql', 'Express','Nextjs',"RabbitMQ","Redis","Prisma","Docker"],
+    githubLink: 'https://github.com/abdulrahmansoyooye',
     type: 'ongoing' as 'ongoing'
   },
   {
     id: 12,
     title: 'Rawaaq School Management',
     description: 'Developing a comprehensive school management system with features for student tracking, class management, fee collection, and academic performance monitoring. Includes an intuitive dashboard for administrators and teachers.',
-    image: '/lovable-uploads/a3abd497-ebad-48f9-914e-db38b49b5c53.png',
-    tags: ['Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'Charts.js'],
-    githubLink: 'https://github.com',
+    image: '/lovable-uploads/rawaaq-image.png',
+    tags: ["Typescript",'Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'Charts.js'],
+    githubLink: 'https://github.com/abdulrahmansoyooye',
     type: 'ongoing' as 'ongoing'
   },
   {
@@ -30,8 +30,8 @@ const allProjects = [
     title: 'Naas Educators',
     description: 'A platform dedicated to providing resources and mentorship for parents focused on homeschooling. Features include curriculum planning tools, progress tracking, and community discussion forums.',
     image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
-    githubLink: 'https://github.com',
+    tags: ["Typescript",'React', 'Nextjs', 'Tailwind CSS', 'Redux'],
+    githubLink: 'https://github.com/abdulrahmansoyooye',
     type: 'ongoing' as 'ongoing'
   },
   // Backend Projects
@@ -40,8 +40,8 @@ const allProjects = [
     title: 'Social Media API Platform',
     description: 'A scalable microservice architecture for social media applications with authentication, content management, and real-time notifications using message queues.',
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'Docker', 'RabbitMQ', 'Redis'],
-    githubLink: 'https://github.com',
+    tags: ["Javascript",'Node.js', 'Express', 'MongoDB', 'Docker', 'RabbitMQ', 'Redis'],
+    githubLink: 'https://github.com/abdulrahmansoyooye',
     type: 'backend' as 'backend'
   },
   {
@@ -50,7 +50,7 @@ const allProjects = [
     description: 'Robust backend system and admin dashboard for Sayf Network, handling content management, user authentication, newsletter subscriptions, and course enrollment functionality.',
     image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Next.js'],
-    githubLink: 'https://github.com',
+    githubLink: 'https://github.com/abdulrahmansoyooye',
     type: 'backend' as 'backend'
   },
   {
@@ -58,8 +58,8 @@ const allProjects = [
     title: 'Distinct Patterns Backend',
     description: 'E-commerce backend infrastructure using Sanity CMS for product management, inventory tracking, and order processing. Includes custom APIs for frontend integration.',
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Sanity.io', 'Node.js', 'Express', 'Stripe API', 'Webhooks'],
-    githubLink: 'https://github.com',
+    tags: ["Typescript",'Sanity.io', 'Node.js', 'Express', 'Stripe API', 'Webhooks'],
+    githubLink: 'https://github.com/abdulrahmansoyooye',
     type: 'backend' as 'backend'
   },
   
@@ -68,7 +68,7 @@ const allProjects = [
     id: 9,
     title: 'Sayf Network Website',
     description: 'A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.',
-    image: '/lovable-uploads/d9b17563-95be-4699-b5db-5c5494442a34.png',
+    image: '/lovable-uploads/sayfnetwork-image.jpg',
     tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Cloudinary'],
     githubLink: 'https://github.com',
     liveLink: 'https://sayfnetwork.com',
@@ -78,10 +78,10 @@ const allProjects = [
     id: 8,
     title: 'Distinct Patterns',
     description: 'An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.',
-    image: '/lovable-uploads/dd19b65f-d683-402e-a407-3ae955eb5102.png',
-    tags: ['Next.js', 'Sanity', 'Tailwind CSS', 'Paystack'],
+    image: '/lovable-uploads/distinctpatterns-image.jpg',
+    tags: ["Typescript",'Next.js', 'Sanity', 'Tailwind CSS', 'Paystack'],
     githubLink: 'https://github.com',
-    liveLink: 'https://distinctpatterns.com',
+    liveLink: 'https://distinctpatterns.com.ng',
     type: 'frontend' as 'frontend'
   },
 ];

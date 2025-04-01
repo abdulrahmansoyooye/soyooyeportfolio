@@ -87,7 +87,7 @@ const TechStack = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-xl font-semibold mb-6">Backend</h3>
+          <h3 className="text-xl font-semibold mb-6">High-Demand Backend Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {backendTech.map((tech, index) => (
               <TechItem key={index} {...tech} />
@@ -96,7 +96,7 @@ const TechStack = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-xl font-semibold mb-6">Frontend</h3>
+          <h3 className="text-xl font-semibold mb-6">High-Demand Frontend Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {frontendTech.map((tech, index) => (
               <TechItem key={index} {...tech} />
@@ -105,7 +105,7 @@ const TechStack = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-xl font-semibold mb-6">Dev Tools </h3>
+          <h3 className="text-xl font-semibold mb-6">Developer Tools</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {devOpsTech.map((tech, index) => (
               <TechItem key={index} {...tech} />

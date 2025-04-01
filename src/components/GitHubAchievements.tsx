@@ -1,7 +1,6 @@
-
-import React from 'react';
-import { Github, Star, Trophy, Check } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import React from "react";
+import { Github, Star, Trophy, Check } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const GitHubAchievements = () => {
   return (
@@ -12,12 +11,15 @@ const GitHubAchievements = () => {
             <Github className="inline-block mr-2" size={16} />
             GitHub Stats
           </span>
-          <h2 className="heading-lg text-gradient mb-6">My Open Source Journey</h2>
+          <h2 className="heading-lg text-gradient mb-6">
+            My Open Source Journey
+          </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Committed to collaboration and continuous improvement through active open-source contributions
+            Committed to collaboration and continuous improvement through active
+            contributions
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-on-scroll">
           <Card className="glass border-none overflow-hidden">
             <CardHeader className="bg-accent-purple/10 border-b border-white/10">
@@ -33,8 +35,15 @@ const GitHubAchievements = () => {
                     <Star size={16} />
                   </div>
                   <div>
-                    <h3 className="font-medium">Arctic Code Vault Contributor</h3>
-                    <p className="text-sm text-muted-foreground">Contributed code to the GitHub Archive Program</p>
+                    <h3 className="font-medium">
+                      Quickdraw ⚡️ – A fast problem solver!
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Earned a badge for closing issues within 5 minutes of
+                      opening—proving speed, efficiency, and a sharp eye for
+                      solutions. When it comes to rapid development and bug
+                      fixes, I don’t just keep up—I set the pace!{" "}
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -42,8 +51,16 @@ const GitHubAchievements = () => {
                     <Star size={16} />
                   </div>
                   <div>
-                    <h3 className="font-medium">Pull Shark</h3>
-                    <p className="text-sm text-muted-foreground">Had multiple pull requests merged into public repositories</p>
+                    <h3 className="font-medium">
+                      🚀 Pull Shark - Twice the impact, twice the precision!
+                      Quality work tells
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Recognized for consistently delivering high-quality,
+                      production-ready code through multiple well-executed pull
+                      requests.When innovation meets execution, the results
+                      speak for themselves! 🚀
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -51,14 +68,21 @@ const GitHubAchievements = () => {
                     <Star size={16} />
                   </div>
                   <div>
-                    <h3 className="font-medium">Pair Extraordinaire</h3>
-                    <p className="text-sm text-muted-foreground">Coauthored commits on merged pull requests</p>
+                    <h3 className="font-medium">
+                      🔥 YOLO – Pair Extraordinaire, A Collaboartive Peer
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Fearless, fast, and calculated! Earned this for
+                      confidently merging changes that push projects forward.
+                      Clean, efficient, and built for scale—because great
+                      software starts with great collaboration!
+                    </p>
                   </div>
                 </li>
               </ul>
             </CardContent>
           </Card>
-          
+
           <Card className="glass border-none overflow-hidden">
             <CardHeader className="bg-accent-blue/10 border-b border-white/10">
               <CardTitle className="flex items-center gap-2">
@@ -70,13 +94,18 @@ const GitHubAchievements = () => {
               <div className="mb-6">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-medium">Annual Contributions</h3>
-                  <span className="text-xl font-bold text-gradient-purple">500+</span>
+                  <span className="text-xl font-bold text-gradient-purple">
+                    400+
+                  </span>
                 </div>
                 <div className="w-full bg-white/10 rounded-full h-2.5">
-                  <div className="bg-gradient-to-r from-accent-purple to-accent-blue h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                  <div
+                    className="bg-gradient-to-r from-accent-purple to-accent-blue h-2.5 rounded-full"
+                    style={{ width: "90%" }}
+                  ></div>
                 </div>
               </div>
-              
+
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="p-1.5 rounded-full bg-accent-blue/20 text-accent-blue mt-0.5">
@@ -84,7 +113,10 @@ const GitHubAchievements = () => {
                   </div>
                   <div>
                     <h3 className="font-medium">Consistent Contributor</h3>
-                    <p className="text-sm text-muted-foreground">Maintained a steady stream of contributions throughout the year</p>
+                    <p className="text-sm text-muted-foreground">
+                      Maintained a steady stream of contributions throughout the
+                      year
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -93,7 +125,9 @@ const GitHubAchievements = () => {
                   </div>
                   <div>
                     <h3 className="font-medium">Project Maintainer</h3>
-                    <p className="text-sm text-muted-foreground">Actively maintain several open source projects with growing communities</p>
+                    <p className="text-sm text-muted-foreground">
+                      Actively maintain several projects with growing peers
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -101,20 +135,23 @@ const GitHubAchievements = () => {
                     <Check size={16} />
                   </div>
                   <div>
-                    <h3 className="font-medium">Documentation Expert</h3>
-                    <p className="text-sm text-muted-foreground">Improved documentation for multiple popular repositories</p>
+                    <h3 className="font-medium">Communication Expert</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Actively Collaborating with technical and non-technical
+                      teams, while optimizing deployment strategies
+                    </p>
                   </div>
                 </li>
               </ul>
             </CardContent>
           </Card>
         </div>
-        
+
         <div className="flex justify-center mt-12">
-          <a 
-            href="https://github.com/abdulrahmansoyooye" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://github.com/abdulrahmansoyooye"
+            target="_blank"
+            rel="noopener noreferrer"
             className="button-secondary inline-flex items-center gap-2"
           >
             <Github size={18} />

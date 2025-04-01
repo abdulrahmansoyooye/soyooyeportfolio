@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -10,19 +9,28 @@ const allProjects = [
   // Ongoing Projects
   {
     id: 11,
-    title: 'Digital Health Platform ',
-    description: 'Currently developing a platform that uses AI to analyze social media trends and provide actionable insights for businesses.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Machine Learning', 'MongoDB', 'React', 'Redis'],
+    title: 'Digital Health Platform',
+    description: 'Leading development of a telemedicine platform aimed at improving healthcare accessibility in Nigeria. Features include remote consultations, medical record management, and medication tracking with local pharmacy integration.',
+    image: '/lovable-uploads/b7005ebc-f4b0-411e-b9e0-db270ef96902.png',
+    tags: ['Node.js', 'React', 'MongoDB', 'WebRTC', 'Express'],
     githubLink: 'https://github.com',
     type: 'ongoing' as 'ongoing'
   },
   {
     id: 12,
-    title: 'Blockchain-Based Identity Verification',
-    description: 'Building a secure identity verification system using blockchain technology to provide tamper-proof verification processes.',
-    image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Solidity', 'Ethereum', 'React', 'Node.js', 'Web3.js'],
+    title: 'Rawaaq School Management',
+    description: 'Developing a comprehensive school management system with features for student tracking, class management, fee collection, and academic performance monitoring. Includes an intuitive dashboard for administrators and teachers.',
+    image: '/lovable-uploads/a3abd497-ebad-48f9-914e-db38b49b5c53.png',
+    tags: ['Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'Charts.js'],
+    githubLink: 'https://github.com',
+    type: 'ongoing' as 'ongoing'
+  },
+  {
+    id: 13,
+    title: 'Naas Educators',
+    description: 'A platform dedicated to providing resources and mentorship for parents focused on homeschooling. Features include curriculum planning tools, progress tracking, and community discussion forums.',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    tags: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
     githubLink: 'https://github.com',
     type: 'ongoing' as 'ongoing'
   },
@@ -30,97 +38,50 @@ const allProjects = [
   {
     id: 1,
     title: 'Social Media API Platform',
-    description: 'A scalable REST API for e-commerce applications with authentication, product management, and order processing.',
+    description: 'A scalable microservice architecture for social media applications with authentication, content management, and real-time notifications using message queues.',
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
+    tags: ['Node.js', 'Express', 'MongoDB', 'Docker', 'RabbitMQ', 'Redis'],
     githubLink: 'https://github.com',
     type: 'backend' as 'backend'
   },
   {
-    id: 9,
-    title: 'Sayf Network Website',
-    description: 'User interface for a travel booking application with search, filtering, and booking functionality.',
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Nextjs', 'MongoDB', 'Tailwind', 'Cloudinary'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    type: 'frontend' as 'frontend'
-  },
-  {
     id: 2,
-    title: 'Authentication Microservice',
-    description: 'Secure authentication and authorization service with OAuth2, JWT, and multi-factor authentication support.',
+    title: 'Sayf Network Backend',
+    description: 'Robust backend system and admin dashboard for Sayf Network, handling content management, user authentication, newsletter subscriptions, and course enrollment functionality.',
     image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'JWT', 'Argon2', 'MongoDB',"Proxy Integration"],
+    tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Next.js'],
     githubLink: 'https://github.com',
     type: 'backend' as 'backend'
   },
   {
     id: 3,
-    title: 'Post Microservice',
-    description: 'High-performance data processing system for real-time analytics and reporting of user behavior.',
+    title: 'Distinct Patterns Backend',
+    description: 'E-commerce backend infrastructure using Sanity CMS for product management, inventory tracking, and order processing. Includes custom APIs for frontend integration.',
     image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
-    githubLink: 'https://github.com',
-    type: 'backend' as 'backend'
-  },
-  {
-    id: 4,
-    title: 'Main Microservice Architecture',
-    description: 'A system of microservices for handling user authentication, payments, and notifications.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Express Proxy', 'Docker', 'Node.js'],
-    githubLink: 'https://github.com',
-    type: 'backend' as 'backend'
-  },
-  {
-    id: 8,
-    title: 'E-commerce Website',
-    description: 'Admin dashboard for managing products, orders, and customers of an e-commerce platform.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Nextjs', 'Sanity', 'Shadcn UI',"Pay stack"],
-    githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
-    type: 'frontend' as 'frontend'
-  },
-  {
-    id: 5,
-    title: 'Serverless Backend',
-    description: 'Cost-effective serverless backend for a mobile application with automatic scaling.',
-    image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['AWS Lambda', 'DynamoDB', 'API Gateway', 'Serverless'],
-    githubLink: 'https://github.com',
-    type: 'backend' as 'backend'
-  },
-  {
-    id: 6,
-    title: 'Content Management API',
-    description: 'Flexible API for managing digital content across multiple platforms and channels.',
-    image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['GraphQL', 'Node.js', 'MongoDB', 'AWS S3'],
+    tags: ['Sanity.io', 'Node.js', 'Express', 'Stripe API', 'Webhooks'],
     githubLink: 'https://github.com',
     type: 'backend' as 'backend'
   },
   
   // Frontend Projects
   {
-    id: 10,
-    title: 'Rawaaq School Dashboard',
-    description: 'Interactive charts and graphs for visualizing complex datasets and analysis results.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Nextjs', 'Shadcn UI', 'Tailwind', 'TypeScript'],
+    id: 9,
+    title: 'Sayf Network Website',
+    description: 'A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.',
+    image: '/lovable-uploads/d9b17563-95be-4699-b5db-5c5494442a34.png',
+    tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Cloudinary'],
     githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
+    liveLink: 'https://sayfnetwork.com',
     type: 'frontend' as 'frontend'
   },
   {
-    id: 7,
-    title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio website built with React and Tailwind CSS.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['React', 'Tailwind CSS', 'Vite', 'TypeScript'],
+    id: 8,
+    title: 'Distinct Patterns',
+    description: 'An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.',
+    image: '/lovable-uploads/dd19b65f-d683-402e-a407-3ae955eb5102.png',
+    tags: ['Next.js', 'Sanity', 'Tailwind CSS', 'Paystack'],
     githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
+    liveLink: 'https://distinctpatterns.com',
     type: 'frontend' as 'frontend'
   },
 ];

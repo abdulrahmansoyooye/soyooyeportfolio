@@ -40,8 +40,9 @@ const BioAndElevatorPitch = () => {
                 microservices architecture, and database optimization.
               </p>
               <p>
-                What sets me apart is my holistic understanding of the development process. While my primary focus is backend,
-                I'm comfortable working across the full stack, ensuring seamless integration between server-side logic and user interfaces.
+                I'm particularly passionate about digital health innovation, especially telemedicine solutions for Nigeria.
+                I believe technology can transform healthcare accessibility and am dedicated to creating impactful solutions
+                in this space.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <Link to="/about" className="button-secondary flex items-center gap-2">

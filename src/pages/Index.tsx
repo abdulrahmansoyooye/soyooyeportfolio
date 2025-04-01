@@ -13,17 +13,17 @@ import GitHubAchievements from '../components/GitHubAchievements';
 const featuredProjects = [
   {
     id: 11,
-    title: 'AI-Powered Social Media Analytics',
-    description: 'Currently developing a platform that uses AI to analyze social media trends and provide actionable insights for businesses.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Machine Learning', 'MongoDB', 'React', 'Redis'],
+    title: 'Digital Health Platform',
+    description: 'Currently developing a comprehensive telemedicine platform aimed at improving healthcare accessibility in Nigeria through remote consultations, medical record management, and pharmacy integration.',
+    image: '/lovable-uploads/b7005ebc-f4b0-411e-b9e0-db270ef96902.png',
+    tags: ['Node.js', 'React', 'MongoDB', 'WebRTC', 'Express'],
     githubLink: 'https://github.com',
     type: 'ongoing' as 'ongoing'
   },
   {
     id: 1,
     title: 'Social Media Microservices',
-    description: 'A scalable REST API for e-commerce applications with authentication, product management, and order processing.',
+    description: 'A scalable microservice architecture for social media applications with authentication, content management, and real-time notifications using message queues.',
     image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     tags: ['Node.js', 'Express', 'MongoDB', 'Docker',"RabbitMQ", "Redis"],
     githubLink: 'https://github.com',
@@ -32,11 +32,11 @@ const featuredProjects = [
   {
     id: 9,
     title: 'Sayf Network Website',
-    description: 'User interface for a travel booking application with search, filtering, and booking functionality.',
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Nextjs', 'MongoDB', 'Tailwind', 'Cloudinary'],
+    description: 'A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses that help users maximize their time, reach their goals, and live more joyfully.',
+    image: '/lovable-uploads/d9b17563-95be-4699-b5db-5c5494442a34.png',
+    tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Cloudinary'],
     githubLink: 'https://github.com',
-    liveLink: 'https://example.com',
+    liveLink: 'https://sayfnetwork.com',
     type: 'frontend' as 'frontend'
   },
 ];
@@ -69,7 +69,7 @@ const Index = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-            Creating scalable, elegant, and high-performance solutions that deliver exceptional user experiences.
+            Creating scalable, elegant, and high-performance solutions that deliver exceptional user experiences, with a passion for digital health innovation.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
@@ -119,9 +119,7 @@ const Index = () => {
                 deployment and scaling.
               </p>
               <p className="text-gray-700 mb-6">
-                With a solid understanding of frontend technologies, I create holistic 
-                solutions that not only function flawlessly behind the scenes but also 
-                deliver exceptional user experiences.
+                I'm particularly passionate about digital health innovation, especially telemedicine in Nigeria. I believe technology can transform healthcare delivery and make quality medical services accessible to everyone, regardless of location.
               </p>
               <div className="flex flex-wrap gap-6 mt-8">
                 <div className="flex items-center">
@@ -177,8 +175,8 @@ const Index = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 p-6 glass rounded-xl max-w-[250px]">
-                <div className="text-2xl font-bold text-gradient-purple mb-2">2+</div>
-                <div className="text-sm text-slate-300">Years of experience in backend development</div>
+                <div className="text-2xl font-bold text-gradient-purple mb-2">500+</div>
+                <div className="text-sm text-slate-300">GitHub contributions in the last year</div>
               </div>
             </div>
           </div>
@@ -231,7 +229,7 @@ const Index = () => {
           <div className="glass p-8 md:p-12 rounded-2xl text-center animate-on-scroll">
             <h2 className="heading-md text-gradient mb-6">Ready to Build Something Amazing?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              Whether you need a robust backend service, an intuitive frontend, or a full-stack solution, 
+              Whether you need a robust backend service, an intuitive frontend, or a digital health solution, 
               I'm here to help bring your vision to life.
             </p>
             <Link to="/contact" className="button-primary">

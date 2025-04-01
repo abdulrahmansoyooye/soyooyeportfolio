@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -23,10 +24,7 @@ const About = () => {
                 <span className="text-gradient-purple">Developer</span>
               </h1>
               <p className="text-muted-foreground mb-6">
-                A passionate backend developer with a knack for creating
-                elegant, efficient solutions. I blend technical expertise with a
-                creative approach to problem-solving, delivering exceptional
-                results for every project.
+                A passionate backend developer with a strong interest in digital health solutions, particularly telemedicine in Nigeria. I blend technical expertise with a creative approach to problem-solving, delivering exceptional results for every project.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <Link to="/projects" className="button-primary">
@@ -48,9 +46,9 @@ const About = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 p-6 glass rounded-xl max-w-[250px]">
                 <div className="text-2xl font-bold text-gradient-purple mb-2">
-                  40+
+                  500+
                 </div>
-                <div className="text-sm">Repositories</div>
+                <div className="text-sm">GitHub Contributions</div>
               </div>
             </div>
           </div>
@@ -76,10 +74,7 @@ const About = () => {
                 business impact.
               </p>
               <p className="text-gray-700">
-                I believe in continuous learning and staying updated with the
-                latest technologies and best practices in the field. This
-                curiosity and dedication to growth have allowed me to deliver
-                innovative solutions that meet and exceed client expectations.
+                I'm particularly passionate about digital health improvement, especially telemedicine solutions for Nigeria. I believe technology can bridge healthcare gaps and provide accessible services to underserved communities. This drive motivates me to continuously learn and apply my skills to create meaningful impact in the healthcare sector.
               </p>
             </div>
 
@@ -203,16 +198,11 @@ const About = () => {
                     </span>
                   </div>
                   <h5 className="text-accent-purple mb-4">Sayf Network</h5>
-                  <p className="text-muted-foreground">
-                    Led the full-stack development of an admin dashboard,
-                    improving user efficiency by 35% through an intuitive UI and
-                    seamless backend integration Designed and implemented the
-                    system using Next.js, MongoDB, Mongoose, and Tailwind CSS,
-                    ensuring scalability and performance optimization. Enhanced
-                    data management and security, leading to a 25% improvement
-                    in query performance and ensuring data integrity and
-                    reliability.
-                  </p>
+                  <ul className="text-muted-foreground list-disc pl-5 space-y-2">
+                    <li>Led the full-stack development of an admin dashboard, improving user efficiency by 35% through an intuitive UI and seamless backend integration.</li>
+                    <li>Designed and implemented the system using Next.js, MongoDB, Mongoose, and Tailwind CSS, ensuring scalability and performance optimization.</li>
+                    <li>Enhanced data management and security, leading to a 25% improvement in query performance and ensuring data integrity and reliability.</li>
+                  </ul>
                 </div>
 
                 <div className="glass p-6 rounded-xl">
@@ -225,16 +215,11 @@ const About = () => {
                   <h5 className="text-accent-blue mb-4">
                     Nextage Digital Solutions Ltd.
                   </h5>
-                  <p className="text-muted-foreground">
-                    Led the development of multiple applications, improving
-                    development speed by 40% through efficient code structuring
-                    and process automation. Collaborated with cross-functional
-                    teams, effectively communicating technical requirements and
-                    solutions, resulting in 20% faster project delivery times.
-                    Designed and deployed scalable, high-performance systems
-                    using Next.js, Sanity, TypeScript, Tailwind, ensuring 99.9%
-                    uptime and seamless data flow.
-                  </p>
+                  <ul className="text-muted-foreground list-disc pl-5 space-y-2">
+                    <li>Led the development of multiple applications, improving development speed by 40% through efficient code structuring and process automation.</li>
+                    <li>Collaborated with cross-functional teams, effectively communicating technical requirements and solutions, resulting in 20% faster project delivery times.</li>
+                    <li>Designed and deployed scalable, high-performance systems using Next.js, Sanity, TypeScript, Tailwind, ensuring 99.9% uptime and seamless data flow.</li>
+                  </ul>
                 </div>
 
                 <div className="glass p-6 rounded-xl">
@@ -244,12 +229,12 @@ const About = () => {
                       2016 - 2018
                     </span>
                   </div>
-                  <h5 className="text-accent-pink mb-4">Rawaaq </h5>
-                  <p className="text-muted-foreground">
-                    Assisted in building web applications and content management
-                    systems. Collaborated on frontend and backend features as
-                    part of an agile team.
-                  </p>
+                  <h5 className="text-accent-pink mb-4">Rawaaq</h5>
+                  <ul className="text-muted-foreground list-disc pl-5 space-y-2">
+                    <li>Assisted in building web applications and content management systems for educational institutions.</li>
+                    <li>Collaborated on frontend and backend features as part of an agile team, improving product delivery times.</li>
+                    <li>Implemented responsive designs and optimized user interfaces for improved engagement and usability.</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -312,28 +297,28 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="glass p-6 rounded-xl">
                       <h4 className="font-semibold mb-2">
-                        AWS Certified Solutions Architect
+                        IBM Certification – Developing Cloud Applications with React and Node.js
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        Amazon Web Services, 2022
+                        IBM on Coursera, May 2023
                       </p>
                     </div>
 
                     <div className="glass p-6 rounded-xl">
                       <h4 className="font-semibold mb-2">
-                        Certified Kubernetes Administrator
+                        Front-End Development Libraries Certification
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        Cloud Native Computing Foundation, 2021
+                        FreeCodeCamp, July 2023
                       </p>
                     </div>
 
                     <div className="glass p-6 rounded-xl">
                       <h4 className="font-semibold mb-2">
-                        MongoDB Certified Developer
+                        Responsive Web Design Certification
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        MongoDB Inc., 2019
+                        FreeCodeCamp, May 2023
                       </p>
                     </div>
                   </div>

@@ -3,16 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Twitter, Mail, MessageCircle } from 'lucide-react';
 import BackToTop from './BackToTop';
 import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
-
 const Footer = () => {
   const location = useLocation();
-
   const handleLinkClick = () => {
     window.scrollTo(0, 0);
   };
-
-  return (
-    <>
+  return <>
       <footer className="bg-background py-12 border-t border-white/10">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -24,29 +20,21 @@ const Footer = () => {
                 </Avatar>
                 <span className="text-gradient-purple">Abdulrahman</span>
               </Link>
-              <p className="mt-4 text-muted-foreground max-w-md">
-                Hey there! I'm your friendly neighborhood developer who loves building amazing digital experiences. 
-                I blend backend magic with frontend finesse to create solutions that make life easier and more enjoyable!
-              </p>
+              <p className="mt-4 text-muted-foreground max-w-md">Hey there! I'm your friendly neighborhood developer who loves building amazing digital experiences. I blend backend expertise with frontend experience to create webapps that empowers your product!</p>
               <div className="flex mt-6 space-x-4">
-                <a href="https://github.com/abdulrahmansoyooye" target="_blank" rel="noopener noreferrer" 
-                   className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://github.com/abdulrahmansoyooye" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Github size={20} />
                 </a>
-                <a href="https://www.linkedin.com/in/abdulrahman-soyooye-814435294/" target="_blank" rel="noopener noreferrer" 
-                   className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/abdulrahman-soyooye-814435294/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://x.com/abdulrahmansoyo" target="_blank" rel="noopener noreferrer" 
-                   className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://x.com/abdulrahmansoyo" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Twitter size={20} />
                 </a>
-                <a href="mailto:abdulrahmansoyooye@gmail.com" 
-                   className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:abdulrahmansoyooye@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                   <Mail size={20} />
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=2347011280726" target="_blank" rel="noopener noreferrer" 
-                   className="text-gray-400 hover:text-green-400 transition-colors">
+                <a href="https://api.whatsapp.com/send?phone=2347011280726" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
                   <MessageCircle size={20} />
                 </a>
               </div>
@@ -69,12 +57,7 @@ const Footer = () => {
                 <li className="text-muted-foreground">+ (234) 70-1128 0726</li>
                 <li className="text-muted-foreground">Lagos, Nigeria</li>
                 <li>
-                  <a 
-                    href="https://api.whatsapp.com/send?phone=2347011280726" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-green-400 flex items-center gap-1 transition-colors"
-                  >
+                  <a href="https://api.whatsapp.com/send?phone=2347011280726" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-400 flex items-center gap-1 transition-colors">
                     <MessageCircle size={16} className="text-green-500" />
                     Chat on WhatsApp
                   </a>
@@ -89,8 +72,6 @@ const Footer = () => {
         </div>
       </footer>
       <BackToTop />
-    </>
-  );
+    </>;
 };
-
 export default Footer;

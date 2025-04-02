@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -18,7 +17,6 @@ import BioAndElevatorPitch from "../components/BioAndElevatorPitch";
 import GitHubAchievements from "../components/GitHubAchievements";
 import WhatIDo from "../components/WhatIDo";
 import DevelopmentProcess from "../components/DevelopmentProcess";
-import Testimonials from "../components/Testimonials";
 
 const featuredProjects = [
   {
@@ -283,7 +281,7 @@ const Index = () => {
       <DevelopmentProcess />
 
       {/* Testimonials Section - New addition */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">

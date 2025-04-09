@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   FileText,
@@ -44,26 +45,13 @@ const BioAndElevatorPitch = () => {
 
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm Soyooye Abdulrahman, a results-driven Software Developer
-                with a strong background in backend architecture, frontend
-                development, and system optimization for businesses.
+                I'm Soyooye Abdulrahman, a software developer passionate about exploring new ideas and building powerful solutions. I specialize in bridging the gap between backend efficiency and frontend fluidity—creating robust, high-performance applications that deliver real value.
               </p>
               <p>
-                Proficient in JavaScript, TypeScript, Next.js, React, and
-                Node.js, I specialize in designing and implementing RESTful
-                APIs, microservices, and seamless frontend experiences.
+                I'm especially driven by digital health innovation because I truly believe technology can transform how healthcare is delivered in Nigeria. Right now, I'm working on a digital health platform designed to bridge the gap between patients' needs and hospital treatments—making care more accessible, efficient, and impactful.
               </p>
               <p>
-                I bring technical excellence, clear communication, and a
-                problem-solving mindset, helping you build reliable,
-                high-performance applications that enhance user experience and
-                operational efficiency.
-              </p>
-              <p>
-                If you're looking for a versatile and innovative developer who
-                can take your product from concept to deployment, you're on the
-                right page, let's connect and discuss how I can contribute to
-                your team’s success.
+                If this sounds exciting to you too, let's connect! I'd love to chat more on WhatsApp or any platform you prefer.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <Link

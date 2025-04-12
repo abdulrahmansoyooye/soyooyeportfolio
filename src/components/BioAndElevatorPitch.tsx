@@ -39,7 +39,7 @@ const BioAndElevatorPitch = () => {
                 <AvatarFallback>AB</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font-semibold text-gradient-purple">
-                Here's a bit about who I am
+                Who I Am
               </h3>
             </div>
 
@@ -48,11 +48,9 @@ const BioAndElevatorPitch = () => {
                 I'm Soyooye Abdulrahman, a software developer passionate about exploring new ideas and building powerful solutions. I specialize in bridging the gap between backend efficiency and frontend fluidity—creating robust, high-performance applications that deliver real value.
               </p>
               <p>
-                I'm especially driven by digital health innovation because I truly believe technology can transform how healthcare is delivered in Nigeria. Right now, I'm working on a digital health platform designed to bridge the gap between patients' needs and hospital treatments—making care more accessible, efficient, and impactful.
+                I'm especially driven by digital health innovation because I truly believe technology can transform how healthcare is delivered in Nigeria.
               </p>
-              <p>
-                If this sounds exciting to you too, let's connect! I'd love to chat more on WhatsApp or any platform you prefer.
-              </p>
+
               <div className="flex flex-wrap gap-4 mt-6">
                 <Link
                   to="/about"
@@ -92,27 +90,19 @@ const BioAndElevatorPitch = () => {
                 <MessageSquare size={24} className="text-accent-blue" />
               </div>
               <h3 className="text-xl font-semibold text-gradient-purple">
-                You need a developer who cares!
+                What I Do
               </h3>
             </div>
 
             <div className="space-y-4">
-              <p className="space-y-4 text-muted-foreground">
+              <div className="text-muted-foreground">
                 <p>
-                  With a track record of leading development efforts,
-                  collaborating with technical and non-technical teams, and
-                  optimizing deployment strategies, I stand out for my ability
-                  to turn complex problems into scalable solutions that drive
-                  business impact.
+                  Right now, I'm working on a digital health platform designed to bridge the gap between patients' needs and hospital treatments—making care more accessible, efficient, and impactful.
                 </p>
-
-                <p>
-                  Also Passionate about leveraging technology for digital health
-                  solutions, Soyooye aims to create impactful software that
-                  enhances healthcare accessibility and operational efficiency.
-                  
+                <p className="mt-3">
+                  With a track record of leading development efforts and collaborating across teams, I turn complex problems into scalable solutions that drive business impact.
                 </p>
-              </p>
+              </div>
 
               <div className="mt-6 relative">
                 <div className="aspect-w-16 aspect-h-9 bg-black/30 rounded-lg overflow-hidden">
@@ -124,10 +114,6 @@ const BioAndElevatorPitch = () => {
                       />
                       <p className="text-muted-foreground">
                         Video elevator pitch coming soon!
-                      </p>
-                      <p className="text-sm text-muted-foreground mt-2">
-                        I'm working on a concise video introduction to better
-                        showcase my skills and personality.
                       </p>
                     </div>
                   </div>

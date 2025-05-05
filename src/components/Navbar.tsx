@@ -49,6 +49,7 @@ const Navbar = () => {
             <Link to="/" className="nav-link" onClick={handleLinkClick}>Home</Link>
             <Link to="/about" className="nav-link" onClick={handleLinkClick}>About</Link>
             <Link to="/projects" className="nav-link" onClick={handleLinkClick}>Projects</Link>
+            <Link to="/blog" className="nav-link" onClick={handleLinkClick}>Blog</Link>
             <Link to="/contact" className="nav-link" onClick={handleLinkClick}>Contact</Link>
             <a 
               href={"https://docs.google.com/document/d/1gyPjPSXf0ZGtf1PtNxjiBtZYnypBaXW3SAITIkww0ns/edit?usp=sharing"} 
@@ -88,6 +89,7 @@ const Navbar = () => {
             <Link to="/" className="nav-link text-xl" onClick={handleLinkClick}>Home</Link>
             <Link to="/about" className="nav-link text-xl" onClick={handleLinkClick}>About</Link>
             <Link to="/projects" className="nav-link text-xl" onClick={handleLinkClick}>Projects</Link>
+            <Link to="/blog" className="nav-link text-xl" onClick={handleLinkClick}>Blog</Link>
             <Link to="/contact" className="nav-link text-xl" onClick={handleLinkClick}>Contact</Link>
             <a 
               href="/resume.pdf" 

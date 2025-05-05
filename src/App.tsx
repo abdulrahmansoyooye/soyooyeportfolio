@@ -10,7 +10,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
-
+import { Analytics } from "@vercel/analytics/react"
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -29,6 +29,7 @@ const App = () => (
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
+   <Analytics />
   </QueryClientProvider>
 );
 

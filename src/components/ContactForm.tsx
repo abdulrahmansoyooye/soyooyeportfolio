@@ -12,7 +12,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
-  const [state, handleformSubmit,reset] = useForm("xeoalypy");
+  const [state, handleformSubmit, reset] = useForm("xeoalypy");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -34,7 +34,7 @@ const ContactForm = () => {
         </p>
         <button
           onClick={() => {
-            reset()
+            reset();
             setFormState({ name: "", email: "", subject: "", message: "" });
           }}
           className="button-secondary"

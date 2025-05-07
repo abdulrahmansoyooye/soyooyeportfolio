@@ -68,8 +68,7 @@ const allProjects = [
     id: 9,
     title: 'Sayf Network Website',
     description: 'A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.',
-    image: '/lovable-uploads/sayfnetwork-image.jpg',
-    tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Cloudinary'],
+    image: '/lovable-uploads/191c6b59-ea83-46a7-b7f1-312d6799eefe.png',
     githubLink: 'https://github.com',
     liveLink: 'https://sayfnetwork.com',
     type: 'frontend' as 'frontend'
@@ -78,7 +77,7 @@ const allProjects = [
     id: 8,
     title: 'Distinct Patterns',
     description: 'An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.',
-    image: '/lovable-uploads/distinctpatterns-image.jpg',
+    image: '/lovable-uploads/distinctpatterns-image2.jpg',
     tags: ["Typescript",'Next.js', 'Sanity', 'Tailwind CSS', 'Paystack'],
     githubLink: 'https://github.com',
     liveLink: 'https://distinctpatterns.com.ng',
@@ -125,30 +124,29 @@ const Projects = () => {
         <div className="section-wrapper">
           {/* Filter Controls */}
           <div className="flex justify-center mb-12">
-  <div className="glass p-2 rounded-full w-full max-w-[90vw] overflow-x-auto">
-    <div className="flex gap-2 sm:gap-3 justify-center flex-wrap sm:flex-nowrap">
-      {[
-        { label: "All Projects", value: "all" },
-        { label: "Ongoing", value: "ongoing" },
-        { label: "Backend", value: "backend" },
-        { label: "Frontend", value: "frontend" },
-      ].map(({ label, value }) => (
-        <button
-          key={value}
-          onClick={() => setFilter(value)}
-          className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-            filter === value
-              ? "bg-white text-background"
-              : "text-foreground hover:bg-white/10"
-          }`}
-        >
-          {label}
-        </button>
-      ))}
-    </div>
-  </div>
-</div>
-
+            <div className="glass p-2 rounded-full w-full max-w-[90vw] overflow-x-auto">
+              <div className="flex gap-2 sm:gap-3 justify-center flex-wrap sm:flex-nowrap">
+                {[
+                  { label: "All Projects", value: "all" },
+                  { label: "Ongoing", value: "ongoing" },
+                  { label: "Backend", value: "backend" },
+                  { label: "Frontend", value: "frontend" },
+                ].map(({ label, value }) => (
+                  <button
+                    key={value}
+                    onClick={() => setFilter(value as any)}
+                    className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                      filter === value
+                        ? "bg-white text-background"
+                        : "text-foreground hover:bg-white/10"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
           
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

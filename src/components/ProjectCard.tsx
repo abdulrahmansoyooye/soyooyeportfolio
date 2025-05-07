@@ -6,7 +6,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image: string;
-  tags: string[];
+  tags?: string[];
   githubLink?: string;
   liveLink?: string;
   type: 'backend' | 'frontend' | 'ongoing';
@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   image,
-  tags,
+  tags = [],
   githubLink,
   liveLink,
   type
@@ -70,13 +70,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       
       <p className="text-muted-foreground mb-4 line-clamp-3">{description}</p>
       
-      <div className="flex flex-wrap gap-2 mt-auto">
-        {tags.map((tag, index) => (
-          <span key={index} className="tech-pill">
-            {tag}
-          </span>
-        ))}
-      </div>
+      {tags && tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-auto">
+          {tags.map((tag, index) => (
+            <span key={index} className="tech-pill">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

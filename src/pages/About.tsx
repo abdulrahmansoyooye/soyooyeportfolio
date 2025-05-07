@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ArrowRight, Award, Briefcase, GraduationCap } from "lucide-react";
+import { ArrowRight, Award, Briefcase, GraduationCap, ExternalLink, Certificate } from "lucide-react";
 import TechStack from "../components/TechStack";
 import { Link } from "react-router-dom";
 
@@ -39,8 +39,8 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-                  alt="Code and technology"
+                  src="/lovable-uploads/6b8578f2-674e-4131-a5bb-b51b55dbc340.png"
+                  alt="Abdulrahman Soyooye"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -285,21 +285,55 @@ const About = () => {
           <div className="space-y-4">
             {[
               {
-                title: "IBM Cloud Apps with React & Node.js",
-                source: "IBM on Coursera, May 2023"
+                title: "ALX Professional Foundations",
+                source: "ALX Africa, April 2025",
+                image: "/lovable-uploads/52ceb164-6d45-4ab2-adc8-43ff45399768.png",
+                link: "https://savanna.alxafrica.com/certificates/JMf5TnrC23"
               },
               {
-                title: "Front-End Dev Libraries",
-                source: "FreeCodeCamp, July 2023"
+                title: "IBM Cloud Apps with Node.js and React",
+                source: "IBM on Coursera, July 2023",
+                image: "/lovable-uploads/ef8e1304-09a5-4ade-8c0c-93dab1808484.png",
+                link: "https://coursera.org/verify/FXLKTZBZ7UFX"
               },
               {
                 title: "Responsive Web Design",
-                source: "FreeCodeCamp, May 2023"
+                source: "FreeCodeCamp, May 2023",
+                image: "/lovable-uploads/031dc977-121b-4469-a7ce-a090ecdcdade.png",
+                link: "https://freecodecamp.org/certification/soyooye_abdulrahman/responsive-web-design"
+              },
+              {
+                title: "Front-End Dev Libraries",
+                source: "FreeCodeCamp, July 2023",
+                link: ""
               }
-            ].map(({ title, source }, i) => (
+            ].map(({ title, source, image, link }, i) => (
               <div key={i} className="glass p-6 rounded-xl">
-                <h4 className="font-semibold mb-2">{title}</h4>
-                <p className="text-sm text-muted-foreground">{source}</p>
+                <div className="flex flex-col md:flex-row md:items-center gap-4">
+                  {image && (
+                    <div className="w-full md:w-24 h-24 flex-shrink-0">
+                      <img 
+                        src={image} 
+                        alt={title} 
+                        className="w-full h-full object-contain rounded-lg"
+                      />
+                    </div>
+                  )}
+                  <div className="flex-grow">
+                    <h4 className="font-semibold mb-2">{title}</h4>
+                    <p className="text-sm text-muted-foreground mb-2">{source}</p>
+                    {link && (
+                      <a 
+                        href={link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs flex items-center text-accent-blue hover:underline"
+                      >
+                        Verify <ExternalLink size={12} className="ml-1" />
+                      </a>
+                    )}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -308,8 +342,6 @@ const About = () => {
     </div>
   </div>
 </section>
-
-
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-radial from-accent-purple/20 via-background to-background">

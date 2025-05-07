@@ -45,31 +45,30 @@ const Contact = () => {
                     <div className="p-3 rounded-full bg-accent-purple/20 mr-4">
                       <Mail className="text-accent-purple h-5 w-5" />
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-sm text-foreground mb-1">
-                        Email
-                      </h3>
-                      <a
-                        href="mailto:abdulrahmansoyooye@gmail.com"
-                        className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-sm"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-4 h-4 text-accent"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M16 12H8m0 0l4-4m-4 4l4 4"
-                          />
-                        </svg>
-                        abdulrahmansoyooye@gmail.com
-                      </a>
-                    </div>
+                    <div className="w-full break-words">
+  <h3 className="font-semibold text-sm text-foreground mb-1">Email</h3>
+  <a
+    href="mailto:abdulrahmansoyooye@gmail.com"
+    className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors break-all"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-4 h-4 text-accent shrink-0"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M16 12H8m0 0l4-4m-4 4l4 4"
+      />
+    </svg>
+    abdulrahmansoyooye@gmail.com
+  </a>
+</div>
+
                   </div>
 
                   <div className="flex items-start">

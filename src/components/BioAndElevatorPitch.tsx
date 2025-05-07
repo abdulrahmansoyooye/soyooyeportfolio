@@ -21,7 +21,7 @@ const BioAndElevatorPitch = () => {
             👋 Meet: Abdulrahman
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Your dedicated developer for building elegant, high-performance web applications.
+            Your developer for building elegant, high-performance web applications.
           </p>
         </div>
 
@@ -43,15 +43,15 @@ const BioAndElevatorPitch = () => {
 
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm Soyooye Abdulrahman, a software developer passionate about exploring new ideas and building powerful solutions. I specialize in bridging the gap between backend efficiency and frontend fluidity—creating robust, high-performance applications that deliver real value.
+                I'm Soyooye Abdulrahman, a software developer passionate about exploring new ideas and building solutions. I specialize in bridging backend efficiency with frontend experience—creating applications that deliver real value.
               </p>
               <p>
-                I'm especially driven by digital health innovation because I truly believe technology can transform how healthcare is delivered in Nigeria.
+                I'm driven by digital health innovation because I believe technology can transform healthcare delivery in Nigeria.
               </p>
 
               <div className="flex flex-wrap gap-4 mt-6">
                 <a
-                  href="https://docs.google.com/document/d/1gyPjPSXf0ZGtf1PtNxjiBtZYnypBaXW3SAITIkww0ns/edit?usp=sharing"
+                  href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button-secondary w-full flex items-center gap-2"
@@ -86,10 +86,10 @@ const BioAndElevatorPitch = () => {
             <div className="space-y-4">
               <div className="text-muted-foreground">
                 <p>
-                  Right now, I'm working on a digital health platform designed to bridge the gap between patients' needs and hospital treatments—making care more accessible, efficient, and impactful.
+                  I'm working on a digital health platform designed to make healthcare more accessible, efficient, and impactful in Nigeria.
                 </p>
                 <p className="mt-3">
-                  With a track record of leading development efforts and collaborating across teams, I turn complex problems into scalable solutions that drive business impact.
+                  With experience in leading development teams, I turn complex problems into scalable solutions that drive business growth.
                 </p>
               </div>
 

@@ -65,7 +65,7 @@ const featuredProjects = [
     title: "Sayf Network Website",
     description:
       "A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.",
-    image: "/lovable-uploads/sayfnetwork-image.jpg",
+    image: "/lovable-uploads/0a407d96-bbdd-4f92-9814-896968ca89f5.png",
     tags: ["Javascript", "Next.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
     githubLink: "https://github.com",
     liveLink: "https://sayfnetwork.com",
@@ -137,15 +137,13 @@ const Index = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-            This is Abdulrahman, A dedicated developer for building amazing,
-            elegant web app that clients love using.
+            This is Abdulrahman, A developer building elegant web apps that clients love.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
             <Link to="/projects" className="button-primary">
               See My Work <ArrowRight size={16} className="ml-2" />
             </Link>
-          
           </div>
 
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -171,20 +169,13 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="heading-lg text-gray-900 mb-6">
-                Hey There! It's Your dedicated developer
+                Your dedicated developer
               </h2>
               <p className="text-gray-700 mb-6">
-                I'm Soyooye Abdulrahman, a results-driven Software Developer
-                with a strong background in backend architecture, frontend
-                development, and system optimization. I have led teams, built
-                production-ready applications, and optimized development
-                workflows to deliver high-quality, scalable solutions.
+                I'm Soyooye Abdulrahman, a Software Developer specializing in backend architecture, frontend development, and system optimization. I build production-ready applications and optimize workflows to deliver scalable solutions.
               </p>
               <p className="text-gray-700 mb-6">
-                I'm super passionate about digital health innovation, especially
-                telemedicine in Nigeria. I believe technology can transform
-                healthcare delivery and make quality medical services accessible
-                to everyone, no matter where they are!
+                I'm passionate about digital health innovation, especially telemedicine in Nigeria - making quality healthcare accessible to everyone.
               </p>
               <div className="flex flex-wrap gap-6 mt-8">
                 <div className="flex items-center">
@@ -243,7 +234,7 @@ const Index = () => {
             <div className="relative animate-on-scroll">
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
                   alt="Developer working"
                   className="w-full h-auto object-cover"
                 />
@@ -267,11 +258,6 @@ const Index = () => {
       {/* What I Do Section */}
       <WhatIDo />
 
-    
-
-      {/* Testimonials Section - New addition */}
-      {/* <Testimonials /> */}
-
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">
         <div className="section-wrapper">
@@ -281,9 +267,7 @@ const Index = () => {
             </span>
             <h2 className="heading-lg text-gradient mb-6">Featured Projects</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Check out some of my favorite projects! These showcase my
-              problem-solving approach and technical skills across different
-              domains.
+              Check out some of my favorite projects showcasing my problem-solving approach and technical skills.
             </p>
           </div>
 
@@ -310,10 +294,8 @@ const Index = () => {
       {/* GitHub Achievements Section - Now below Tech Stack */}
       <GitHubAchievements />
 
-
-  {/* Development Process Section */}
-  <DevelopmentProcess />
-
+      {/* Development Process Section */}
+      <DevelopmentProcess />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-radial from-accent-purple/20 via-background to-background">
@@ -323,9 +305,7 @@ const Index = () => {
               Let's Create Something Amazing Together!
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              Have a project in mind? Whether you need a robust backend service,
-              an intuitive frontend, or a digital health solution, I'd love to
-              hear about it and see how I can help!
+              Have a project in mind? I'd love to hear about it and see how I can help!
             </p>
             <Link to="/contact" className="button-primary">
               Let's Chat

@@ -23,7 +23,7 @@ const About = () => {
                 <span className="text-gradient-purple">Developer</span>
               </h1>
               <p className="text-muted-foreground mb-6">
-                A passionate backend developer with a strong interest in digital health solutions, particularly telemedicine in Nigeria. I blend technical expertise with a creative approach to problem-solving, delivering exceptional results for every project.
+                A backend developer passionate about digital health solutions, with a focus on telemedicine in Nigeria. I combine technical skills with creative problem-solving to deliver effective solutions.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <Link to="/projects" className="button-primary">
@@ -38,8 +38,8 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src="/lovable-uploads/6b8578f2-674e-4131-a5bb-b51b55dbc340.png"
-                  alt="Abdulrahman Soyooye"
+                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Code on computer screen"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -61,19 +61,10 @@ const About = () => {
             <div>
               <h2 className="heading-md text-gray-900 mb-6">My Story</h2>
               <p className="text-gray-700 mb-4">
-                My journey in software development began years ago when I
-                discovered my passion for creating efficient systems and solving
-                complex problems through code.
-              </p>
-              <p className="text-gray-700 mb-4">
-                With a track record of leading development efforts,
-                collaborating with technical and non-technical teams, and
-                optimizing deployment strategies, I stand out for my ability to
-                turn complex problems into scalable solutions that drive
-                business impact.
+                My software development journey began when I discovered my passion for creating efficient systems and solving complex problems through code.
               </p>
               <p className="text-gray-700">
-                I'm particularly passionate about digital health improvement, especially telemedicine solutions for Nigeria. I believe technology can bridge healthcare gaps and provide accessible services to underserved communities. This drive motivates me to continuously learn and apply my skills to create meaningful impact in the healthcare sector.
+                I'm particularly passionate about digital health innovation, especially telemedicine solutions for Nigeria. I believe technology can bridge healthcare gaps and provide accessible services to underserved communities.
               </p>
             </div>
 
@@ -174,7 +165,7 @@ const About = () => {
         Experience & Education
       </h2>
       <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">
-        A journey of continuous learning and professional growth
+        A journey of continuous learning and growth
       </p>
     </div>
 
@@ -249,14 +240,14 @@ const About = () => {
               {
                 field: "Computer Science",
                 color: "text-accent-purple",
-                school: "University",
+                school: "University of Ibadan",
                 year: "2025",
                 note: "Specialized in Distributed Systems and DBMS. Thesis on NoSQL performance."
               },
               {
                 field: "Computer Science",
                 color: "text-accent-blue",
-                school: "University",
+                school: "University of Ibadan",
                 year: "2025",
                 note: "Covered programming, data structures, software engineering. Graduated with honors."
               }
@@ -288,6 +279,12 @@ const About = () => {
                 source: "ALX Africa, April 2025",
                 image: "/lovable-uploads/52ceb164-6d45-4ab2-adc8-43ff45399768.png",
                 link: "https://savanna.alxafrica.com/certificates/JMf5TnrC23"
+              },
+              {
+                title: "ALX Cloud Computing",
+                source: "ALX Africa, May 2025",
+                image: "/lovable-uploads/031dc977-121b-4469-a7ce-a090ecdcdade.png",
+                link: "https://savanna.alxafrica.com/certificates/cloud-computing"
               },
               {
                 title: "IBM Cloud Apps with Node.js and React",
@@ -350,8 +347,7 @@ const About = () => {
               Want to Work Together?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              I'm always open to discussing new projects, opportunities, and
-              partnerships.
+              I'm open to discussing new projects and opportunities.
             </p>
             <Link to="/contact" className="button-primary">
               Get in Touch

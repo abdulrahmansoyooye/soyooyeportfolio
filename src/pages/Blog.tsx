@@ -41,14 +41,19 @@ const sampleBlogs = [
 
 const Blog = () => {
   const [notificationPermission, setNotificationPermission] = useState("default");
-  const [showGuide, setShowGuide] = useState(true);
+  const [showGuide, setShowGuide] = useState(false);
   const [currentGuideStep, setCurrentGuideStep] = useState(0);
   const { toast } = useToast();
 
   useEffect(() => {
     // Check notification permission on load
     if ("Notification" in window) {
-      setNotificationPermission(Notification.permission);
+      const savedPermission = localStorage.getItem("notificationPermission");
+      if (savedPermission) {
+        setNotificationPermission(savedPermission);
+      } else {
+        setNotificationPermission(Notification.permission);
+      }
     }
     
     // Initialize animation observer
@@ -72,8 +77,8 @@ const Blog = () => {
     
     animateOnScroll();
     
-    // Show guide automatically if notifications are not yet enabled
-    if (notificationPermission !== "granted") {
+    // Only show guide if notifications are not yet enabled and not dismissed before
+    if (notificationPermission !== "granted" && !localStorage.getItem("notificationDismissed")) {
       setTimeout(() => {
         setShowGuide(true);
       }, 2000);
@@ -97,6 +102,9 @@ const Blog = () => {
     try {
       const permission = await Notification.requestPermission();
       setNotificationPermission(permission);
+      
+      // Store permission in localStorage
+      localStorage.setItem("notificationPermission", permission);
       
       if (permission === "granted") {
         toast({
@@ -127,16 +135,21 @@ const Blog = () => {
     }
   };
 
+  const dismissNotificationGuide = () => {
+    setShowGuide(false);
+    localStorage.setItem("notificationDismissed", "true");
+  };
+
   const guideSteps = [
     {
       title: "Welcome to my Blog!",
-      description: "Get notified when I publish new articles about software development, digital health, and more!",
+      description: "Get notified when I publish new articles about software development and digital health.",
       action: "Next",
       image: <Newspaper size={48} className="text-accent-purple mx-auto mb-4" />
     },
     {
       title: "Enable Notifications",
-      description: "Stay updated with my latest insights and tutorials by allowing notifications.",
+      description: "Stay updated with my latest insights and tutorials.",
       action: "Enable Notifications",
       image: <BellRing size={48} className="text-accent-purple mx-auto mb-4" />
     }
@@ -170,7 +183,7 @@ const Blog = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll opacity-0">
-            Thoughts, tutorials, and insights on software development, digital health innovation, and technology trends.
+            Thoughts on software development and digital health innovation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll opacity-0">
@@ -196,7 +209,7 @@ const Blog = () => {
             </span>
             <h2 className="heading-lg text-gradient mb-6">Recent Posts</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Browse through my recent articles on software development, digital health innovation, and more.
+              Browse through my recent articles on tech and digital health.
             </p>
           </div>
 
@@ -241,8 +254,8 @@ const Blog = () => {
               More Content Coming Soon!
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              I'm working on creating valuable content about software development, digital health innovation, and technology trends. 
-              Enable notifications to be the first to know when new posts are published!
+              I'm working on valuable content about software development and digital health innovation. 
+              Enable notifications to know when new posts are published!
             </p>
             <a href="#" className="flex items-center justify-center gap-2 text-accent-purple">
               <ExternalLink size={16} />
@@ -272,7 +285,7 @@ const Blog = () => {
                 {currentGuideStep === guideSteps.length - 1 && (
                   <button 
                     className="mt-4 text-sm text-muted-foreground hover:text-foreground"
-                    onClick={() => setShowGuide(false)}
+                    onClick={dismissNotificationGuide}
                   >
                     Maybe later
                   </button>

@@ -49,7 +49,7 @@ const Contact = () => {
                       <h3 className="font-medium mb-1">Email</h3>
                       <a 
                         href="mailto:email@example.com" 
-                        className="text-muted-foreground hover:text-white transition-colors"
+                        className="flex-inline text-muted-foreground hover:text-white transition-colors"
                       >
                         abdulrahmansoyooye@gmail.com
                       </a>

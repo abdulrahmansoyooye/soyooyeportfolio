@@ -145,17 +145,7 @@ const Index = () => {
             <Link to="/projects" className="button-primary">
               See My Work <ArrowRight size={16} className="ml-2" />
             </Link>
-            <a
-              target="_blank"
-              href={
-                "https://docs.google.com/document/d/1gyPjPSXf0ZGtf1PtNxjiBtZYnypBaXW3SAITIkww0ns/edit?usp=sharing"
-              }
-              rel="noopener noreferrer"
-              className="button-secondary flex items-center justify-center gap-2 cursor-pointer"
-            >
-              <FileText size={16} />
-              Check Resume
-            </a>
+          
           </div>
 
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -277,8 +267,7 @@ const Index = () => {
       {/* What I Do Section */}
       <WhatIDo />
 
-      {/* Development Process Section */}
-      <DevelopmentProcess />
+    
 
       {/* Testimonials Section - New addition */}
       {/* <Testimonials /> */}
@@ -320,6 +309,11 @@ const Index = () => {
       
       {/* GitHub Achievements Section - Now below Tech Stack */}
       <GitHubAchievements />
+
+
+  {/* Development Process Section */}
+  <DevelopmentProcess />
+
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-radial from-accent-purple/20 via-background to-background">

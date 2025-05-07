@@ -20,7 +20,7 @@ const About = () => {
                 About Me
               </span>
               <h1 className="heading-lg text-gradient mb-6">
-                The Journey of a{" "}
+                My Journey as a{" "}
                 <span className="text-gradient-purple">Developer</span>
               </h1>
               <p className="text-muted-foreground mb-6">
@@ -165,172 +165,151 @@ const About = () => {
       </section>
 
       {/* Experience & Education */}
-      <section className="section-padding bg-background">
-        <div className="section-wrapper">
-          <div className="text-center mb-12">
-            <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
-              My Background
-            </span>
-            <h2 className="heading-lg text-gradient mb-6">
-              Experience & Education
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A journey of continuous learning and professional growth
-            </p>
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-12">
+      <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
+        My Background
+      </span>
+      <h2 className="text-3xl sm:text-4xl font-bold text-gradient mb-4">
+        Experience & Education
+      </h2>
+      <p className="text-muted-foreground max-w-2xl mx-auto text-base sm:text-lg">
+        A journey of continuous learning and professional growth
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      {/* Experience */}
+      <div>
+        <div className="flex items-center mb-6">
+          <Briefcase className="mr-3 text-accent-purple w-5 h-5" />
+          <h3 className="text-xl font-semibold">Professional Experience</h3>
+        </div>
+
+        <div className="space-y-6">
+          {[{
+            title: "Fullstack Engineer",
+            org: "Sayf Network",
+            color: "text-accent-purple",
+            date: "May 2024 - Present",
+            points: [
+              "Led the full-stack development of an admin dashboard, improving user efficiency by 35%.",
+              "Built scalable systems with Next.js, MongoDB, Mongoose, and Tailwind CSS.",
+              "Improved database performance by 25% with optimized querying and security."
+            ]
+          },
+          {
+            title: "Lead Software Developer",
+            org: "Nextage Digital Solutions Ltd.",
+            color: "text-accent-blue",
+            date: "Nov 2024 – Present",
+            points: [
+              "Spearheaded product development, increasing delivery speed by 40%.",
+              "Drove cross-functional team efficiency with strong communication.",
+              "Used Sanity, Next.js, and TypeScript to achieve high-performance builds."
+            ]
+          },
+          {
+            title: "Frontend Developer",
+            org: "Rawaaq",
+            color: "text-accent-pink",
+            date: "Dec 2024 - Present",
+            points: [
+              "Built educational dashboards and CMS platforms.",
+              "Contributed to frontend/backend logic for fast release cycles.",
+              "Designed responsive, accessible interfaces for better engagement."
+            ]
+          }].map(({ title, org, color, date, points }, idx) => (
+            <div key={idx} className="glass p-6 rounded-xl">
+              <div className="flex justify-between items-start mb-2">
+                <h4 className="font-semibold">{title}</h4>
+                <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground whitespace-nowrap">
+                  {date}
+                </span>
+              </div>
+              <h5 className={`${color} mb-3`}>{org}</h5>
+              <ul className="text-muted-foreground list-disc pl-5 space-y-2 text-sm">
+                {points.map((point, i) => <li key={i}>{point}</li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Education + Certifications */}
+      <div className="space-y-12">
+        <div>
+          <div className="flex items-center mb-6">
+            <GraduationCap className="mr-3 text-accent-purple w-5 h-5" />
+            <h3 className="text-xl font-semibold">Education</h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            {/* Experience */}
-            <div>
-              <div className="flex items-center mb-8">
-                <Briefcase className="mr-3 text-accent-purple" />
-                <h3 className="text-xl font-semibold">
-                  Professional Experience
-                </h3>
+          <div className="space-y-6">
+            {[
+              {
+                field: "Computer Science",
+                color: "text-accent-purple",
+                school: "University",
+                year: "2025",
+                note: "Specialized in Distributed Systems and DBMS. Thesis on NoSQL performance."
+              },
+              {
+                field: "Computer Science",
+                color: "text-accent-blue",
+                school: "University",
+                year: "2025",
+                note: "Covered programming, data structures, software engineering. Graduated with honors."
+              }
+            ].map(({ field, color, school, year, note }, i) => (
+              <div key={i} className="glass p-6 rounded-xl">
+                <div className="flex justify-between items-start mb-2">
+                  <h4 className="font-semibold">{field}</h4>
+                  <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
+                    {year}
+                  </span>
+                </div>
+                <h5 className={`${color} mb-3`}>{school}</h5>
+                <p className="text-muted-foreground text-sm">{note}</p>
               </div>
-
-              <div className="space-y-8">
-                <div className="glass p-6 rounded-xl">
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Fullstack Engineer</h4>
-                    <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      May 2024 - Present
-                    </span>
-                  </div>
-                  <h5 className="text-accent-purple mb-4">Sayf Network</h5>
-                  <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                    <li>Led the full-stack development of an admin dashboard, improving user efficiency by 35% through an intuitive UI and seamless backend integration.</li>
-                    <li>Designed and implemented the system using Next.js, MongoDB, Mongoose, and Tailwind CSS, ensuring scalability and performance optimization.</li>
-                    <li>Enhanced data management and security, leading to a 25% improvement in query performance and ensuring data integrity and reliability.</li>
-                  </ul>
-                </div>
-
-                <div className="glass p-6 rounded-xl">
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Lead Software Developer</h4>
-                    <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      Nov 2024 – Present
-                    </span>
-                  </div>
-                  <h5 className="text-accent-blue mb-4">
-                    Nextage Digital Solutions Ltd.
-                  </h5>
-                  <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                    <li>Led the development of multiple applications, improving development speed by 40% through efficient code structuring and process automation.</li>
-                    <li>Collaborated with cross-functional teams, effectively communicating technical requirements and solutions, resulting in 20% faster project delivery times.</li>
-                    <li>Designed and deployed scalable, high-performance systems using Next.js, Sanity, TypeScript, Tailwind, ensuring 99.9% uptime and seamless data flow.</li>
-                  </ul>
-                </div>
-
-                <div className="glass p-6 rounded-xl">
-                  <div className="flex justify-between items-start mb-2">
-                    <h4 className="font-semibold">Frontend Developer</h4>
-                    <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                      Dec 2024 -Present
-                    </span>
-                  </div>
-                  <h5 className="text-accent-pink mb-4">Rawaaq</h5>
-                  <ul className="text-muted-foreground list-disc pl-5 space-y-2">
-                    <li>Assisted in building web applications and content management systems for educational institutions.</li>
-                    <li>Collaborated on frontend and backend features as part of an agile team, improving product delivery times.</li>
-                    <li>Implemented responsive designs and optimized user interfaces for improved engagement and usability.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            {/* Education & Certifications */}
-            <div>
-              <div className="grid grid-cols-1 gap-8">
-                <div>
-                  <div className="flex items-center mb-8">
-                    <GraduationCap className="mr-3 text-accent-purple" />
-                    <h3 className="text-xl font-semibold">Education</h3>
-                  </div>
-
-                  <div className="space-y-8">
-                    <div className="glass p-6 rounded-xl">
-                      <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">
-                          Computer Science
-                        </h4>
-                        <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                          2025 
-                        </span>
-                      </div>
-                      <h5 className="text-accent-purple mb-4">
-                         University
-                      </h5>
-                      <p className="text-muted-foreground">
-                        Specialized in Distributed Systems and Database
-                        Management. Thesis on optimizing query performance in
-                        NoSQL databases.
-                      </p>
-                    </div>
-
-                    <div className="glass p-6 rounded-xl">
-                      <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">
-                          Computer Science
-                        </h4>
-                        <span className="text-sm px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                          2025
-                        </span>
-                      </div>
-                      <h5 className="text-accent-blue mb-4">
-                         University
-                      </h5>
-                      <p className="text-muted-foreground">
-                        Foundation in programming, algorithms, data structures,
-                        and software engineering. Graduated with honors.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-center mb-8">
-                    <Award className="mr-3 text-accent-blue" />
-                    <h3 className="text-xl font-semibold">Certifications</h3>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="glass p-6 rounded-xl">
-                      <h4 className="font-semibold mb-2">
-                        IBM Certification – Developing Cloud Applications with React and Node.js
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        IBM on Coursera, May 2023
-                      </p>
-                    </div>
-
-                    <div className="glass p-6 rounded-xl">
-                      <h4 className="font-semibold mb-2">
-                        Front-End Development Libraries Certification
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        FreeCodeCamp, July 2023
-                      </p>
-                    </div>
-
-                    <div className="glass p-6 rounded-xl">
-                      <h4 className="font-semibold mb-2">
-                        Responsive Web Design Certification
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        FreeCodeCamp, May 2023
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </section>
 
-      {/* Tech Stack */}
-      <TechStack />
+        <div>
+          <div className="flex items-center mb-6">
+            <Award className="mr-3 text-accent-blue w-5 h-5" />
+            <h3 className="text-xl font-semibold">Certifications</h3>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                title: "IBM Cloud Apps with React & Node.js",
+                source: "IBM on Coursera, May 2023"
+              },
+              {
+                title: "Front-End Dev Libraries",
+                source: "FreeCodeCamp, July 2023"
+              },
+              {
+                title: "Responsive Web Design",
+                source: "FreeCodeCamp, May 2023"
+              }
+            ].map(({ title, source }, i) => (
+              <div key={i} className="glass p-6 rounded-xl">
+                <h4 className="font-semibold mb-2">{title}</h4>
+                <p className="text-sm text-muted-foreground">{source}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-radial from-accent-purple/20 via-background to-background">

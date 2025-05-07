@@ -52,20 +52,14 @@ const BioAndElevatorPitch = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 mt-6">
-                <Link
-                  to="/about"
-                  className="button-secondary flex items-center gap-2"
-                >
-                  <UserRound size={16} />
-                  More About Me
-                </Link>
+                
                 <a
                   href={
                     "https://docs.google.com/document/d/1gyPjPSXf0ZGtf1PtNxjiBtZYnypBaXW3SAITIkww0ns/edit?usp=sharing"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button-secondary flex items-center gap-2"
+                  className="button-secondary w-full flex items-center gap-2"
                 >
                   <FileText size={16} />
                   Resume
@@ -74,7 +68,7 @@ const BioAndElevatorPitch = () => {
                   href="https://api.whatsapp.com/send?phone=2347011280726"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button-secondary flex items-center gap-2 bg-green-600 hover:bg-green-700"
+                  className="button-secondary w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
                 >
                   <MessageCircle size={16} />
                   Chat on WhatsApp
@@ -120,18 +114,12 @@ const BioAndElevatorPitch = () => {
                 </div>
 
                 <div className="mt-6 flex flex-wrap justify-center gap-4">
-                  <a
-                    href="/contact"
-                    className="button-primary flex items-center gap-2"
-                  >
-                    <MessageSquare size={16} />
-                    Let's Connect
-                  </a>
+                
                   <a
                     href="https://api.whatsapp.com/send?phone=2347011280726"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="button-primary flex items-center gap-2 bg-green-600 hover:bg-green-700"
+                    className="button-primary w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
                   >
                     <MessageCircle size={16} />
                     Quick Chat

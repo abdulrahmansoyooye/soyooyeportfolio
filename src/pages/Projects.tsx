@@ -125,49 +125,30 @@ const Projects = () => {
         <div className="section-wrapper">
           {/* Filter Controls */}
           <div className="flex justify-center mb-12">
-            <div className="glass p-1 rounded-full">
-              <button
-                onClick={() => setFilter('all')}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  filter === 'all'
-                    ? 'bg-white text-background'
-                    : 'text-foreground hover:bg-white/10'
-                }`}
-              >
-                All Projects
-              </button>
-              <button
-                onClick={() => setFilter('ongoing')}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  filter === 'ongoing'
-                    ? 'bg-white text-background'
-                    : 'text-foreground hover:bg-white/10'
-                }`}
-              >
-                Ongoing
-              </button>
-              <button
-                onClick={() => setFilter('backend')}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  filter === 'backend'
-                    ? 'bg-white text-background'
-                    : 'text-foreground hover:bg-white/10'
-                }`}
-              >
-                Backend
-              </button>
-              <button
-                onClick={() => setFilter('frontend')}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                  filter === 'frontend'
-                    ? 'bg-white text-background'
-                    : 'text-foreground hover:bg-white/10'
-                }`}
-              >
-                Frontend
-              </button>
-            </div>
-          </div>
+  <div className="glass p-2 rounded-full w-full max-w-[90vw] overflow-x-auto">
+    <div className="flex gap-2 sm:gap-3 justify-center flex-wrap sm:flex-nowrap">
+      {[
+        { label: "All Projects", value: "all" },
+        { label: "Ongoing", value: "ongoing" },
+        { label: "Backend", value: "backend" },
+        { label: "Frontend", value: "frontend" },
+      ].map(({ label, value }) => (
+        <button
+          key={value}
+          onClick={() => setFilter(value)}
+          className={`px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+            filter === value
+              ? "bg-white text-background"
+              : "text-foreground hover:bg-white/10"
+          }`}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  </div>
+</div>
+
           
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

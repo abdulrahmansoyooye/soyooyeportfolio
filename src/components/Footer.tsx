@@ -20,7 +20,7 @@ const Footer = () => {
                 </Avatar>
                 <span className="text-gradient-purple">Abdulrahman</span>
               </Link>
-              <p className="mt-4 text-muted-foreground max-w-md">Hey there! I'm your friendly neighborhood developer who loves building amazing digital experiences. I blend backend expertise with frontend experience to create webapps that empowers your product!</p>
+              <p className="mt-4 text-muted-foreground max-w-md">You need the best. I build the best</p>
               <div className="flex mt-6 space-x-4">
                 <a href="https://github.com/abdulrahmansoyooye" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Github size={20} />

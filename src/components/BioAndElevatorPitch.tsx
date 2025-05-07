@@ -5,7 +5,7 @@ import {
   Video,
   MessageCircle,
   MessageSquare,
-  Certificate,
+  Award,
 } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
@@ -97,15 +97,15 @@ const BioAndElevatorPitch = () => {
                 <div className="aspect-w-16 aspect-h-9 bg-black/30 rounded-lg overflow-hidden flex items-center justify-center p-4">
                   <div className="flex flex-wrap gap-3 justify-center">
                     <div className="glass p-3 rounded-lg flex items-center gap-2 text-sm">
-                      <Certificate size={16} className="text-accent-purple" />
+                      <Award size={16} className="text-accent-purple" />
                       <span>IBM Node.js & React</span>
                     </div>
                     <div className="glass p-3 rounded-lg flex items-center gap-2 text-sm">
-                      <Certificate size={16} className="text-accent-blue" />
+                      <Award size={16} className="text-accent-blue" />
                       <span>ALX Foundations</span>
                     </div>
                     <div className="glass p-3 rounded-lg flex items-center gap-2 text-sm">
-                      <Certificate size={16} className="text-accent-pink" />
+                      <Award size={16} className="text-accent-pink" />
                       <span>FCC Web Design</span>
                     </div>
                   </div>

@@ -1,8 +1,7 @@
-
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ArrowRight, Award, Briefcase, GraduationCap, ExternalLink, Certificate } from "lucide-react";
+import { ArrowRight, Award, Briefcase, GraduationCap, ExternalLink } from "lucide-react";
 import TechStack from "../components/TechStack";
 import { Link } from "react-router-dom";
 

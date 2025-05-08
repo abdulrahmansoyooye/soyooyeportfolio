@@ -131,13 +131,13 @@ const Index = () => {
           </span>
 
           <h1 className="heading-xl text-gradient mb-6 max-w-4xl animate-on-scroll">
-            Bridging <span className="text-gradient-purple">Backend Power</span>{" "}
-            with{" "}
+          Connecting <span className="text-gradient-purple">Backend Power</span>{" "}
+            and{" "}
             <span className="text-gradient-purple">Frontend Experience</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-            This is Abdulrahman, A developer building elegant web apps that clients love.
+            I'm Soyooye Abdulrahman, A developer who builds software products for all.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
@@ -169,7 +169,7 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="heading-lg text-gray-900 mb-6">
-                Your dedicated developer
+                Soyooye Abdulrahman:The only developer you need
               </h2>
               <p className="text-gray-700 mb-6">
                 I'm Soyooye Abdulrahman, a Software Developer specializing in backend architecture, frontend development, and system optimization. I build production-ready applications and optimize workflows to deliver scalable solutions.
@@ -302,10 +302,10 @@ const Index = () => {
         <div className="section-wrapper">
           <div className="glass p-8 md:p-12 rounded-2xl text-center animate-on-scroll opacity-0">
             <h2 className="heading-md text-gradient mb-6">
-              Let's Create Something Amazing Together!
+            Do You Have A Project In Mind? 
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              Have a project in mind? I'd love to hear about it and see how I can help!
+              Let's dicuss it. Click the button here and drop a message 
             </p>
             <Link to="/contact" className="button-primary">
               Let's Chat

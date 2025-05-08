@@ -18,10 +18,10 @@ const BioAndElevatorPitch = () => {
             About Me
           </span>
           <h2 className="heading-lg text-gradient mb-6">
-            👋 Meet: Abdulrahman
+            👋 Meet me once again
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Your developer for building elegant, high-performance web applications.
+            I'm a developer and I love what I do
           </p>
         </div>
 
@@ -86,10 +86,10 @@ const BioAndElevatorPitch = () => {
             <div className="space-y-4">
               <div className="text-muted-foreground">
                 <p>
-                  I'm working on a digital health platform designed to make healthcare more accessible, efficient, and impactful in Nigeria.
+                I build fast, clean, and user-focused web applications and software products — from beautiful interfaces to powerful backend systems.
                 </p>
                 <p className="mt-3">
-                  With experience in leading development teams, I turn complex problems into scalable solutions that drive business growth.
+                Whether it’s a responsive dashboard, a content-rich platform, or a feature-packed admin panel, Your ideas come to life with code. I focus on simplicity, performance, and making sure you actually enjoy the experience
                 </p>
               </div>
 

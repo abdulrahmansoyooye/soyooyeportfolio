@@ -258,11 +258,6 @@ const About = () => {
                   image: "/lovable-uploads/52ceb164-6d45-4ab2-adc8-43ff45399768.png",
                   link: "https://savanna.alxafrica.com/certificates/JMf5TnrC23"
                 }, {
-                  title: "ALX Cloud Computing",
-                  source: "ALX Africa, May 2025",
-                  image: "/lovable-uploads/031dc977-121b-4469-a7ce-a090ecdcdade.png",
-                  link: "https://savanna.alxafrica.com/certificates/cloud-computing"
-                }, {
                   title: "IBM Cloud Apps with Node.js and React",
                   source: "IBM on Coursera, July 2023",
                   image: "/lovable-uploads/ef8e1304-09a5-4ade-8c0c-93dab1808484.png",
@@ -272,10 +267,6 @@ const About = () => {
                   source: "FreeCodeCamp, May 2023",
                   image: "/lovable-uploads/031dc977-121b-4469-a7ce-a090ecdcdade.png",
                   link: "https://freecodecamp.org/certification/soyooye_abdulrahman/responsive-web-design"
-                }, {
-                  title: "Front-End Dev Libraries",
-                  source: "FreeCodeCamp, July 2023",
-                  link: ""
                 }].map(({
                   title,
                   source,

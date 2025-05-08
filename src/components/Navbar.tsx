@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link to="/blog" className="nav-link" onClick={handleLinkClick}>Blog</Link>
             <Link to="/contact" className="nav-link" onClick={handleLinkClick}>Contact</Link>
             <a 
-              href={"https://docs.google.com/document/d/1gyPjPSXf0ZGtf1PtNxjiBtZYnypBaXW3SAITIkww0ns/edit?usp=sharing"} 
+              href={"/resume.pdf"} 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 nav-link cursor-pointer"

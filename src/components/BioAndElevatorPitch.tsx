@@ -1,11 +1,9 @@
 
-import React from "react";
 import {
   FileText,
   Video,
   MessageCircle,
   MessageSquare,
-  Award,
 } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
@@ -37,7 +35,7 @@ const BioAndElevatorPitch = () => {
                 <AvatarFallback>AB</AvatarFallback>
               </Avatar>
               <h3 className="text-xl font-semibold text-gradient-purple">
-                Who I Am
+               This Is Who I Am
               </h3>
             </div>
 
@@ -48,7 +46,19 @@ const BioAndElevatorPitch = () => {
               <p>
                 I'm driven by digital health innovation because I believe technology can transform healthcare delivery in Nigeria.
               </p>
-
+              <div className="aspect-w-16 aspect-h-9 bg-black/30 rounded-lg overflow-hidden">
+                  <div className="flex items-center justify-center h-full">
+                    <div className="text-center p-6">
+                      <Video
+                        size={48}
+                        className="mx-auto mb-4 text-accent-purple"
+                      />
+                      <p className="text-muted-foreground">
+                        I'm working on bringing this soon inshaAllah!
+                      </p>
+                    </div>
+                  </div>
+                </div>
               <div className="flex flex-wrap gap-4 mt-6">
                 <a
                   href="/resume.pdf"
@@ -59,15 +69,7 @@ const BioAndElevatorPitch = () => {
                   <FileText size={16} />
                   Resume
                 </a>
-                <a
-                  href="https://api.whatsapp.com/send?phone=2347011280726"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button-secondary w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
-                >
-                  <MessageCircle size={16} />
-                  Chat on WhatsApp
-                </a>
+               
               </div>
             </div>
           </div>
@@ -79,7 +81,7 @@ const BioAndElevatorPitch = () => {
                 <MessageSquare size={24} className="text-accent-blue" />
               </div>
               <h3 className="text-xl font-semibold text-gradient-purple">
-                What I Do
+                This Is What I Do
               </h3>
             </div>
 
@@ -94,33 +96,18 @@ const BioAndElevatorPitch = () => {
               </div>
 
               <div className="mt-6 relative">
-                <div className="aspect-w-16 aspect-h-9 bg-black/30 rounded-lg overflow-hidden flex items-center justify-center p-4">
-                  <div className="flex flex-wrap gap-3 justify-center">
-                    <div className="glass p-3 rounded-lg flex items-center gap-2 text-sm">
-                      <Award size={16} className="text-accent-purple" />
-                      <span>IBM Node.js & React</span>
-                    </div>
-                    <div className="glass p-3 rounded-lg flex items-center gap-2 text-sm">
-                      <Award size={16} className="text-accent-blue" />
-                      <span>ALX Foundations</span>
-                    </div>
-                    <div className="glass p-3 rounded-lg flex items-center gap-2 text-sm">
-                      <Award size={16} className="text-accent-pink" />
-                      <span>FCC Web Design</span>
-                    </div>
-                  </div>
-                </div>
+       
 
-                <div className="mt-6 flex flex-wrap justify-center gap-4">
-                  <a
-                    href="https://api.whatsapp.com/send?phone=2347011280726"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button-primary w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
-                  >
-                    <MessageCircle size={16} />
-                    Quick Chat
-                  </a>
+                <div className="mt-6 flex flex-wrap justify-between gap-4">
+                <a
+                  href="https://api.whatsapp.com/send?phone=2347011280726"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-secondary w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
+                >
+                  <MessageCircle size={16} />
+                  Chat on WhatsApp
+                </a>
                 </div>
               </div>
             </div>

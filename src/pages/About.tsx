@@ -220,18 +220,12 @@ const About = () => {
           </div>
 
           <div className="space-y-6">
-            {[{
-                  field: "Computer Science",
-                  color: "text-accent-purple",
-                  school: "University of Ibadan",
-                  year: "2025",
-                  note: "Specialized in Distributed Systems and DBMS. Thesis on NoSQL performance."
-                }, {
+            {[ {
                   field: "Computer Science",
                   color: "text-accent-blue",
                   school: "University of Ibadan",
                   year: "2025",
-                  note: "Covered programming, data structures, software engineering. Graduated with honors."
+                  note: "Covering programming, data structures, software engineering."
                 }].map(({
                   field,
                   color,

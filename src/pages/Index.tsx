@@ -65,7 +65,7 @@ const featuredProjects = [
     title: "Sayf Network Website",
     description:
       "A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.",
-    image: "/lovable-uploads/0a407d96-bbdd-4f92-9814-896968ca89f5.png",
+    image: "/lovable-uploads/191c6b59-ea83-46a7-b7f1-312d6799eefe.png",
     tags: ["Javascript", "Next.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
     githubLink: "https://github.com",
     liveLink: "https://sayfnetwork.com",
@@ -130,14 +130,14 @@ const Index = () => {
             Backend Developer with Frontend Experience
           </span>
 
-          <h1 className="heading-xl text-gradient mb-6 max-w-4xl animate-on-scroll">
-          Connecting <span className="text-gradient-purple">Backend Power</span>{" "}
+          <h1 className="heading-xl max-lg:heading-2lg text-gradient mb-6 max-w-4xl animate-on-scroll">
+          Connecting <span className="text-gradient-purple">Backend Development</span>{" "}
             and{" "}
             <span className="text-gradient-purple">Frontend Experience</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-            I'm Soyooye Abdulrahman, A developer who builds software products for all.
+          A full stack developer driven by enthusiasm,, I'm Soyooye Abdulrahman
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
@@ -163,14 +163,14 @@ const Index = () => {
       {/* About Section - Light Background */}
       <section className="light-section">
         <div className="section-wrapper">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
             <div className="animate-on-scroll">
               <span className="px-3 py-1 rounded-full text-sm font-medium bg-accent-purple/20 text-accent-purple mb-4 inline-block">
                 About Me
               </span>
-              <h2 className="heading-lg text-gray-900 mb-6">
-                Soyooye Abdulrahman:The only developer you need
-              </h2>
+              <h2 className="flex flex-col gap-4 heading-lg text-gray-900 mb-4">
+        <span>Soyooye Abdulrahman</span>  <span className="text-[1.5rem]">The Only Developer You Need</span> 
+        </h2>
               <p className="text-gray-700 mb-6">
                 I'm Soyooye Abdulrahman, a Software Developer specializing in backend architecture, frontend development, and system optimization. I build production-ready applications and optimize workflows to deliver scalable solutions.
               </p>
@@ -265,7 +265,7 @@ const Index = () => {
             <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
               My Work
             </span>
-            <h2 className="heading-lg text-gradient mb-6">Featured Projects</h2>
+            <h2 className="heading-lg text-gradient mb-6">Some Of My Favourite Projects. </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Check out some of my favorite projects showcasing my problem-solving approach and technical skills.
             </p>
@@ -305,7 +305,7 @@ const Index = () => {
             Do You Have A Project In Mind? 
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-              Let's dicuss it. Click the button here and drop a message 
+              Let's dicuss it, I'm open to new projects and opportunities. Click the button here and leave a message 
             </p>
             <Link to="/contact" className="button-primary">
               Let's Chat

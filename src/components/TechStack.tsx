@@ -77,15 +77,15 @@ const TechStack = () => {
               My Expertise
             </span>
           </div>
-          <h2 className="heading-lg text-gradient mb-6">Technical Proficiency</h2>
+          <h2 className="heading-lg text-gradient mb-6">Comprehensive Skills To Your Project</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Leveraging a diverse set of technologies to build robust, scalable solutions.
-            From backend systems to frontend interfaces, I bring comprehensive skills to every project.
+            Using a diverse set of technologies to build robust, scalable solutions.
+            From backend systems to frontend interfaces, I bring these comprehensive skills to your project.
           </p>
         </div>
 
         <div className="mt-12 animate-on-scroll opacity-0">
-          <h3 className="text-xl font-semibold mb-6">High-Demand Backend Skills</h3>
+          <h3 className="text-xl font-semibold mb-6">Backend Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {backendTech.map((tech, index) => (
               <TechItem key={index} {...tech} />
@@ -94,7 +94,7 @@ const TechStack = () => {
         </div>
 
         <div className="mt-12 animate-on-scroll opacity-0">
-          <h3 className="text-xl font-semibold mb-6">High-Demand Frontend Skills</h3>
+          <h3 className="text-xl font-semibold mb-6">Frontend Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {frontendTech.map((tech, index) => (
               <TechItem key={index} {...tech} />

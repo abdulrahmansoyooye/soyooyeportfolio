@@ -11,12 +11,10 @@ const GitHubAchievements = () => {
           <Github className="inline-block mr-2" size={16} />
           GitHub Highlights
         </span>
-        <h2 className="heading-lg text-gradient mb-4">
-          Open Source Impact
+        <h2 className="flex flex-col gap-2 heading-lg text-gradient mb-4">
+        <span>Still Not Convinced?</span>  <span className="text-[1.5rem]">Checkout My Collaboration Impact</span> 
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
-          Building in public and solving real problems through code.
-        </p>
+        
       </div>
   
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

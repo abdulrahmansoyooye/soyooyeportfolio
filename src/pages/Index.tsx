@@ -131,13 +131,12 @@ const Index = () => {
           </span>
 
           <h1 className="heading-xl max-lg:heading-2lg text-gradient mb-6 max-w-4xl animate-on-scroll">
-          Connecting <span className="text-gradient-purple">Backend Development</span>{" "}
-            and{" "}
-            <span className="text-gradient-purple">Frontend Experience</span>
+          <span className="text-gradient-purple">Scalable</span> Systems. Sleek <span className="text-gradient-purple">Interfaces</span>. Results that Ship
+        {/* Backend Power  + Frontend Precision — I Build What <span className="text-gradient-purple">Startups</span> Need to Scale */}
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-          Bridging Backend Power with Frontend Polish for Founders & Startups, I'm Soyooye Abdulrahman
+           I'm Soyooye Abdulrahman, I bride Backend Power with Frontend Polish for Founders & Startups
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">

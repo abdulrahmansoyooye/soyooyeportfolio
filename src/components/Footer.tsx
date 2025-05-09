@@ -14,8 +14,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <Link to="/" className="flex items-center gap-2 text-2xl font-bold" onClick={handleLinkClick}>
-                <Avatar className="h-10 w-10 border border-accent-purple/30">
-                  <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" />
+                <Avatar className="h-10 w-10 border border-accent-purple/30 bg-black">
+                  <AvatarImage src="/lovable-uploads/935b1b51-ba23-4136-bd4e-3f526cae318d.png" alt="Abdulrahman" />
                   <AvatarFallback>AB</AvatarFallback>
                 </Avatar>
                 <span className="text-gradient-purple">Abdulrahman</span>

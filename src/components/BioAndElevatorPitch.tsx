@@ -16,11 +16,9 @@ const BioAndElevatorPitch = () => {
             About Me
           </span>
           <h2 className="heading-lg text-gradient mb-6">
-            👋 Meet me once again
+            👋 Meet Me Once Again
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm a developer and I love what I do
-          </p>
+         
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 animate-on-scroll">

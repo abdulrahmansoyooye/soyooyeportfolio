@@ -137,7 +137,7 @@ const Index = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-          A full stack developer driven by enthusiasm,, I'm Soyooye Abdulrahman
+          Bridging Backend Power with Frontend Polish for Founders & Startups, I'm Soyooye Abdulrahman
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
@@ -169,13 +169,15 @@ const Index = () => {
                 About Me
               </span>
               <h2 className="flex flex-col gap-4 heading-lg text-gray-900 mb-4">
-        <span>Soyooye Abdulrahman</span>  <span className="text-[1.5rem]">The Only Developer You Need</span> 
+        <span>Soyooye Abdulrahman</span>  <span className="text-[1.5rem]">I Help Startups Build Scalable Web Apps </span> 
         </h2>
               <p className="text-gray-700 mb-6">
-                I'm Soyooye Abdulrahman, a Software Developer specializing in backend architecture, frontend development, and system optimization. I build production-ready applications and optimize workflows to deliver scalable solutions.
+              I'm Soyooye Abdulrahman — a full-stack software developer who architects scalable backends, builds clean, high-performance frontends, and optimizes systems for real-world impact.
+
+              
               </p>
               <p className="text-gray-700 mb-6">
-                I'm passionate about digital health innovation, especially telemedicine in Nigeria - making quality healthcare accessible to everyone.
+              I specialize in building production-ready applications that move fast and scale smart — from MVPs to full admin dashboards and CMS platforms. I don’t just write code — I deliver outcomes.
               </p>
               <div className="flex flex-wrap gap-6 mt-8">
                 <div className="flex items-center">
@@ -265,7 +267,7 @@ const Index = () => {
             <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
               My Work
             </span>
-            <h2 className="heading-lg text-gradient mb-6">Some Of My Favourite Projects. </h2>
+            <h2 className="heading-lg text-gradient mb-6">Some Of My Works. </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Check out some of my favorite projects showcasing my problem-solving approach and technical skills.
             </p>

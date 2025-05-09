@@ -11,7 +11,7 @@ const DevelopmentProcess = () => {
           <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">
             How I Work
           </span>
-          <h2 className="heading-lg text-gradient mb-6">This Is How I Get Stuffs Done</h2>
+          <h2 className="heading-lg text-gradient mb-6">How I Get Stuffs Done</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             I follow a structured yet flexible approach to ensure your project is delivered efficiently, 
             with the highest quality standards, and meets all your requirements.

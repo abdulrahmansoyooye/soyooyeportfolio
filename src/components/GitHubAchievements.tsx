@@ -12,7 +12,7 @@ const GitHubAchievements = () => {
           GitHub Highlights
         </span>
         <h2 className="flex flex-col gap-2 heading-lg text-gradient mb-4">
-        <span>Still Not Convinced?</span>  <span className="text-[1.5rem]">Checkout My Collaboration Impact</span> 
+        <span>My Collaboration Impact</span> 
         </h2>
         
       </div>
@@ -68,7 +68,7 @@ const GitHubAchievements = () => {
               <h3 className="text-3xl font-bold text-gradient-purple">400+</h3>
             </div>
             {[
-              "Consistent open-source contributor",
+              "Consistent contributor",
               "Maintainer of active projects",
               "Strong cross-team communication",
             ].map((text, i) => (

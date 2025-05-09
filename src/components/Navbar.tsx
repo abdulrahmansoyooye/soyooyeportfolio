@@ -60,7 +60,7 @@ const Navbar = () => {
               <FileText size={16} />
               Resume
             </a>
-            <Link to="/contact" className="button-primary" onClick={handleLinkClick}>Let's Talk</Link>
+            <Link to="/contact" className="button-primary" onClick={handleLinkClick}>Start your MVP</Link>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -100,7 +100,7 @@ const Navbar = () => {
               <FileText size={18} />
               Resume
             </a>
-            <Link to="/contact" className="button-primary text-xl" onClick={handleLinkClick}>Let's Talk</Link>
+            <Link to="/contact" className="button-primary text-xl" onClick={handleLinkClick}>Start your MVP</Link>
           </div>
           <button 
             onClick={() => setIsOpen(false)}

@@ -309,7 +309,7 @@ const Index = () => {
               Let's dicuss it, I'm open to new projects and opportunities. Click the button here and leave a message 
             </p>
             <Link to="/contact" className="button-primary">
-              Let's Chat
+              Start your MVP
             </Link>
           </div>
         </div>

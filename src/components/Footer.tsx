@@ -59,7 +59,7 @@ const Footer = () => {
                 <li>
                   <a href="https://api.whatsapp.com/send?phone=2347011280726" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-400 flex items-center gap-1 transition-colors">
                     <MessageCircle size={16} className="text-green-500" />
-                    Chat on WhatsApp
+                    Book a free 15-min consult
                   </a>
                 </li>
               </ul>

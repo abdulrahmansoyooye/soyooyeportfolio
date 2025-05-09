@@ -104,7 +104,7 @@ const BioAndElevatorPitch = () => {
                   className="button-secondary w-full flex items-center gap-2 bg-green-600 hover:bg-green-700"
                 >
                   <MessageCircle size={16} />
-                  Chat on WhatsApp
+                  Book a free 15-min consult
                 </a>
                 </div>
               </div>

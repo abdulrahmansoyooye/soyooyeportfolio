@@ -118,7 +118,7 @@ const DevelopmentProcess = () => {
         
         <div className="mt-16 text-center animate-on-scroll">
           <Link to="/contact" className="button-primary inline-flex items-center gap-2">
-            Start Your Project <ArrowRight size={16} />
+            Tell me about your project <ArrowRight size={16} />
           </Link>
         </div>
       </div>

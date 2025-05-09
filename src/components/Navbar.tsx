@@ -37,8 +37,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2 font-bold" onClick={handleLinkClick}>
-            <Avatar className="h-8 w-8 border border-accent-purple/30">
-              <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" className='object-cover'/>
+            <Avatar className="h-8 w-8 border border-accent-purple/30 bg-black">
+              <AvatarImage src="/lovable-uploads/935b1b51-ba23-4136-bd4e-3f526cae318d.png" alt="Abdulrahman" className='object-cover'/>
               <AvatarFallback>AB</AvatarFallback>
             </Avatar>
             <span className="text-gradient-purple">Abdulrahman</span>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link to="/blog" className="nav-link" onClick={handleLinkClick}>Blog</Link>
             <Link to="/contact" className="nav-link" onClick={handleLinkClick}>Contact</Link>
             <a 
-              href={"/resume.pdf"} 
+              href="/resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 nav-link cursor-pointer"
@@ -80,8 +80,8 @@ const Navbar = () => {
         <div className="absolute inset-0 bg-background/95 backdrop-blur-sm">
           <div className="flex flex-col h-[100vh] justify-center  bg-background/95 backdrop-blur-sm items-center space-y-8 p-4">
             <div className="flex flex-col items-center mb-6">
-              <Avatar className="h-20 w-20 border-2 border-accent-purple/50 mb-4">
-                <AvatarImage src="/lovable-uploads/7dabc1dd-bc3f-4959-a589-ac41a719f761.png" alt="Abdulrahman" />
+              <Avatar className="h-20 w-20 border-2 border-accent-purple/50 mb-4 bg-black">
+                <AvatarImage src="/lovable-uploads/935b1b51-ba23-4136-bd4e-3f526cae318d.png" alt="Abdulrahman" />
                 <AvatarFallback>AB</AvatarFallback>
               </Avatar>
               <span className="text-2xl font-bold text-gradient-purple">Abdulrahman</span>

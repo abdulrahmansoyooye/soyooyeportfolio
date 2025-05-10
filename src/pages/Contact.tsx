@@ -17,7 +17,7 @@ const Contact = () => {
               Contact Me
             </span>
             <h1 className="heading-lg text-gradient mb-6">
-              Launch Your<span className="text-gradient-purple"> Startup</span>
+              Launch Your<span className="text-gradient-purple"> Startup</span> Now
             </h1>
             <p className="text-muted-foreground">
               Have a project in mind or just want to say hello? I'd love to hear

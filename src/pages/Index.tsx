@@ -136,7 +136,7 @@ const Index = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-           I'm Soyooye Abdulrahman, I bride Backend Power with Frontend Polish for Founders & Startups
+           I'm Soyooye Abdulrahman, I build Scalable Apps for Founders & Startups
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">

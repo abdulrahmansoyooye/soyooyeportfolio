@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Twitter, Mail, MessageCircle } from 'lucide-react';
@@ -71,7 +72,7 @@ const Footer = () => {
             <p>© {new Date().getFullYear()} Abdulrahman. All rights reserved.</p>
             <p className="mt-2">
               Designed by <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer" className="text-accent-purple hover:text-accent-purple/80 transition-colors">Lovable</a> • 
-              Developed by Abdulrahman
+              Edited & Developed by <a href="https://www.linkedin.com/in/abdulrahman-soyooye-814435294/" target="_blank" rel="noopener noreferrer" className="text-accent-purple hover:text-accent-purple/80 transition-colors">Abdulrahman</a>
             </p>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Twitter, Mail, MessageCircle } from 'lucide-react';
 import BackToTop from './BackToTop';
 import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar';
+
 const Footer = () => {
   const location = useLocation();
   const handleLinkClick = () => {
@@ -68,10 +69,15 @@ const Footer = () => {
           
           <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Abdulrahman. All rights reserved.</p>
+            <p className="mt-2">
+              Designed by <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer" className="text-accent-purple hover:text-accent-purple/80 transition-colors">Lovable</a> • 
+              Developed by Abdulrahman
+            </p>
           </div>
         </div>
       </footer>
       <BackToTop />
     </>;
 };
+
 export default Footer;

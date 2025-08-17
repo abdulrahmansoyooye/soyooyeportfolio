@@ -175,7 +175,7 @@ const About = () => {
       </section>
 
       {/* Experience & Education */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
+      <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="px-3 py-1 rounded-full text-sm font-medium glass mb-4 inline-block">

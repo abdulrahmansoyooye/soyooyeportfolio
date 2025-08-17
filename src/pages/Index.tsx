@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 import TechStack from "../components/TechStack";
 import Sphere3D from "../components/Sphere3D";
-import BioAndElevatorPitch from "../components/BioAndElevatorPitch";
+import Experience from "../components/Experience";
 import GitHubAchievements from "../components/GitHubAchievements";
 import WhatIDo from "../components/WhatIDo";
 import DevelopmentProcess from "../components/DevelopmentProcess";
@@ -253,8 +253,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Bio and Elevator Pitch Section */}
-      <BioAndElevatorPitch />
+      {/* Experience Section */}
+      <Experience />
 
       {/* What I Do Section */}
       <WhatIDo />

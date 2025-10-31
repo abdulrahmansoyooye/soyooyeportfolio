@@ -159,105 +159,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section - Light Background */}
-      <section className="light-section">
-        <div className="section-wrapper">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-            <div className="animate-on-scroll">
-              <span className="px-3 py-1 rounded-full text-sm font-medium bg-accent-purple/20 text-accent-purple mb-4 inline-block">
-                About Me
-              </span>
-              <h2 className="flex flex-col gap-4 heading-lg text-gray-900 mb-4">
-        <span>Soyooye Abdulrahman</span>  <span className="text-[1.5rem]">I Help Startups Build Scalable Web Apps </span> 
-        </h2>
-              <p className="text-gray-700 mb-6">
-              I'm Soyooye Abdulrahman — a full-stack software developer who architects scalable backends, builds clean, high-performance frontends, and optimizes systems for real-world impact.
-
-              
-              </p>
-              <p className="text-gray-700 mb-6">
-              I specialize in building production-ready applications that move fast and scale smart — from MVPs to full admin dashboards and CMS platforms. I don’t just write code — I deliver outcomes.
-              </p>
-              <div className="flex flex-wrap gap-6 mt-8">
-                <div className="flex items-center">
-                  <div className="p-3 rounded-full bg-accent-purple/10 mr-4">
-                    <Server size={24} className="text-accent-purple" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Backend</h3>
-                    <p className="text-sm text-gray-600">
-                      Scalable Architecture
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="p-3 rounded-full bg-accent-blue/10 mr-4">
-                    <Database size={24} className="text-accent-blue" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Database</h3>
-                    <p className="text-sm text-gray-600">
-                      Optimized Performance
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="p-3 rounded-full bg-accent-pink/10 mr-4">
-                    <Code size={24} className="text-accent-pink" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Frontend</h3>
-                    <p className="text-sm text-gray-600">
-                      Intuitive Interfaces
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex gap-4 mt-8">
-                <Link
-                  to="/about"
-                  className="inline-flex items-center text-accent-purple font-medium"
-                >
-                  More About Me <ArrowRight size={16} className="ml-2" />
-                </Link>
-                <a
-                  href="/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-accent-blue font-medium"
-                >
-                  <FileText size={16} className="mr-2" />
-                  View Resume
-                </a>
-              </div>
-            </div>
-
-            <div className="relative animate-on-scroll">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-                  alt="Developer working"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 -left-6 p-6 glass rounded-xl max-w-[250px]">
-                <div className="text-2xl font-bold text-gradient-purple mb-2">
-                  400+
-                </div>
-                <div className="text-sm text-slate-300">
-                  GitHub contributions in the last year
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Experience Section */}
       <Experience />
-
-      {/* What I Do Section */}
-      <WhatIDo />
 
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">
@@ -288,6 +191,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* What I Do Section */}
+      <WhatIDo />
 
       {/* Tech Stack Section */}
       <TechStack />

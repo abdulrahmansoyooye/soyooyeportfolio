@@ -17,21 +17,77 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    company: "Nexatage",
-    position: "Software Engineering Lead",
-    duration: "2024 - Present",
+    company: "Microservice Project",
+    position: "Backend Developer",
+    duration: "Jan 2025 - Present",
     location: "Remote",
     description: [
-      "Lead software engineering initiatives and architecture decisions for enterprise applications",
-      "Mentor development teams and establish best practices for scalable system design",
-      "Drive technical strategy and implementation of microservices architecture",
-      "Collaborate with stakeholders to align technical solutions with business objectives"
+      "Engineered scalable microservice architecture using Node.js, Express, MongoDB, RabbitMQ, and Redis, ensuring 99.8% uptime and real-time processing",
+      "Designed and optimized backend infrastructure, improving API response times by 45% and handling a 30% increase in concurrent users",
+      "Implemented robust authentication and security protocols, reducing potential vulnerabilities by 50% and ensuring data protection"
     ],
-    technologies: ["TypeScript", "Node.js", "React", "Next.js", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+    technologies: ["Node.js", "Express", "MongoDB", "RabbitMQ", "Redis", "TypeScript", "Docker"],
     type: "work"
   },
   {
     id: 2,
+    company: "Rawaaq School Management System",
+    position: "Frontend Developer",
+    duration: "Dec 2024 - Present",
+    location: "Remote",
+    description: [
+      "Developed responsive, feature-rich frontend using Next.js, React, TypeScript, and Tailwind CSS, improving load times by 30% and ensuring cross-device compatibility",
+      "Effectively collaborated with senior developer and other contributors via GitHub, reducing merge conflicts and improving code review efficiency"
+    ],
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    type: "work"
+  },
+  {
+    id: 3,
+    company: "Nextage Digital Solutions",
+    position: "Lead Software Developer",
+    duration: "Nov 2024 - Present",
+    location: "Remote",
+    description: [
+      "Led development of multiple applications, improving development speed by 40% through efficient code structuring and process automation",
+      "Collaborated with cross-functional teams, effectively communicating technical requirements and solutions, resulting in 20% faster project delivery times",
+      "Designed and deployed scalable, high-performance systems using Next.js, Sanity, TypeScript, Tailwind, ensuring 99.9% uptime and seamless data flow"
+    ],
+    technologies: ["Next.js", "Sanity", "TypeScript", "Tailwind CSS", "Node.js"],
+    type: "work"
+  },
+  {
+    id: 4,
+    company: "Sayf Network",
+    position: "Full-Stack Developer",
+    duration: "May 2024 - Present",
+    location: "Remote",
+    description: [
+      "Led full-stack development of admin dashboard, improving user efficiency by 3x through intuitive UI and seamless backend integration",
+      "Designed and implemented system using Next.js, MongoDB, Mongoose, and Tailwind CSS, ensuring scalability and performance optimization",
+      "Enhanced data management and security, leading to 25% improvement in query performance and ensuring data integrity and reliability",
+      "Established direct communication process with stakeholders, reducing feedback cycles by 50%, leading to faster and more accurate development process"
+    ],
+    technologies: ["JavaScript", "Next.js", "MongoDB", "Mongoose", "Tailwind CSS", "Cloudinary"],
+    website: "https://sayfnetwork.com",
+    type: "work"
+  },
+  {
+    id: 5,
+    company: "Vyntra",
+    position: "Full-Stack Engineer",
+    duration: "2024 - Present",
+    location: "Remote",
+    description: [
+      "Architected and developed enterprise-grade web applications with focus on scalability and performance",
+      "Implemented modern tech stack solutions delivering seamless user experiences and robust backend infrastructure",
+      "Collaborated with product teams to translate business requirements into technical solutions"
+    ],
+    technologies: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
+    type: "work"
+  },
+  {
+    id: 6,
     company: "Freelance Development",
     position: "Senior Full-Stack Engineer",
     duration: "2023 - Present",
@@ -46,23 +102,7 @@ const experiences: ExperienceItem[] = [
     type: "freelance"
   },
   {
-    id: 3,
-    company: "Sayf Network",
-    position: "Frontend Software Engineer",
-    duration: "2023 - 2024",
-    location: "Remote",
-    description: [
-      "Engineered and maintained high-performance web applications serving 10k+ monthly active users",
-      "Implemented responsive design systems and optimized performance for mobile-first experiences",
-      "Built content management systems with advanced newsletter and subscription functionality",
-      "Collaborated with UX/UI designers to create intuitive, conversion-optimized user interfaces"
-    ],
-    technologies: ["JavaScript", "Next.js", "Tailwind CSS", "MongoDB", "Cloudinary"],
-    website: "https://sayfnetwork.com",
-    type: "work"
-  },
-  {
-    id: 4,
+    id: 7,
     company: "Distinct Patterns",
     position: "E-commerce Software Engineer",
     duration: "2023",

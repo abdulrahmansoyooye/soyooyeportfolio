@@ -17,33 +17,6 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    company: "Microservice Project",
-    position: "Backend Developer",
-    duration: "Jan 2025 - Present",
-    location: "Remote",
-    description: [
-      "Engineered scalable microservice architecture using Node.js, Express, MongoDB, RabbitMQ, and Redis, ensuring 99.8% uptime and real-time processing",
-      "Designed and optimized backend infrastructure, improving API response times by 45% and handling a 30% increase in concurrent users",
-      "Implemented robust authentication and security protocols, reducing potential vulnerabilities by 50% and ensuring data protection"
-    ],
-    technologies: ["Node.js", "Express", "MongoDB", "RabbitMQ", "Redis", "TypeScript", "Docker"],
-    type: "work"
-  },
-  {
-    id: 2,
-    company: "Rawaaq School Management System",
-    position: "Frontend Developer",
-    duration: "Dec 2024 - Present",
-    location: "Remote",
-    description: [
-      "Developed responsive, feature-rich frontend using Next.js, React, TypeScript, and Tailwind CSS, improving load times by 30% and ensuring cross-device compatibility",
-      "Effectively collaborated with senior developer and other contributors via GitHub, reducing merge conflicts and improving code review efficiency"
-    ],
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    type: "work"
-  },
-  {
-    id: 3,
     company: "Nextage Digital Solutions",
     position: "Lead Software Developer",
     duration: "Nov 2024 - Present",
@@ -57,7 +30,7 @@ const experiences: ExperienceItem[] = [
     type: "work"
   },
   {
-    id: 4,
+    id: 2,
     company: "Sayf Network",
     position: "Full-Stack Developer",
     duration: "May 2024 - Present",
@@ -73,48 +46,17 @@ const experiences: ExperienceItem[] = [
     type: "work"
   },
   {
-    id: 5,
+    id: 3,
     company: "Vyntra",
-    position: "Full-Stack Engineer",
+    position: "Backend Developer",
     duration: "2024 - Present",
     location: "Remote",
     description: [
-      "Architected and developed enterprise-grade web applications with focus on scalability and performance",
-      "Implemented modern tech stack solutions delivering seamless user experiences and robust backend infrastructure",
-      "Collaborated with product teams to translate business requirements into technical solutions"
+      "Developed backend infrastructure for e-commerce platform serving students",
+      "Implemented scalable APIs and database architecture to handle growing user base",
+      "Optimized performance and ensured secure transaction processing"
     ],
-    technologies: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "Tailwind CSS"],
-    type: "work"
-  },
-  {
-    id: 6,
-    company: "Freelance Development",
-    position: "Senior Full-Stack Engineer",
-    duration: "2023 - Present",
-    location: "Remote",
-    description: [
-      "Architect and develop enterprise-grade web applications for high-growth startups and SMEs",
-      "Build scalable e-commerce platforms, telemedicine systems, and SaaS productivity tools",
-      "Implement robust microservices architecture with containerized deployment strategies",
-      "Lead cross-functional teams in agile development cycles for international clients"
-    ],
-    technologies: ["TypeScript", "Node.js", "React", "Next.js", "MongoDB", "PostgreSQL", "Docker", "Redis"],
-    type: "freelance"
-  },
-  {
-    id: 7,
-    company: "Distinct Patterns",
-    position: "E-commerce Software Engineer",
-    duration: "2023",
-    location: "Nigeria",
-    description: [
-      "Developed comprehensive e-commerce platform handling 1000+ products and payment processing",
-      "Integrated secure payment gateways with Paystack for seamless transaction processing",
-      "Built admin dashboard with real-time inventory management and analytics capabilities",
-      "Optimized site performance achieving 95+ PageSpeed scores and improved conversion rates by 40%"
-    ],
-    technologies: ["TypeScript", "Next.js", "Sanity CMS", "Tailwind CSS", "Paystack"],
-    website: "https://distinctpatterns.com.ng",
+    technologies: ["Node.js", "Express", "MongoDB", "PostgreSQL", "TypeScript"],
     type: "work"
   }
 ];

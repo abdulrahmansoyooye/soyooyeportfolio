@@ -20,67 +20,14 @@ import DevelopmentProcess from "../components/DevelopmentProcess";
 
 const featuredProjects = [
   {
-    id: 11,
-    title: "Digital Health Platform",
+    id: 1,
+    title: "TheCompanion App",
     description:
-      "Leading development of a telemedicine platform aimed at improving healthcare accessibility in Nigeria. Features include remote consultations, medical record management, and medication tracking with local pharmacy integration.",
-    image: "/lovable-uploads/digital-health-platform-image.png",
-    tags: [
-      "Typescript",
-      "Node.js",
-      "React",
-      "MongoDB",
-      "Postgreql",
-      "Express",
-      "Nextjs",
-      "RabbitMQ",
-      "Redis",
-      "Prisma",
-      "Docker",
-    ],
+      "An AI-powered conversational system designed to act as a context-aware, real-time guide rather than a static content source.",
+    image: "/lovable-uploads/thecompanion-app-image.png",
+    tags: ["Node.js", "Prisma", "PostgreSQL", "Supabase", "Next.js", "Tailwind"],
     githubLink: "https://github.com/abdulrahmansoyooye",
     type: "ongoing" as "ongoing",
-  },
-  {
-    id: 1,
-    title: "Social Media Microservices",
-    description:
-      "A scalable microservice architecture for social media applications with authentication, content management, and real-time notifications using message queues.",
-    image:
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: [
-      "Typescript",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Docker",
-      "RabbitMQ",
-      "Redis",
-    ],
-    githubLink: "https://github.com",
-    type: "backend" as "backend",
-  },
-  {
-    id: 9,
-    title: "Sayf Network Website",
-    description:
-      "A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.",
-    image: "/lovable-uploads/191c6b59-ea83-46a7-b7f1-312d6799eefe.png",
-    tags: ["Javascript", "Next.js", "MongoDB", "Tailwind CSS", "Cloudinary"],
-    githubLink: "https://github.com",
-    liveLink: "https://sayfnetwork.com",
-    type: "frontend" as "frontend",
-  },
-  {
-    id: 8,
-    title: "Distinct Patterns",
-    description:
-      "An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.",
-    image: "/lovable-uploads/distinctpatterns-image2.jpg",
-    tags: ["Typescript", "Next.js", "Sanity", "Tailwind CSS", "Paystack"],
-    githubLink: "https://github.com",
-    liveLink: "https://distinctpatterns.com.ng",
-    type: "frontend" as "frontend",
   },
 ];
 

@@ -131,12 +131,11 @@ const Index = () => {
           </span>
 
           <h1 className="heading-xl max-lg:heading-2lg text-gradient mb-6 max-w-4xl animate-on-scroll">
-          <span className="text-gradient-purple">Scalable</span> Systems. Sleek <span className="text-gradient-purple">Interfaces</span>. Results that Ship
-        {/* Backend Power  + Frontend Precision — I Build What <span className="text-gradient-purple">Startups</span> Need to Scale */}
+            Launch Your <span className="text-gradient-purple">Startup</span> With a Reliable Developer
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">
-           I'm Soyooye Abdulrahman, I build Scalable Apps for Founders & Startups
+            Helping Startups Build Scalable Web Applications and Cloud Systems
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-on-scroll">
@@ -159,9 +158,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <Experience />
-
       {/* Featured Projects Section */}
       <section className="section-padding bg-background">
         <div className="section-wrapper">
@@ -175,9 +171,9 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-on-scroll opacity-0">
+          <div className="flex flex-col gap-8 animate-on-scroll opacity-0">
             {featuredProjects.map((project) => (
-              <ProjectCard key={project.id} {...project} />
+              <ProjectCard key={project.id} {...project} horizontal />
             ))}
           </div>
 
@@ -191,6 +187,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Experience Section */}
+      <Experience />
 
       {/* What I Do Section */}
       <WhatIDo />

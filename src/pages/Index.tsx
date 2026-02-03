@@ -27,7 +27,8 @@ const featuredProjects = [
     image: "/lovable-uploads/thecompanion-app-image.png",
     tags: ["Node.js", "Prisma", "PostgreSQL", "Supabase", "Next.js", "Tailwind"],
     githubLink: "https://github.com/abdulrahmansoyooye",
-    type: "ongoing" as "ongoing",
+    liveLink: "https://thecompanionapp.vercel.app/",
+    type: "fullstack" as "fullstack",
   },
 ];
 

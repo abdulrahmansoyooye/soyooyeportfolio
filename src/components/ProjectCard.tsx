@@ -9,7 +9,7 @@ interface ProjectCardProps {
   tags?: string[];
   githubLink?: string;
   liveLink?: string;
-  type: 'backend' | 'frontend' | 'ongoing';
+  type: 'backend' | 'frontend' | 'ongoing' | 'fullstack';
   horizontal?: boolean;
 }
 
@@ -88,9 +88,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               ? 'bg-accent-purple/20 text-accent-purple' 
               : type === 'frontend'
                 ? 'bg-accent-blue/20 text-accent-blue'
-                : 'bg-accent-green/20 text-green-500'
+                : type === 'fullstack'
+                  ? 'bg-orange-500/20 text-orange-500'
+                  : 'bg-accent-green/20 text-green-500'
           }`}>
-            {type === 'backend' ? 'Backend' : type === 'frontend' ? 'Frontend' : 'Ongoing'}
+            {type === 'backend' ? 'Backend' : type === 'frontend' ? 'Frontend' : type === 'fullstack' ? 'Fullstack' : 'Ongoing'}
           </span>
           
           <h3 className="text-2xl lg:text-3xl font-bold mb-4 group-hover:text-accent-purple transition-colors">
@@ -161,9 +163,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           ? 'bg-accent-purple/20 text-accent-purple' 
           : type === 'frontend'
             ? 'bg-accent-blue/20 text-accent-blue'
-            : 'bg-accent-green/20 text-green-500'
+            : type === 'fullstack'
+              ? 'bg-orange-500/20 text-orange-500'
+              : 'bg-accent-green/20 text-green-500'
       }`}>
-        {type === 'backend' ? 'Backend' : type === 'frontend' ? 'Frontend' : 'Ongoing'}
+        {type === 'backend' ? 'Backend' : type === 'frontend' ? 'Frontend' : type === 'fullstack' ? 'Fullstack' : 'Ongoing'}
       </span>
       
       <h3 className="text-xl font-semibold mb-2 group-hover:text-accent-purple transition-colors">

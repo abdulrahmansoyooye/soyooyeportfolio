@@ -43,21 +43,10 @@ const featuredProjects = [
   },
   {
     id: 3,
-    title: "Vyntra",
-    description:
-      "A student-focused e-commerce platform enabling seamless buying and selling within university communities. Features include product listings, secure transactions, and user profiles.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
-    githubLink: "https://github.com/abdulrahmansoyooye",
-    liveLink: "https://vyntra.ng",
-    type: "fullstack" as "fullstack",
-  },
-  {
-    id: 4,
-    title: "Student ID Card Manager",
+    title: "ID Card Management Platform",
     description:
       "A streamlined system for generating and managing student identification cards. Features include bulk card generation, QR code integration, and administrative dashboard.",
-    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    image: "/lovable-uploads/idcard-portal-image.png",
     tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubLink: "https://github.com/abdulrahmansoyooye",
     type: "backend" as "backend",
@@ -111,7 +100,7 @@ const Index = () => {
           </span>
 
           <h1 className="heading-xl max-lg:heading-2lg text-gradient mb-6 max-w-4xl animate-on-scroll">
-            Launch Your <span className="text-gradient-purple">Startup</span> With a Reliable Developer
+            Launch Your <span className="text-gradient-purple">Startup</span> Without Headaches
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 animate-on-scroll">

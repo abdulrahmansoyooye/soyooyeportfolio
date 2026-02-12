@@ -21,6 +21,17 @@ import DevelopmentProcess from "../components/DevelopmentProcess";
 const featuredProjects = [
   {
     id: 1,
+    title: "Distinct Patterns",
+    description:
+      "An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.",
+    image: "/lovable-uploads/distinctpatterns-image2.jpg",
+    tags: ["TypeScript", "Next.js", "Sanity", "Tailwind CSS", "Paystack"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    liveLink: "https://distinctpatterns.com.ng",
+    type: "fullstack" as "fullstack",
+  },
+  {
+    id: 2,
     title: "TheCompanion App",
     description:
       "An AI-powered conversational system designed to act as a context-aware, real-time guide rather than a static content source.",
@@ -29,6 +40,27 @@ const featuredProjects = [
     githubLink: "https://github.com/abdulrahmansoyooye",
     liveLink: "https://thecompanionapp.vercel.app/",
     type: "fullstack" as "fullstack",
+  },
+  {
+    id: 3,
+    title: "Vyntra",
+    description:
+      "A student-focused e-commerce platform enabling seamless buying and selling within university communities. Features include product listings, secure transactions, and user profiles.",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    liveLink: "https://vyntra.ng",
+    type: "fullstack" as "fullstack",
+  },
+  {
+    id: 4,
+    title: "Student ID Card Manager",
+    description:
+      "A streamlined system for generating and managing student identification cards. Features include bulk card generation, QR code integration, and administrative dashboard.",
+    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    type: "backend" as "backend",
   },
 ];
 

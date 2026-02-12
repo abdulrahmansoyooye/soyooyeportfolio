@@ -6,87 +6,85 @@ import { Link } from 'react-router-dom';
 
 // Sample project data - in a real app, you would fetch this from an API or CMS
 const allProjects = [
-  // Ongoing Projects
-  {
-    id: 11,
-    title: 'Digital Health Platform',
-    description: 'Leading development of a telemedicine platform aimed at improving healthcare accessibility in Nigeria. Features include remote consultations, medical record management, and medication tracking with local pharmacy integration.',
-    image: '/lovable-uploads/digital-health-platform-image.png',
-    tags: ['Node.js', 'React', 'MongoDB', 'Postgreql', 'Express','Nextjs',"RabbitMQ","Redis","Prisma","Docker"],
-    githubLink: 'https://github.com/abdulrahmansoyooye',
-    type: 'ongoing' as 'ongoing'
-  },
-  {
-    id: 12,
-    title: 'Rawaaq School Management',
-    description: 'Developing a comprehensive school management system with features for student tracking, class management, fee collection, and academic performance monitoring. Includes an intuitive dashboard for administrators and teachers.',
-    image: '/lovable-uploads/rawaaq-image.png',
-    tags: ["Typescript",'Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'Charts.js'],
-    githubLink: 'https://github.com/abdulrahmansoyooye',
-    type: 'ongoing' as 'ongoing'
-  },
-  {
-    id: 13,
-    title: 'Naas Educators',
-    description: 'A platform dedicated to providing resources and mentorship for parents focused on homeschooling. Features include curriculum planning tools, progress tracking, and community discussion forums.',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ["Typescript",'React', 'Nextjs', 'Tailwind CSS', 'Redux'],
-    githubLink: 'https://github.com/abdulrahmansoyooye',
-    type: 'ongoing' as 'ongoing'
-  },
-  // Backend Projects
+  // Fullstack Projects
   {
     id: 1,
-    title: 'Social Media API Platform',
-    description: 'A scalable microservice architecture for social media applications with authentication, content management, and real-time notifications using message queues.',
-    image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ["Javascript",'Node.js', 'Express', 'MongoDB', 'Docker', 'RabbitMQ', 'Redis'],
-    githubLink: 'https://github.com/abdulrahmansoyooye',
-    type: 'backend' as 'backend'
+    title: "Distinct Patterns",
+    description:
+      "An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.",
+    image: "/lovable-uploads/distinctpatterns-image2.jpg",
+    tags: ["TypeScript", "Next.js", "Sanity", "Tailwind CSS", "Paystack"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    liveLink: "https://distinctpatterns.com.ng",
+    type: "fullstack" as "fullstack",
   },
   {
     id: 2,
-    title: 'Sayf Network Backend',
-    description: 'Robust backend system and admin dashboard for Sayf Network, handling content management, user authentication, newsletter subscriptions, and course enrollment functionality.',
-    image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Next.js'],
-    githubLink: 'https://github.com/abdulrahmansoyooye',
-    type: 'backend' as 'backend'
+    title: "TheCompanion App",
+    description:
+      "An AI-powered conversational system designed to act as a context-aware, real-time guide rather than a static content source.",
+    image: "/lovable-uploads/thecompanion-app-image.png",
+    tags: ["Node.js", "Prisma", "PostgreSQL", "Supabase", "Next.js", "Tailwind"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    liveLink: "https://thecompanionapp.vercel.app/",
+    type: "fullstack" as "fullstack",
   },
   {
     id: 3,
-    title: 'Distinct Patterns Backend',
-    description: 'E-commerce backend infrastructure using Sanity CMS for product management, inventory tracking, and order processing. Includes custom APIs for frontend integration.',
-    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    tags: ["Typescript",'Sanity.io', 'Node.js', 'Express', 'Stripe API', 'Webhooks'],
-    githubLink: 'https://github.com/abdulrahmansoyooye',
-    type: 'backend' as 'backend'
+    title: "ID Card Management Platform",
+    description:
+      "A streamlined system for generating and managing student identification cards. Features include bulk card generation, QR code integration, and administrative dashboard.",
+    image: "/lovable-uploads/idcard-portal-image.png",
+    tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    liveLink: "https://studentidmanagement.vercel.app/",
+    type: "fullstack" as "fullstack",
   },
-  
-  // Frontend Projects
+  // Ongoing Projects
   {
-    id: 9,
-    title: 'Sayf Network Website',
-    description: 'A dynamic productivity platform for Muslims featuring articles, podcasts, newsletters, and courses. The website helps users maximize their time, reach their goals, and live more joyfully.',
-    image: '/lovable-uploads/191c6b59-ea83-46a7-b7f1-312d6799eefe.png',
-    githubLink: 'https://github.com',
-    liveLink: 'https://sayfnetwork.com',
-    type: 'frontend' as 'frontend'
+    id: 11,
+    title: "Digital Health Platform",
+    description:
+      "Leading development of a telemedicine platform aimed at improving healthcare accessibility in Nigeria. Features include remote consultations, medical record management, and medication tracking with local pharmacy integration.",
+    image: "/lovable-uploads/digital-health-platform-image.png",
+    tags: ["Node.js", "React", "MongoDB", "PostgreSQL", "Express", "Next.js", "RabbitMQ", "Redis", "Prisma", "Docker"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    type: "ongoing" as "ongoing",
   },
   {
-    id: 8,
-    title: 'Distinct Patterns',
-    description: 'An elegant e-commerce platform specializing in high-quality traditional and modern clothing. Features include product showcasing, shopping cart functionality, secure checkout, and user account management.',
-    image: '/lovable-uploads/distinctpatterns-image2.jpg',
-    tags: ["Typescript",'Next.js', 'Sanity', 'Tailwind CSS', 'Paystack'],
-    githubLink: 'https://github.com',
-    liveLink: 'https://distinctpatterns.com.ng',
-    type: 'frontend' as 'frontend'
+    id: 12,
+    title: "Rawaaq School Management",
+    description:
+      "Developing a comprehensive school management system with features for student tracking, class management, fee collection, and academic performance monitoring.",
+    image: "/lovable-uploads/rawaaq-image.png",
+    tags: ["TypeScript", "Next.js", "MongoDB", "Tailwind CSS", "Charts.js"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    type: "ongoing" as "ongoing",
+  },
+  {
+    id: 13,
+    title: "Naas Educators",
+    description:
+      "A platform dedicated to providing resources and mentorship for parents focused on homeschooling. Features include curriculum planning tools, progress tracking, and community discussion forums.",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Redux"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    type: "ongoing" as "ongoing",
+  },
+  // Backend Projects
+  {
+    id: 4,
+    title: "Social Media API Platform",
+    description:
+      "A scalable microservice architecture for social media applications with authentication, content management, and real-time notifications using message queues.",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    tags: ["JavaScript", "Node.js", "Express", "MongoDB", "Docker", "RabbitMQ", "Redis"],
+    githubLink: "https://github.com/abdulrahmansoyooye",
+    type: "backend" as "backend",
   },
 ];
-
 const Projects = () => {
-  const [filter, setFilter] = useState<'all' | 'backend' | 'frontend' | 'ongoing'>('all');
+  const [filter, setFilter] = useState<'all' | 'backend' | 'fullstack' | 'ongoing'>('all');
   
   useEffect(() => {
     // Scroll to top when component mounts
@@ -128,9 +126,9 @@ const Projects = () => {
               <div className="flex gap-2 sm:gap-3 justify-center flex-wrap sm:flex-nowrap">
                 {[
                   { label: "All Projects", value: "all" },
+                  { label: "Fullstack", value: "fullstack" },
                   { label: "Ongoing", value: "ongoing" },
                   { label: "Backend", value: "backend" },
-                  { label: "Frontend", value: "frontend" },
                 ].map(({ label, value }) => (
                   <button
                     key={value}

@@ -45,7 +45,7 @@ const featuredProjects = [
     id: 3,
     title: "ID Card Management Platform",
     description:
-      "A streamlined system for generating and managing student identification cards. Features include bulk card generation, QR code integration, and administrative dashboard.",
+      "A streamlined system for generating and managing student identification cards. Features include card generation, QR code integration, and administrative dashboard.",
     image: "/lovable-uploads/idcard-portal-image.png",
     tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubLink: "https://github.com/abdulrahmansoyooye",

@@ -49,7 +49,8 @@ const featuredProjects = [
     image: "/lovable-uploads/idcard-portal-image.png",
     tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubLink: "https://github.com/abdulrahmansoyooye",
-    type: "backend" as "backend",
+    liveLink: "https://studentidmanagement.vercel.app/",
+    type: "fullstack" as "fullstack",
   },
 ];
 

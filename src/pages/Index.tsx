@@ -4,10 +4,6 @@ import Footer from "../components/Footer";
 import {
   ArrowDown,
   ArrowRight,
-  Code,
-  Database,
-  FileText,
-  Server,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
@@ -15,7 +11,6 @@ import TechStack from "../components/TechStack";
 import Sphere3D from "../components/Sphere3D";
 import Experience from "../components/Experience";
 import GitHubAchievements from "../components/GitHubAchievements";
-import WhatIDo from "../components/WhatIDo";
 import DevelopmentProcess from "../components/DevelopmentProcess";
 
 const featuredProjects = [
@@ -160,9 +155,6 @@ const Index = () => {
 
       {/* Experience Section */}
       <Experience />
-
-      {/* What I Do Section */}
-      <WhatIDo />
 
       {/* Tech Stack Section */}
       <TechStack />

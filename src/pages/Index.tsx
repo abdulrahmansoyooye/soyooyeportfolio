@@ -15,7 +15,6 @@ import TechStack from "../components/TechStack";
 import Sphere3D from "../components/Sphere3D";
 import Experience from "../components/Experience";
 import GitHubAchievements from "../components/GitHubAchievements";
-import WhatIDo from "../components/WhatIDo";
 import DevelopmentProcess from "../components/DevelopmentProcess";
 
 const featuredProjects = [

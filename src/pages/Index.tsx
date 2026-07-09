@@ -4,10 +4,6 @@ import Footer from "../components/Footer";
 import {
   ArrowDown,
   ArrowRight,
-  Code,
-  Database,
-  FileText,
-  Server,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";

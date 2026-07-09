@@ -59,7 +59,6 @@ const TechStack = () => {
   ];
 
   const devOpsTech = [
-    { name: 'Docker', icon: "docker", proficiency: 80 },
     { name: 'Github', icon: "github", proficiency: 95 },
     { name: 'Git', icon: "git", proficiency: 95 },
     { name: 'Postman', icon: "postman", proficiency: 90 },

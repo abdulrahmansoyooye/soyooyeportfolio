@@ -29,7 +29,7 @@ const experiences: ExperienceItem[] = [
       "Redesigned frontend data management using TanStack Query and Zustand, reducing unnecessary network requests and improving cache efficiency and UI responsiveness through robust loading and error states",
       "Implemented production-ready observability with structured logging and environment-aware log levels, and improved rendering performance through component memoization and refined state subscriptions"
     ],
-    technologies: ["Node.js", "Express", "TypeScript", "JWT", "Mongoose", "MongoDB", "Zustand"],
+    technologies: ["Node.js", "Express", "TypeScript", "JWT", "Mongoose", "MongoDB"],
     type: "work"
   },
   {

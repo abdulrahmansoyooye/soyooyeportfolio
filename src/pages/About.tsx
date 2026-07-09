@@ -202,36 +202,40 @@ const About = () => {
               <div className="space-y-6">
                 {[
                   {
-                    title: "Fullstack Engineer",
-                    org: "Sayf Network",
+                    title: "Full-Stack Developer Intern",
+                    org: "Aknexis",
                     color: "text-accent-purple",
-                    date: "May 2024 - Present",
+                    date: "Feb 2026 – Apr 2026",
                     points: [
-                      "Led the full-stack development of an admin dashboard, improving user efficiency by 35%.",
-                      "Built scalable systems with Next.js, MongoDB, Mongoose, and Tailwind CSS.",
-                      "Improved database performance by 25% with optimized querying and security.",
+                      "Led a production-grade modernization initiative for a full-stack application, using AI-assisted engineering to accelerate system auditing and large-scale refactoring",
+                      "Remediated critical security vulnerabilities by enforcing secure secret management, role-based authorization, and input validation aligned with OWASP best practices",
+                      "Refactored backend architecture with centralized middleware for validation and error handling, standardizing API responses across 10+ services",
+                      "Optimized database access patterns through query refactoring and indexing, improving API performance and scalability",
+                      "Redesigned frontend data management using TanStack Query and Zustand, improving cache efficiency and UI responsiveness",
+                      "Implemented production-ready observability with structured logging and environment-aware log levels"
                     ],
                   },
                   {
-                    title: "Lead Software Developer",
-                    org: "Nextage Digital Solutions Ltd.",
+                    title: "Backend Developer",
+                    org: "Vyntra (E-commerce Platform)",
                     color: "text-accent-blue",
-                    date: "Nov 2024 – Present",
+                    date: "Sept 2025 – Oct 2025",
                     points: [
-                      "Spearheaded product development, increasing delivery speed by 40%.",
-                      "Drove cross-functional team efficiency with strong communication.",
-                      "Used Sanity, Next.js, and TypeScript to achieve high-performance builds.",
+                      "Designed and implemented RESTful APIs for seller workflows including product listing, inventory, and order management, covering 10 endpoints",
+                      "Restructured backend architecture to separate seller and buyer logic into distinct service layers, reducing cross-domain bugs and feature turnaround time",
+                      "Wrote API documentation covering 10 endpoints",
+                      "Partnered with engineers and product stakeholders to scope and ship features aligned to business requirements within weeks"
                     ],
                   },
                   {
-                    title: "Frontend Developer",
-                    org: "Rawaaq",
+                    title: "Software Developer",
+                    org: "Nextage Digital Solutions",
                     color: "text-accent-pink",
-                    date: "Dec 2024 - Present",
+                    date: "Nov 2024 – Dec 2025",
                     points: [
-                      "Built educational dashboards and CMS platforms.",
-                      "Contributed to frontend/backend logic for fast release cycles.",
-                      "Designed responsive, accessible interfaces for better engagement.",
+                      "Led the development of 3 client-facing web applications",
+                      "Architected and built a full-stack e-commerce platform, including a customer storefront and admin dashboard with product management, cart, and checkout flows",
+                      "Integrated Sanity CMS for non-technical catalog management — live at distinctpatterns.vercel.app"
                     ],
                   },
                 ].map(({ title, org, color, date, points }, idx) => (

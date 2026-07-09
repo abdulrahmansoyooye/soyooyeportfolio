@@ -31,16 +31,15 @@ const allProjects = [
   },
   {
     id: 3,
-    title: "ID Card Management Platform",
+    title: "University ID Card Management System",
     description:
-      "A streamlined system for generating and managing student identification cards. Features include card generation, QR code integration, and administrative dashboard.",
+      "Architecting a centralized platform for ID issuance, verification, and role-based access control, designed for 1,000+ users across 15+ departments. Implemented QR-based verification to reduce manual administrative processing time.",
     image: "/lovable-uploads/idcard-portal-image.png",
     tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
     githubLink: "https://github.com/abdulrahmansoyooye",
     liveLink: "https://studentidmanagement.vercel.app/",
-    type: "fullstack" as "fullstack",
+    type: "ongoing" as "ongoing",
   },
-  // Ongoing Projects
   {
     id: 11,
     title: "Digital Health Platform",

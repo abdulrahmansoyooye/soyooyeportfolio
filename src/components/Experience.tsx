@@ -17,46 +17,48 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    company: "Nextage Digital Solutions",
-    position: "Lead Software Developer",
-    duration: "Nov 2024 - Present",
+    company: "Aknexis",
+    position: "Full-Stack Developer Intern",
+    duration: "Feb 2026 – Apr 2026",
     location: "Remote",
     description: [
-      "Led development of multiple applications, improving development speed by 40% through efficient code structuring and process automation",
-      "Collaborated with cross-functional teams, effectively communicating technical requirements and solutions, resulting in 20% faster project delivery times",
-      "Designed and deployed scalable, high-performance systems using Next.js, Sanity, TypeScript, Tailwind, ensuring 99.9% uptime and seamless data flow"
+      "Led a production-grade modernization initiative for a full-stack application, using AI-assisted engineering to accelerate system auditing, uncover hidden defects, and guide large-scale refactoring across frontend, backend, database, and infrastructure layers",
+      "Remediated critical security vulnerabilities by enforcing secure secret management, strengthening authentication and role-based authorization, and implementing input validation and rate limiting aligned with OWASP best practices",
+      "Refactored backend architecture by introducing centralized middleware for validation and error handling, standardizing API responses across over 10 services to improve maintainability and debugging efficiency",
+      "Optimized database access patterns through query refactoring, indexing strategies, and selective data retrieval, improving API performance and scalability for production workloads",
+      "Redesigned frontend data management using TanStack Query and Zustand, reducing unnecessary network requests and improving cache efficiency and UI responsiveness through robust loading and error states",
+      "Implemented production-ready observability with structured logging and environment-aware log levels, and improved rendering performance through component memoization and refined state subscriptions"
     ],
-    technologies: ["Next.js", "Sanity", "TypeScript", "Tailwind CSS", "Node.js"],
+    technologies: ["Node.js", "Express", "TypeScript", "JWT", "Mongoose", "MongoDB", "TanStack Query", "Zustand"],
     type: "work"
   },
   {
     id: 2,
-    company: "Sayf Network",
-    position: "Full-Stack Developer",
-    duration: "May 2024 - Present",
+    company: "Vyntra",
+    position: "Backend Developer",
+    duration: "Sept 2025 – Oct 2025",
     location: "Remote",
     description: [
-      "Led full-stack development of admin dashboard, improving user efficiency by 3x through intuitive UI and seamless backend integration",
-      "Designed and implemented system using Next.js, MongoDB, Mongoose, and Tailwind CSS, ensuring scalability and performance optimization",
-      "Enhanced data management and security, leading to 25% improvement in query performance and ensuring data integrity and reliability",
-      "Established direct communication process with stakeholders, reducing feedback cycles by 50%, leading to faster and more accurate development process"
+      "Designed and implemented RESTful APIs for seller workflows including product listing, inventory, and order management, covering 10 endpoints",
+      "Restructured backend architecture to separate seller and buyer logic into distinct service layers, cutting cross-domain bugs and reducing average feature turnaround time",
+      "Wrote API documentation covering 10 endpoints",
+      "Partnered with engineers and product stakeholders to scope and ship features aligned to business requirements within weeks"
     ],
-    technologies: ["JavaScript", "Next.js", "MongoDB", "Mongoose", "Tailwind CSS", "Cloudinary"],
-    website: "https://sayfnetwork.com",
+    technologies: ["Node.js", "Express", "SQL", "Sequelize"],
     type: "work"
   },
   {
     id: 3,
-    company: "Vyntra",
-    position: "Backend Developer",
-    duration: "2024 - Present",
+    company: "Nextage Digital Solutions",
+    position: "Software Developer",
+    duration: "Nov 2024 – Dec 2025",
     location: "Remote",
     description: [
-      "Developed backend infrastructure for e-commerce platform serving students",
-      "Implemented scalable APIs and database architecture to handle growing user base",
-      "Optimized performance and ensured secure transaction processing"
+      "Led the development of 3 client-facing web applications",
+      "Architected and built a full-stack e-commerce platform, including a customer storefront and admin dashboard with product management, cart, and checkout flows, and integrating Sanity CMS for non-technical catalog management — live at distinctpatterns.vercel.app"
     ],
-    technologies: ["Node.js", "Express", "MongoDB", "PostgreSQL", "TypeScript"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity"],
+    website: "https://distinctpatterns.vercel.app",
     type: "work"
   }
 ];

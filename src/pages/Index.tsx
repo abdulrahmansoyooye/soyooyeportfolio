@@ -52,6 +52,7 @@ const featuredProjects = [
     liveLink: "https://studentidmanagement.vercel.app/",
     type: "ongoing" as "ongoing",
   },
+];
 
 const Index = () => {
   useEffect(() => {

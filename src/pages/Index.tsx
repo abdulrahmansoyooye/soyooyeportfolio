@@ -27,7 +27,7 @@ const featuredProjects = [
     image: "/lovable-uploads/distinctpatterns-image2.jpg",
     tags: ["TypeScript", "Next.js", "Sanity", "Tailwind CSS", "Paystack"],
     githubLink: "https://github.com/abdulrahmansoyooye",
-    liveLink: "https://distinctpatterns.com.ng",
+    liveLink: "https://distinctpatterns.vercel.app/",
     type: "fullstack" as "fullstack",
   },
   {

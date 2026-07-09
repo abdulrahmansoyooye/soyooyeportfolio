@@ -160,9 +160,6 @@ const Index = () => {
       {/* Experience Section */}
       <Experience />
 
-      {/* What I Do Section */}
-      <WhatIDo />
-
       {/* Tech Stack Section */}
       <TechStack />
       
